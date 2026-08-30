@@ -54,6 +54,7 @@ struct HomeView: View {
 
 struct ProjectCard: View {
     @EnvironmentObject private var store: ProjectStore
+    @State private var showDeleteConfirmation = false
     let project: ProjectSummary
     let open: () -> Void
     var body: some View {
@@ -69,7 +70,11 @@ struct ProjectCard: View {
                         }
                     }.aspectRatio(1.18, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 15))
                     Text(project.name).font(.system(.headline, design: .serif, weight: .semibold)).lineLimit(1)
-                    Text(project.modifiedAt, style: .relative).font(.caption).foregroundStyle(.secondary)
+                    HStack {
+                        Text(project.canvas.rawValue.uppercased()).font(DTTheme.smallCaps).tracking(1).foregroundStyle(.secondary)
+                        Spacer()
+                        Color.clear.frame(width: 30, height: 30)
+                    }
                 }.padding(10).vellumSurface(radius: 18)
             }.buttonStyle(.plain)
             Button {
@@ -79,11 +84,16 @@ struct ProjectCard: View {
                     .font(.system(size: 14, weight: .semibold)).foregroundStyle(project.favorite ? DTTheme.clay : DTTheme.ink)
                     .frame(width: 34, height: 34).background(.ultraThinMaterial, in: Circle())
             }.padding(17).accessibilityLabel(project.favorite ? "Remove from favorites" : "Add to favorites")
+            VStack { Spacer(); Button(role: .destructive) { showDeleteConfirmation = true } label: { Image(systemName: "trash").font(.system(size: 13, weight: .semibold)).frame(width: 30, height: 30).background(DTTheme.parchment.opacity(0.65), in: Circle()) }.foregroundStyle(DTTheme.clay).accessibilityLabel("Delete \(project.name)") }.padding(17)
         }.contextMenu {
             Button { var copy = project; copy.id = UUID(); copy.name += " Copy"; store.projects.insert(copy, at: 0) } label: { Label("Duplicate", systemImage: "plus.square.on.square") }
             Button { var value = project; value.favorite.toggle(); store.update(value) } label: { Label(project.favorite ? "Unfavorite" : "Favorite", systemImage: "heart") }
             Button(role: .destructive) { store.delete(project) } label: { Label("Delete", systemImage: "trash") }
         }
+        .confirmationDialog("Delete \(project.name)?", isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
+            Button("Delete Composition", role: .destructive) { store.delete(project) }
+            Button("Cancel", role: .cancel) { }
+        } message: { Text("This removes the composition and all of its reference images.") }
     }
 }
 

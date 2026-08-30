@@ -29,8 +29,6 @@ struct SettingsView: View {
                         FineDivider()
                         HStack {
                             SettingLabel(icon: "info", title: "Draw Through", detail: "Made for slow, careful looking")
-                            Spacer()
-                            Text("1.0").font(.system(.subheadline, design: .serif)).foregroundStyle(DTTheme.clay.opacity(0.65))
                         }
                     }
                     Text("A quiet tool for turning references into drawings.").font(.system(.footnote, design: .serif)).italic().foregroundStyle(DTTheme.ink.opacity(0.45)).frame(maxWidth: .infinity).padding(.vertical, 8)

@@ -42,13 +42,16 @@ struct CanvasView: View {
                 }.ignoresSafeArea()
                 ZStack {
                     if showGrid { GridOverlay().stroke(.black.opacity(0.10), lineWidth: 0.7).frame(width: geo.size.width * 3, height: geo.size.height * 3) }
+                    Color.clear.contentShape(Rectangle())
                     if layers.isEmpty {
                         PhotosPicker(selection: $photoItems, maxSelectionCount: 12, matching: .images) { EmptyCanvasHint() }.buttonStyle(.plain)
                     }
                     ForEach(layers) { layer in
-                        if !layer.hidden { LayerCanvasItem(layer: binding(for: layer), selected: selection == layer.id, canvasSize: geo.size) { selection = layer.id } }
+                        if !layer.hidden { LayerCanvasItem(layer: binding(for: layer), selected: selection == layer.id, interactionEnabled: selection == nil || selection == layer.id, canvasSize: geo.size) { selection = layer.id } }
                     }
-                }.scaleEffect(canvasScale).offset(canvasOffset)
+                }
+                .simultaneousGesture(SpatialTapGesture().onEnded { tap in selectLayer(at: tap.location, canvasSize: geo.size) })
+                .scaleEffect(canvasScale).offset(canvasOffset)
                 if traceLocked { LockedOverlay { unlock() } }
             }
             .safeAreaInset(edge: .top, spacing: 0) { topBar }
@@ -75,7 +78,7 @@ struct CanvasView: View {
         .overlay(alignment: .top) {
             if showSavedFeedback { Label("Composition saved", systemImage: "checkmark.circle.fill").font(.system(.caption, design: .serif, weight: .semibold)).padding(.horizontal, 14).padding(.vertical, 9).background(.ultraThinMaterial, in: Capsule()).padding(.top, 62).transition(.move(edge: .top).combined(with: .opacity)) }
         }
-        .background { TwoFingerPanInstaller { delta in guard !traceLocked else { return }; canvasOffset.width += delta.width; canvasOffset.height += delta.height } }
+        .background { TwoFingerPanInstaller(isEnabled: !traceLocked && selection == nil) { delta in canvasOffset.width += delta.width; canvasOffset.height += delta.height } }
     }
 
     private var topBar: some View {
@@ -184,6 +187,29 @@ struct CanvasView: View {
             canvasOffset = CGSize(width: -bounds.midX * canvasScale, height: -bounds.midY * canvasScale)
         }
         panel = nil
+    }
+    private func selectLayer(at location: CGPoint, canvasSize: CGSize) {
+        let point = CGPoint(x: (location.x - canvasSize.width / 2) / canvasScale,
+                            y: (location.y - canvasSize.height / 2) / canvasScale)
+        let candidates = layers.reversed().filter { layer in
+            guard !layer.hidden, !layer.locked, layer.opacity > 0.02 else { return false }
+            let maximum = CGSize(width: min(canvasSize.width * 0.68, 620), height: canvasSize.height * 0.68)
+            let ratio = min(maximum.width / max(layer.image.size.width, 1), maximum.height / max(layer.image.size.height, 1))
+            let halfWidth = layer.image.size.width * ratio * layer.scale / 2
+            let halfHeight = layer.image.size.height * ratio * layer.scale / 2
+            let dx = point.x - layer.position.width
+            let dy = point.y - layer.position.height
+            let cosine = cos(-layer.rotation.radians), sine = sin(-layer.rotation.radians)
+            let localX = dx * cosine - dy * sine
+            let localY = dx * sine + dy * cosine
+            return abs(localX) <= halfWidth && abs(localY) <= halfHeight
+        }.map(\.id)
+        guard !candidates.isEmpty else { selection = nil; return }
+        if let current = selection, let index = candidates.firstIndex(of: current), candidates.count > 1 {
+            selection = candidates[(index + 1) % candidates.count]
+        } else {
+            selection = candidates[0]
+        }
     }
     private func renderComposition() -> UIImage? {
         let renderer = ImageRenderer(content: ZStack { background; ForEach(layers.filter { !$0.hidden }) { layer in Image(uiImage: FilterEngine.process(layer)).resizable().scaledToFit().frame(width: 500).scaleEffect(layer.scale).rotationEffect(layer.rotation).offset(layer.position).opacity(layer.opacity) } }.frame(width: 1200, height: 1600))

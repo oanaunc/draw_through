@@ -27,7 +27,7 @@
 		94908477B142A3593EF65555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76965161ABA2FBC61DBC50B /* CanvasComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasComponents.swift; sourceTree = "<group>"; };
 		BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DrawThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C918D41A7CF3B2825438703B /* SettingsAndTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAndTips.swift; sourceTree = "<group>"; };
 		D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D3C323FFF7C1ECA6F19C35DF /* DrawThroughApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawThroughApp.swift; sourceTree = "<group>"; };
@@ -104,8 +104,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 4DA871E5F2EE86002C392764 /* Build configuration list for PBXProject "DrawThrough" */;
 			developmentRegion = en;
@@ -162,6 +160,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = HBD3XXQK45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Draw Through";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your finished compositions.";
@@ -214,6 +213,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -226,6 +226,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -271,6 +272,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -289,6 +291,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -306,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = HBD3XXQK45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Draw Through";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your finished compositions.";

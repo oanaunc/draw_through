@@ -6,6 +6,7 @@ import UIKit
 struct LayerCanvasItem: View {
     @Binding var layer: LayerItem
     let selected: Bool
+    let interactionEnabled: Bool
     let canvasSize: CGSize
     let select: () -> Void
     @GestureState private var drag: CGSize = .zero
@@ -26,12 +27,12 @@ struct LayerCanvasItem: View {
             .opacity(layer.opacity).brightness(layer.brightness).contrast(layer.contrast)
             .overlay { if selected { SelectionFrame(layer: $layer) } }
             .scaleEffect(layer.scale * zoom).rotationEffect(layer.rotation + turn).offset(x: layer.position.width + drag.width, y: layer.position.height + drag.height)
-            .contentShape(Rectangle()).onTapGesture(perform: select)
+            .contentShape(Rectangle())
             .gesture(layer.locked ? nil : dragGesture.simultaneously(with: magnifyGesture).simultaneously(with: rotateGesture))
-            .allowsHitTesting(layer.opacity > 0.02)
+            .allowsHitTesting(interactionEnabled && layer.opacity > 0.02)
             .accessibilityLabel(layer.name)
     }
-    private var dragGesture: some Gesture { DragGesture().updating($drag) { value, state, _ in state = value.translation }.onEnded { layer.position.width += $0.translation.width; layer.position.height += $0.translation.height } }
+    private var dragGesture: some Gesture { DragGesture().onChanged { _ in if !selected { select() } }.updating($drag) { value, state, _ in state = value.translation }.onEnded { layer.position.width += $0.translation.width; layer.position.height += $0.translation.height } }
     private var magnifyGesture: some Gesture { MagnificationGesture().updating($zoom) { value, state, _ in state = value }.onEnded { layer.scale = min(max(layer.scale * $0, 0.15), 6) } }
     private var rotateGesture: some Gesture { RotationGesture().updating($turn) { value, state, _ in state = value }.onEnded { layer.rotation += $0 } }
 }
@@ -67,10 +68,16 @@ private struct SelectionFrame: View {
 }
 
 struct TwoFingerPanInstaller: UIViewRepresentable {
+    let isEnabled: Bool
     let onChange: (CGSize) -> Void
-    func makeCoordinator() -> Coordinator { Coordinator(onChange: onChange) }
+    func makeCoordinator() -> Coordinator { Coordinator(isEnabled: isEnabled, onChange: onChange) }
     func makeUIView(context: Context) -> InstallerView { let view = InstallerView(); view.coordinator = context.coordinator; return view }
-    func updateUIView(_ uiView: InstallerView, context: Context) { context.coordinator.onChange = onChange; uiView.installIfNeeded() }
+    func updateUIView(_ uiView: InstallerView, context: Context) {
+        context.coordinator.onChange = onChange
+        context.coordinator.isEnabled = isEnabled
+        uiView.installIfNeeded()
+        context.coordinator.recognizer?.isEnabled = isEnabled
+    }
     static func dismantleUIView(_ uiView: InstallerView, coordinator: Coordinator) { uiView.removeRecognizer() }
 
     final class InstallerView: UIView {
@@ -81,14 +88,16 @@ struct TwoFingerPanInstaller: UIViewRepresentable {
             guard let host = window, installedOn == nil, let coordinator else { return }
             let pan = UIPanGestureRecognizer(target: coordinator, action: #selector(Coordinator.panned(_:)))
             pan.minimumNumberOfTouches = 2; pan.maximumNumberOfTouches = 2; pan.cancelsTouchesInView = false; pan.delegate = coordinator
+            pan.isEnabled = coordinator.isEnabled
             host.addGestureRecognizer(pan); coordinator.recognizer = pan; installedOn = host
         }
         func removeRecognizer() { if let recognizer = coordinator?.recognizer { installedOn?.removeGestureRecognizer(recognizer) }; installedOn = nil }
     }
     final class Coordinator: NSObject, UIGestureRecognizerDelegate {
         var onChange: (CGSize) -> Void
+        var isEnabled: Bool
         weak var recognizer: UIPanGestureRecognizer?
-        init(onChange: @escaping (CGSize) -> Void) { self.onChange = onChange }
+        init(isEnabled: Bool, onChange: @escaping (CGSize) -> Void) { self.isEnabled = isEnabled; self.onChange = onChange }
         @objc func panned(_ recognizer: UIPanGestureRecognizer) {
             let translation = recognizer.translation(in: recognizer.view)
             onChange(CGSize(width: translation.x, height: translation.y)); recognizer.setTranslation(.zero, in: recognizer.view)
@@ -129,8 +138,11 @@ struct LayersPanel: View {
     @Binding var selection: UUID?
     var body: some View {
         NavigationStack { List { ForEach($layers.reversed()) { $layer in
-            HStack { Button { layer.hidden.toggle() } label: { Image(systemName: layer.hidden ? "eye.slash" : "eye") }; Image(uiImage: layer.image).resizable().scaledToFill().frame(width: 45, height: 45).clipShape(RoundedRectangle(cornerRadius: 6)); VStack(alignment: .leading) { TextField("Layer", text: $layer.name); Text(selection == layer.id ? "ACTIVE · \(Int(layer.opacity * 100))% · \(layer.mode.rawValue)" : "\(Int(layer.opacity * 100))% · \(layer.mode.rawValue)").font(.caption).fontWeight(selection == layer.id ? .semibold : .regular).foregroundStyle(selection == layer.id ? DTTheme.clay : .secondary) }; Spacer(); if selection == layer.id { Image(systemName: "checkmark.circle.fill").foregroundStyle(DTTheme.clay) }; Button { layer.locked.toggle() } label: { Image(systemName: layer.locked ? "lock.fill" : "lock.open") } }
-                .contentShape(Rectangle()).onTapGesture { selection = layer.id }
+            HStack { Button { layer.hidden.toggle() } label: { Image(systemName: layer.hidden ? "eye.slash" : "eye").frame(width: 30, height: 36) }.buttonStyle(.borderless); Image(uiImage: layer.image).resizable().scaledToFill().frame(width: 45, height: 45).clipShape(RoundedRectangle(cornerRadius: 6)); VStack(alignment: .leading) { TextField("Layer", text: $layer.name); Text(layer.locked ? "LOCKED · \(Int(layer.opacity * 100))% · \(layer.mode.rawValue)" : (selection == layer.id ? "ACTIVE · \(Int(layer.opacity * 100))% · \(layer.mode.rawValue)" : "\(Int(layer.opacity * 100))% · \(layer.mode.rawValue)")).font(.caption).fontWeight(selection == layer.id ? .semibold : .regular).foregroundStyle(layer.locked ? .secondary : (selection == layer.id ? DTTheme.clay : .secondary)) }; Spacer(); if selection == layer.id { Image(systemName: "checkmark.circle.fill").foregroundStyle(DTTheme.clay) }; Button {
+                layer.locked.toggle()
+                if layer.locked && selection == layer.id { selection = layers.reversed().first(where: { !$0.locked && !$0.hidden && $0.id != layer.id })?.id }
+            } label: { Image(systemName: layer.locked ? "lock.fill" : "lock.open").frame(width: 34, height: 36).contentShape(Rectangle()) }.buttonStyle(.borderless).accessibilityLabel(layer.locked ? "Unlock \(layer.name)" : "Lock \(layer.name)") }
+                .contentShape(Rectangle()).onTapGesture { if !layer.locked { selection = layer.id } }
                 .listRowBackground(selection == layer.id ? DTTheme.parchment.opacity(0.55) : Color.clear)
             }.onMove { source, destination in layers.move(fromOffsets: source, toOffset: max(0, layers.count - destination)) }.onDelete { offsets in let ids = offsets.map { Array(layers.reversed())[$0].id }; layers.removeAll { ids.contains($0.id) } }
         }.parchmentList().navigationTitle("Layers").navigationBarTitleDisplayMode(.inline).toolbar { EditButton() } }.presentationDetents([.medium, .large]).presentationBackground(.ultraThinMaterial)
