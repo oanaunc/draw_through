@@ -41,13 +41,21 @@ struct CanvasView: View {
                     }
                 }.ignoresSafeArea()
                 ZStack {
-                    if showGrid { GridOverlay().stroke(.black.opacity(0.10), lineWidth: 0.7).frame(width: geo.size.width * 3, height: geo.size.height * 3) }
                     Color.clear.contentShape(Rectangle())
                     if layers.isEmpty {
                         PhotosPicker(selection: $photoItems, maxSelectionCount: 12, matching: .images) { EmptyCanvasHint() }.buttonStyle(.plain)
                     }
                     ForEach(layers) { layer in
                         if !layer.hidden { LayerCanvasItem(layer: binding(for: layer), selected: selection == layer.id, interactionEnabled: selection == nil || selection == layer.id, canvasSize: geo.size) { selection = layer.id } }
+                    }
+                }
+                .frame(width: geo.size.width, height: geo.size.height)
+                .background {
+                    if showGrid {
+                        GridOverlay()
+                            .stroke(.black.opacity(0.08), lineWidth: 0.5)
+                            .frame(width: geo.size.width * 3, height: geo.size.height * 3)
+                            .allowsHitTesting(false)
                     }
                 }
                 .simultaneousGesture(SpatialTapGesture().onEnded { tap in selectLayer(at: tap.location, canvasSize: geo.size) })
