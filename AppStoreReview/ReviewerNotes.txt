@@ -1,0 +1,72 @@
+DRAW THROUGH — NOTES FOR APP REVIEW
+Version 1.0.0 (Build 1) — first submission
+
+Draw Through is an offline drawing-reference tool for iPhone and iPad. It works
+like a digital light table: the artist adds photos as reference layers, arranges
+them into a composition, then rests paper on the screen and traces or draws from
+what is shown underneath.
+
+SIGN-IN
+No account, sign-in, or demo credentials are required. Every feature is available
+immediately on first launch.
+
+NO NETWORK, NO PURCHASES
+The app makes no network requests of any kind. There are no in-app purchases,
+subscriptions, advertising, analytics, or tracking. Nothing is transmitted off
+the device.
+
+FIRST LAUNCH
+A three-screen introduction appears. Tap "Continue" twice, then "Start Drawing"
+to reach the main screen. The introduction can be replayed later from
+Settings (gear icon) > About > Replay introduction.
+
+HOW TO TEST THE CORE WORKFLOW
+1. Tap "New Canvas", then "Create". The canvas opens.
+2. Tap "Image" in the bottom bar (or tap the invitation in the middle of the
+   empty canvas) and pick one or more photos using Apple's system photo picker.
+3. Tap an image to select it. Drag to move, pinch to resize, rotate with two
+   fingers, or drag a corner handle to resize.
+4. "Layers" lists every image. From there you can rename, reorder, hide, lock,
+   or delete a layer. Tap "Edit" to reorder or swipe to delete.
+5. "Adjust" changes the selected image: Color / B&W / Outline, plus opacity,
+   brightness, and contrast.
+6. "View" toggles a faint grid over the canvas, changes the canvas background
+   colour, and offers "Fit composition" and "Reset view".
+7. "Lock" freezes the composition for tracing. To unlock, press and hold the
+   round lock control near the bottom of the screen for two seconds — a ring
+   fills as you hold. A single tap will not unlock it; this is deliberate, so a
+   hand resting on the screen while drawing cannot disturb the composition.
+8. The checkmark in the top bar saves manually. Compositions also save
+   automatically after every change.
+9. The share icon in the top bar opens Export, where the flattened composition
+   can be shared or saved to Photos.
+10. The back arrow returns to the project list. Projects can be favourited
+    (heart), deleted (trash), or duplicated via long-press.
+
+TWO THINGS THAT MAY LOOK LIKE BUGS
+- "Adjust" is intentionally dimmed and unavailable until an image layer is
+  selected, because it edits the selected layer. Tap an image first.
+- Two-finger dragging on empty canvas space pans the infinite canvas. A
+  one-finger drag on an image moves that image instead.
+
+PERMISSIONS
+Reference images are chosen through the system photo picker (PHPickerViewController),
+which does not require photo library access. The only permission prompt appears
+when the reviewer chooses "Save to Photos" in the Export panel, which requests
+add-only photo library access.
+
+DATA HANDLING
+Projects, reference images, and settings are stored only in the app's own
+container on the device and are deleted with the app. No user data is collected,
+shared, or transmitted, which is why the App Privacy section is filed as
+"Data Not Collected".
+
+CONTENT
+All artwork bundled with the app (app icon, introduction illustrations, and
+sample reference photographs) is owned by the developer. Reviewer-selected
+photos stay on the device and are never published by the app.
+
+CONTACT
+Oana Rinaldi — oanarinaldi@gmail.com
+Happy to provide anything else needed. Thank you for your time reviewing this
+first release.

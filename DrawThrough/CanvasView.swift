@@ -49,7 +49,6 @@ struct CanvasView: View {
                         if !layer.hidden { LayerCanvasItem(layer: binding(for: layer), selected: selection == layer.id, interactionEnabled: selection == nil || selection == layer.id, canvasSize: geo.size) { selection = layer.id } }
                     }
                 }
-                .frame(width: geo.size.width, height: geo.size.height)
                 .background {
                     if showGrid {
                         GridOverlay()
@@ -112,7 +111,10 @@ struct CanvasView: View {
         HStack(spacing: 4) {
             PhotosPicker(selection: $photoItems, maxSelectionCount: 12, matching: .images) { ToolLabel("Image", "plus") }
             Button { panel = .layers } label: { ToolLabel("Layers", "square.3.layers.3d") }
-            Button { panel = .adjust } label: { ToolLabel("Adjust", "slider.horizontal.3") }.disabled(selection == nil)
+            Button { panel = .adjust } label: { ToolLabel("Adjust", "slider.horizontal.3") }
+                .disabled(selection == nil)
+                .foregroundStyle(selection == nil ? DTTheme.ink.opacity(0.32) : DTTheme.ink)
+                .accessibilityHint(selection == nil ? "Select an image to adjust it" : "")
             Button { panel = .view } label: { ToolLabel("View", "viewfinder") }
             Button { traceLocked ? unlock() : lock() } label: { ToolLabel(traceLocked ? "Unlock" : "Lock", traceLocked ? "lock.open.fill" : "lock.fill") }.tint(DTTheme.clay)
         }.foregroundStyle(DTTheme.ink).padding(8)
