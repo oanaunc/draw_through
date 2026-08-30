@@ -61,7 +61,7 @@ struct LayersPanel: View {
             HStack { Button { layer.hidden.toggle() } label: { Image(systemName: layer.hidden ? "eye.slash" : "eye") }; Image(uiImage: layer.image).resizable().scaledToFill().frame(width: 45, height: 45).clipShape(RoundedRectangle(cornerRadius: 6)); VStack(alignment: .leading) { TextField("Layer", text: $layer.name); Text("\(Int(layer.opacity * 100))% · \(layer.mode.rawValue)").font(.caption).foregroundStyle(.secondary) }; Spacer(); Button { layer.locked.toggle() } label: { Image(systemName: layer.locked ? "lock.fill" : "lock.open") } }
                 .contentShape(Rectangle()).onTapGesture { selection = layer.id }
             }.onMove { source, destination in layers.move(fromOffsets: source, toOffset: max(0, layers.count - destination)) }.onDelete { offsets in let ids = offsets.map { Array(layers.reversed())[$0].id }; layers.removeAll { ids.contains($0.id) } }
-        }.navigationTitle("Layers").navigationBarTitleDisplayMode(.inline).toolbar { EditButton() } }.presentationDetents([.medium, .large])
+        }.parchmentList().navigationTitle("Layers").navigationBarTitleDisplayMode(.inline).toolbar { EditButton() } }.presentationDetents([.medium, .large]).presentationBackground(.ultraThinMaterial)
     }
 }
 
@@ -74,17 +74,17 @@ struct AdjustPanel: View {
             VStack(alignment: .leading) { HStack { Text("Brightness"); Spacer(); Text("\(Int(layer.brightness * 100))").foregroundStyle(.secondary) }; Slider(value: $layer.brightness, in: -0.5...0.5) }
             VStack(alignment: .leading) { HStack { Text("Contrast"); Spacer(); Text(String(format: "%.1f", layer.contrast)).foregroundStyle(.secondary) }; Slider(value: $layer.contrast, in: 0.5...2) }
             Button("Reset adjustments") { layer.opacity = 1; layer.brightness = 0; layer.contrast = 1; layer.mode = .color }
-        }.navigationTitle("Adjust").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium, .large])
+        }.parchmentList().navigationTitle("Adjust").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium, .large]).presentationBackground(.ultraThinMaterial)
     }
 }
 
 struct ViewPanel: View {
     @Binding var showGrid: Bool
     @Binding var background: Color
-    var body: some View { NavigationStack { Form { Toggle("Grid", isOn: $showGrid); Section("Background") { HStack { ForEach([DTTheme.warmPaper, .white, Color(white: 0.72), .black], id: \.self) { color in Circle().fill(color).stroke(.secondary, lineWidth: 1).frame(width: 36, height: 36).onTapGesture { background = color } } } }; Section { Button("Fit composition") { }; Button("Reset view") { } } }.navigationTitle("View & Guides").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]) }
+    var body: some View { NavigationStack { Form { Toggle("Grid", isOn: $showGrid); Section("Background") { HStack { ForEach([DTTheme.warmPaper, DTTheme.parchment, Color(white: 0.72), DTTheme.ink], id: \.self) { color in Circle().fill(LinearGradient(colors: [color.opacity(0.75), color], startPoint: .topLeading, endPoint: .bottomTrailing)).stroke(.secondary, lineWidth: 1).frame(width: 36, height: 36).onTapGesture { background = color } } } }; Section { Button("Fit composition") { }; Button("Reset view") { } } }.parchmentList().navigationTitle("View & Guides").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial) }
 }
 
 struct ExportPanel: View {
     let image: UIImage?
-    var body: some View { NavigationStack { List { if let image { ShareLink(item: Image(uiImage: image), preview: SharePreview("Draw Through Composition", image: Image(uiImage: image))) { Label("Share composition", systemImage: "square.and.arrow.up") }; Button { UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil) } label: { Label("Save to Photos", systemImage: "photo") } } else { ContentUnavailableView("Nothing to export", systemImage: "photo") } }.navigationTitle("Export").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]) }
+    var body: some View { NavigationStack { List { if let image { ShareLink(item: Image(uiImage: image), preview: SharePreview("Draw Through Composition", image: Image(uiImage: image))) { Label("Share composition", systemImage: "square.and.arrow.up") }; Button { UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil) } label: { Label("Save to Photos", systemImage: "photo") } } else { ContentUnavailableView("Nothing to export", systemImage: "photo") } }.parchmentList().navigationTitle("Export").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial) }
 }

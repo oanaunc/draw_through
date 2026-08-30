@@ -16,7 +16,7 @@ struct DrawThroughApp: App {
             }
             .environmentObject(store)
             .preferredColorScheme(store.settings.appearance.colorScheme)
+            .tint(DTTheme.clay)
         }
     }
 }
-

@@ -170,7 +170,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drawthrough.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.drawthrough;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.drawthrough.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.drawthrough;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

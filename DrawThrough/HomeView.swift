@@ -16,15 +16,22 @@ struct HomeView: View {
             ZStack {
                 PaperBackground()
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 24) {
+                    VStack(alignment: .leading, spacing: 22) {
                         HStack(alignment: .firstTextBaseline) {
-                            Text("Draw Through").font(.system(size: 38, weight: .medium, design: .serif)).italic()
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("DRAWING STUDIO").font(DTTheme.smallCaps).tracking(2.4).foregroundStyle(DTTheme.clay.opacity(0.72))
+                                Text("Draw Through").font(DTTheme.display(43)).italic()
+                            }
                             Spacer()
-                            Button { showTips = true } label: { Image(systemName: "lightbulb") }
-                            Button { showSettings = true } label: { Image(systemName: "gearshape") }
+                            Button { showTips = true } label: { Image(systemName: "lightbulb").frame(width: 38, height: 38).background(.white.opacity(0.28), in: Circle()) }
+                            Button { showSettings = true } label: { Image(systemName: "gearshape").frame(width: 38, height: 38).background(.white.opacity(0.28), in: Circle()) }
                         }.font(.title3).foregroundStyle(DTTheme.ink)
                         Button { showCanvasSetup = true } label: { Label("New Canvas", systemImage: "plus").frame(maxWidth: .infinity) }.buttonStyle(InkButtonStyle())
-                        Picker("Projects", selection: $filter) { Text("Recent").tag(0); Text("Favorites").tag(1) }.pickerStyle(.segmented)
+                        HStack {
+                            Text("YOUR CANVASES").font(DTTheme.smallCaps).tracking(1.7)
+                            Spacer()
+                            Picker("Projects", selection: $filter) { Text("Recent").tag(0); Text("Favorites").tag(1) }.pickerStyle(.segmented).frame(maxWidth: 220)
+                        }
                         if filtered.isEmpty {
                             ContentUnavailableView("Your canvas is waiting", systemImage: "scribble.variable", description: Text("Create a canvas, add references, and arrange the drawing you want to make."))
                                 .frame(maxWidth: .infinity).padding(.top, 50)
@@ -53,12 +60,13 @@ struct ProjectCard: View {
         Button(action: open) {
             VStack(alignment: .leading, spacing: 10) {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 15).fill(.white.opacity(0.45))
-                    Image(systemName: "photo.artframe").font(.system(size: 44, weight: .thin)).foregroundStyle(DTTheme.clay)
-                }.aspectRatio(1.18, contentMode: .fit)
-                Text(project.name).font(.headline).lineLimit(1)
+                    LinearGradient(colors: [DTTheme.vellum.opacity(0.72), DTTheme.parchment.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    Image(systemName: "photo.artframe").font(.system(size: 44, weight: .thin)).foregroundStyle(DTTheme.clay.opacity(0.78))
+                    VStack { HStack { Spacer(); if project.favorite { Image(systemName: "heart.fill").font(.caption).padding(9) } }; Spacer() }
+                }.aspectRatio(1.18, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 15))
+                Text(project.name).font(.system(.headline, design: .serif, weight: .semibold)).lineLimit(1)
                 Text(project.modifiedAt, style: .relative).font(.caption).foregroundStyle(.secondary)
-            }.padding(10).background(.white.opacity(0.3), in: RoundedRectangle(cornerRadius: 18))
+            }.padding(10).vellumSurface(radius: 18)
         }.buttonStyle(.plain).contextMenu {
             Button { var copy = project; copy.id = UUID(); copy.name += " Copy"; store.projects.insert(copy, at: 0) } label: { Label("Duplicate", systemImage: "plus.square.on.square") }
             Button { var value = project; value.favorite.toggle(); store.update(value) } label: { Label(project.favorite ? "Unfavorite" : "Favorite", systemImage: "heart") }
@@ -81,10 +89,9 @@ struct NewCanvasSheet: View {
                         }.foregroundStyle(DTTheme.ink)
                     }
                 }
-            }.scrollContentBackground(.hidden).background(DTTheme.warmPaper)
+            }.parchmentList()
                 .navigationTitle("New Canvas").navigationBarTitleDisplayMode(.inline)
                 .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }; ToolbarItem(placement: .confirmationAction) { Button("Create") { create(selected) }.fontWeight(.semibold) } }
-        }.presentationDetents([.medium])
+        }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial)
     }
 }
-
