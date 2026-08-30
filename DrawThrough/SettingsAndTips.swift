@@ -11,10 +11,6 @@ struct SettingsView: View {
                 VStack(alignment: .leading, spacing: 26) {
                     EditorialHeader(kicker: "DRAW THROUGH", title: "Settings", subtitle: "Shape the studio around the way you draw.") { dismiss() }
                     SettingsSection(title: "STUDIO") {
-                        MenuRow(icon: "circle.lefthalf.filled", title: "Appearance", value: store.settings.appearance.rawValue) {
-                            ForEach(AppearanceChoice.allCases, id: \.self) { choice in Button(choice.rawValue) { store.settings.appearance = choice } }
-                        }
-                        FineDivider()
                         MenuRow(icon: "rectangle.on.rectangle.angled", title: "Default canvas", value: store.settings.defaultCanvas.rawValue) {
                             ForEach(CanvasKind.allCases, id: \.self) { canvas in Button(canvas.rawValue) { store.settings.defaultCanvas = canvas } }
                         }

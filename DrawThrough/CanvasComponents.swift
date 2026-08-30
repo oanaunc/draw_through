@@ -1,6 +1,7 @@
 import SwiftUI
 import CoreImage
 import CoreImage.CIFilterBuiltins
+import UIKit
 
 struct LayerCanvasItem: View {
     @Binding var layer: LayerItem
@@ -11,11 +12,19 @@ struct LayerCanvasItem: View {
     @GestureState private var zoom: CGFloat = 1
     @GestureState private var turn: Angle = .zero
 
+    private var fittedSize: CGSize {
+        let maximum = CGSize(width: min(canvasSize.width * 0.68, 620), height: canvasSize.height * 0.68)
+        let imageSize = layer.image.size
+        guard imageSize.width > 0, imageSize.height > 0 else { return maximum }
+        let ratio = min(maximum.width / imageSize.width, maximum.height / imageSize.height)
+        return CGSize(width: imageSize.width * ratio, height: imageSize.height * ratio)
+    }
+
     var body: some View {
         Image(uiImage: FilterEngine.process(layer)).resizable().scaledToFit()
-            .frame(maxWidth: min(canvasSize.width * 0.68, 620), maxHeight: canvasSize.height * 0.68)
+            .frame(width: fittedSize.width, height: fittedSize.height)
             .opacity(layer.opacity).brightness(layer.brightness).contrast(layer.contrast)
-            .overlay { if selected { RoundedRectangle(cornerRadius: 3).stroke(DTTheme.ink, style: StrokeStyle(lineWidth: 1.5, dash: [6, 4])) } }
+            .overlay { if selected { SelectionFrame(layer: $layer) } }
             .scaleEffect(layer.scale * zoom).rotationEffect(layer.rotation + turn).offset(x: layer.position.width + drag.width, y: layer.position.height + drag.height)
             .contentShape(Rectangle()).onTapGesture(perform: select)
             .gesture(layer.locked ? nil : dragGesture.simultaneously(with: magnifyGesture).simultaneously(with: rotateGesture))
@@ -24,6 +33,65 @@ struct LayerCanvasItem: View {
     private var dragGesture: some Gesture { DragGesture().updating($drag) { value, state, _ in state = value.translation }.onEnded { layer.position.width += $0.translation.width; layer.position.height += $0.translation.height } }
     private var magnifyGesture: some Gesture { MagnificationGesture().updating($zoom) { value, state, _ in state = value }.onEnded { layer.scale = min(max(layer.scale * $0, 0.15), 6) } }
     private var rotateGesture: some Gesture { RotationGesture().updating($turn) { value, state, _ in state = value }.onEnded { layer.rotation += $0 } }
+}
+
+private struct SelectionFrame: View {
+    @Binding var layer: LayerItem
+    @State private var startingScale: CGFloat?
+    var body: some View {
+        GeometryReader { geo in
+            ZStack {
+                RoundedRectangle(cornerRadius: 2).stroke(DTTheme.ink, style: StrokeStyle(lineWidth: 1.4, dash: [7, 5]))
+                handle.position(x: 0, y: 0)
+                handle.position(x: geo.size.width, y: 0)
+                handle.position(x: 0, y: geo.size.height)
+                handle.position(x: geo.size.width, y: geo.size.height)
+                    .highPriorityGesture(DragGesture()
+                        .onChanged { value in
+                            if startingScale == nil { startingScale = layer.scale }
+                            let change = (value.translation.width + value.translation.height) / 240
+                            layer.scale = min(max((startingScale ?? layer.scale) + change, 0.15), 6)
+                        }
+                        .onEnded { _ in startingScale = nil })
+            }
+        }
+    }
+    private var handle: some View {
+        RoundedRectangle(cornerRadius: 2).fill(DTTheme.vellum).frame(width: 13, height: 13)
+            .overlay { RoundedRectangle(cornerRadius: 2).stroke(DTTheme.ink, lineWidth: 1.4) }
+            .shadow(color: .black.opacity(0.12), radius: 2, y: 1)
+    }
+}
+
+struct TwoFingerPanInstaller: UIViewRepresentable {
+    let onChange: (CGSize) -> Void
+    func makeCoordinator() -> Coordinator { Coordinator(onChange: onChange) }
+    func makeUIView(context: Context) -> InstallerView { let view = InstallerView(); view.coordinator = context.coordinator; return view }
+    func updateUIView(_ uiView: InstallerView, context: Context) { context.coordinator.onChange = onChange; uiView.installIfNeeded() }
+    static func dismantleUIView(_ uiView: InstallerView, coordinator: Coordinator) { uiView.removeRecognizer() }
+
+    final class InstallerView: UIView {
+        weak var coordinator: Coordinator?
+        private weak var installedOn: UIView?
+        override func didMoveToWindow() { super.didMoveToWindow(); installIfNeeded() }
+        func installIfNeeded() {
+            guard let host = window, installedOn == nil, let coordinator else { return }
+            let pan = UIPanGestureRecognizer(target: coordinator, action: #selector(Coordinator.panned(_:)))
+            pan.minimumNumberOfTouches = 2; pan.maximumNumberOfTouches = 2; pan.cancelsTouchesInView = false; pan.delegate = coordinator
+            host.addGestureRecognizer(pan); coordinator.recognizer = pan; installedOn = host
+        }
+        func removeRecognizer() { if let recognizer = coordinator?.recognizer { installedOn?.removeGestureRecognizer(recognizer) }; installedOn = nil }
+    }
+    final class Coordinator: NSObject, UIGestureRecognizerDelegate {
+        var onChange: (CGSize) -> Void
+        weak var recognizer: UIPanGestureRecognizer?
+        init(onChange: @escaping (CGSize) -> Void) { self.onChange = onChange }
+        @objc func panned(_ recognizer: UIPanGestureRecognizer) {
+            let translation = recognizer.translation(in: recognizer.view)
+            onChange(CGSize(width: translation.x, height: translation.y)); recognizer.setTranslation(.zero, in: recognizer.view)
+        }
+        func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool { true }
+    }
 }
 
 enum FilterEngine {
@@ -81,10 +149,13 @@ struct AdjustPanel: View {
 struct ViewPanel: View {
     @Binding var showGrid: Bool
     @Binding var background: Color
-    var body: some View { NavigationStack { Form { Toggle("Grid", isOn: $showGrid); Section("Background") { HStack { ForEach([DTTheme.warmPaper, DTTheme.parchment, Color(white: 0.72), DTTheme.ink], id: \.self) { color in Circle().fill(LinearGradient(colors: [color.opacity(0.75), color], startPoint: .topLeading, endPoint: .bottomTrailing)).stroke(.secondary, lineWidth: 1).frame(width: 36, height: 36).onTapGesture { background = color } } } }; Section { Button("Fit composition") { }; Button("Reset view") { } } }.parchmentList().navigationTitle("View & Guides").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial) }
+    let fitComposition: () -> Void
+    let resetView: () -> Void
+    var body: some View { NavigationStack { Form { Toggle("Grid", isOn: $showGrid); Section("Background") { HStack { ForEach([DTTheme.warmPaper, DTTheme.parchment, Color(white: 0.72), DTTheme.ink], id: \.self) { color in Circle().fill(LinearGradient(colors: [color.opacity(0.75), color], startPoint: .topLeading, endPoint: .bottomTrailing)).stroke(.secondary, lineWidth: 1).frame(width: 36, height: 36).onTapGesture { background = color } } } }; Section { Button("Fit composition", action: fitComposition); Button("Reset view", action: resetView) } }.parchmentList().navigationTitle("View & Guides").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial) }
 }
 
 struct ExportPanel: View {
     let image: UIImage?
-    var body: some View { NavigationStack { List { if let image { ShareLink(item: Image(uiImage: image), preview: SharePreview("Draw Through Composition", image: Image(uiImage: image))) { Label("Share composition", systemImage: "square.and.arrow.up") }; Button { UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil) } label: { Label("Save to Photos", systemImage: "photo") } } else { ContentUnavailableView("Nothing to export", systemImage: "photo") } }.parchmentList().navigationTitle("Export").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial) }
+    @Environment(\.dismiss) private var dismiss
+    var body: some View { NavigationStack { List { if let image { ShareLink(item: Image(uiImage: image), preview: SharePreview("Draw Through Composition", image: Image(uiImage: image))) { Label("Share composition", systemImage: "square.and.arrow.up") }; Button { UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil); UINotificationFeedbackGenerator().notificationOccurred(.success); dismiss() } label: { Label("Save to Photos", systemImage: "photo") } } else { ContentUnavailableView("Nothing to export", systemImage: "photo") } }.parchmentList().navigationTitle("Export").navigationBarTitleDisplayMode(.inline) }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial) }
 }
