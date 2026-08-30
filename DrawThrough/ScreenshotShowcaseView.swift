@@ -44,7 +44,7 @@ private struct DemoHomeView: View {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 175), spacing: 18)], spacing: 18) {
                         ForEach(projects, id: \.0) { item in
                             VStack(alignment: .leading, spacing: 10) {
-                                Image(item.1).resizable().scaledToFill().frame(height: 210).clipShape(RoundedRectangle(cornerRadius: 15))
+                                Image(item.1).resizable().scaledToFill().frame(height: 210).clipShape(RoundedRectangle(cornerRadius: 15)).overlay(alignment: .topTrailing) { Image(systemName: item.0 == "Reference Study" ? "heart.fill" : "heart").padding(10).background(.ultraThinMaterial, in: Circle()).padding(8) }
                                 Text(item.0).font(.system(.headline, design: .serif, weight: .semibold)); Text(item.2).font(DTTheme.smallCaps).tracking(1).foregroundStyle(.secondary)
                             }.padding(10).vellumSurface(radius: 18)
                         }
@@ -65,7 +65,7 @@ private struct DemoCanvasView: View {
             PaperBackground()
             if panel == .guides { DemoGrid().stroke(DTTheme.ink.opacity(0.12), lineWidth: 0.7).ignoresSafeArea() }
             composition.padding(.horizontal, sizeClass == .regular ? 110 : 22).padding(.vertical, 95)
-            if panel != .locked { topBar; bottomBar }
+            topBar; bottomBar
             panelOverlay
         }
     }

@@ -105,7 +105,23 @@ struct ProjectSummary: Identifiable, Codable, Hashable {
     func delete(_ project: ProjectSummary) {
         projects.removeAll { $0.id == project.id }
         try? FileManager.default.removeItem(at: documentURL(project.id))
+        try? FileManager.default.removeItem(at: thumbnailURL(project.id))
     }
+    func saveThumbnail(_ image: UIImage, for projectID: UUID) {
+        let size = CGSize(width: 600, height: 508)
+        let format = UIGraphicsImageRendererFormat(); format.opaque = true; format.scale = 1
+        let thumbnail = UIGraphicsImageRenderer(size: size, format: format).image { _ in
+            UIColor(DTTheme.warmPaper).setFill(); UIRectFill(CGRect(origin: .zero, size: size))
+            let sourceRatio = image.size.width / max(image.size.height, 1)
+            let targetRatio = size.width / size.height
+            let drawSize = sourceRatio > targetRatio ? CGSize(width: size.height * sourceRatio, height: size.height) : CGSize(width: size.width, height: size.width / sourceRatio)
+            image.draw(in: CGRect(x: (size.width - drawSize.width) / 2, y: (size.height - drawSize.height) / 2, width: drawSize.width, height: drawSize.height))
+        }
+        try? FileManager.default.createDirectory(at: documentsDirectory, withIntermediateDirectories: true)
+        try? thumbnail.jpegData(compressionQuality: 0.88)?.write(to: thumbnailURL(projectID), options: .atomic)
+        objectWillChange.send()
+    }
+    func loadThumbnail(for projectID: UUID) -> UIImage? { try? UIImage(data: Data(contentsOf: thumbnailURL(projectID))) }
     func saveDocument(for projectID: UUID, layers: [LayerItem], showGrid: Bool, background: Color, canvasOffset: CGSize, canvasScale: CGFloat) {
         let color = UIColor(background)
         var red: CGFloat = 0.955, green: CGFloat = 0.925, blue: CGFloat = 0.865, alpha: CGFloat = 1
@@ -130,6 +146,7 @@ struct ProjectSummary: Identifiable, Codable, Hashable {
         FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("DrawThrough/Compositions", isDirectory: true)
     }
     private func documentURL(_ id: UUID) -> URL { documentsDirectory.appendingPathComponent("\(id.uuidString).json") }
+    private func thumbnailURL(_ id: UUID) -> URL { documentsDirectory.appendingPathComponent("\(id.uuidString)-thumbnail.jpg") }
     private func save() { if let data = try? JSONEncoder().encode(projects) { UserDefaults.standard.set(data, forKey: "projects") } }
     private func saveSettings() { if let data = try? JSONEncoder().encode(settings) { UserDefaults.standard.set(data, forKey: "settings") } }
 }

@@ -20,6 +20,7 @@ struct CanvasView: View {
     @State private var canvasOffset: CGSize = .zero
     @State private var canvasScale: CGFloat = 1
     @State private var viewportSize: CGSize = .zero
+    @State private var thumbnailTask: Task<Void, Never>?
     @FocusState private var isEditingName: Bool
 
     enum CanvasPanel: String, Identifiable { case layers, adjust, view, export; var id: String { rawValue } }
@@ -50,8 +51,8 @@ struct CanvasView: View {
                 }.scaleEffect(canvasScale).offset(canvasOffset)
                 if traceLocked { LockedOverlay { unlock() } }
             }
-            .safeAreaInset(edge: .top, spacing: 0) { if !traceLocked { topBar } }
-            .safeAreaInset(edge: .bottom, spacing: 0) { if !traceLocked { bottomBar } }
+            .safeAreaInset(edge: .top, spacing: 0) { topBar }
+            .safeAreaInset(edge: .bottom, spacing: 0) { bottomBar }
             .onAppear { viewportSize = geo.size }
             .onChange(of: geo.size) { _, value in viewportSize = value }
         }
@@ -66,7 +67,7 @@ struct CanvasView: View {
         .onChange(of: project.name) { _, _ in autosave() }
         .sheet(item: $panel) { choice in panelView(choice) }
         .onAppear { loadComposition() }
-        .onDisappear { saveComposition(feedback: false); UIApplication.shared.isIdleTimerDisabled = false }
+        .onDisappear { saveComposition(feedback: false); saveThumbnailNow(); UIApplication.shared.isIdleTimerDisabled = false }
         .confirmationDialog("Delete this composition?", isPresented: $showDeleteConfirmation, titleVisibility: .visible) {
             Button("Delete Composition", role: .destructive) { store.delete(project); dismiss() }
             Button("Cancel", role: .cancel) { }
@@ -74,7 +75,7 @@ struct CanvasView: View {
         .overlay(alignment: .top) {
             if showSavedFeedback { Label("Composition saved", systemImage: "checkmark.circle.fill").font(.system(.caption, design: .serif, weight: .semibold)).padding(.horizontal, 14).padding(.vertical, 9).background(.ultraThinMaterial, in: Capsule()).padding(.top, 62).transition(.move(edge: .top).combined(with: .opacity)) }
         }
-        .background { TwoFingerPanInstaller { delta in canvasOffset.width += delta.width; canvasOffset.height += delta.height } }
+        .background { TwoFingerPanInstaller { delta in guard !traceLocked else { return }; canvasOffset.width += delta.width; canvasOffset.height += delta.height } }
     }
 
     private var topBar: some View {
@@ -102,7 +103,7 @@ struct CanvasView: View {
             Button { panel = .layers } label: { ToolLabel("Layers", "square.3.layers.3d") }
             Button { panel = .adjust } label: { ToolLabel("Adjust", "slider.horizontal.3") }.disabled(selection == nil)
             Button { panel = .view } label: { ToolLabel("View", "viewfinder") }
-            Button { lock() } label: { ToolLabel("Lock", "lock.fill") }.tint(DTTheme.clay)
+            Button { traceLocked ? unlock() : lock() } label: { ToolLabel(traceLocked ? "Unlock" : "Lock", traceLocked ? "lock.open.fill" : "lock.fill") }.tint(DTTheme.clay)
         }.foregroundStyle(DTTheme.ink).padding(8)
             .background { WarmGlass(cornerRadius: 25) }
             .padding(.horizontal, 12).padding(.bottom, 8)
@@ -148,11 +149,21 @@ struct CanvasView: View {
         project.modifiedAt = .now
         store.update(project)
         store.saveDocument(for: project.id, layers: layers, showGrid: showGrid, background: background, canvasOffset: canvasOffset, canvasScale: canvasScale)
+        scheduleThumbnail()
         if feedback {
             withAnimation { showSavedFeedback = true }
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) { withAnimation { showSavedFeedback = false } }
         }
     }
+    private func scheduleThumbnail() {
+        thumbnailTask?.cancel()
+        thumbnailTask = Task { @MainActor in
+            try? await Task.sleep(for: .milliseconds(450))
+            guard !Task.isCancelled else { return }
+            saveThumbnailNow()
+        }
+    }
+    private func saveThumbnailNow() { if let image = renderComposition() { store.saveThumbnail(image, for: project.id) } }
     private func resetView() {
         withAnimation(.easeInOut(duration: 0.28)) { canvasOffset = .zero; canvasScale = 1 }
         panel = nil
@@ -182,6 +193,20 @@ struct CanvasView: View {
 
 struct ToolLabel: View { let title, icon: String; init(_ title: String, _ icon: String) { self.title = title; self.icon = icon }; var body: some View { VStack(spacing: 4) { Image(systemName: icon).font(.body.weight(.light)); Text(title.uppercased()).font(.system(size: 8, weight: .semibold, design: .serif)).tracking(0.7) }.frame(maxWidth: .infinity).padding(.vertical, 5) } }
 
-struct EmptyCanvasHint: View { var body: some View { VStack(spacing: 13) { Image(systemName: "photo.badge.plus").font(.system(size: 40, weight: .ultraLight)); Text("Add a reference image").font(DTTheme.title(24)); Text("Drag, pinch and rotate to compose.").font(.system(.subheadline, design: .serif)).foregroundStyle(DTTheme.ink.opacity(0.55)) }.padding(28).vellumSurface(radius: 24).foregroundStyle(DTTheme.ink).allowsHitTesting(false) } }
+struct EmptyCanvasHint: View {
+    var body: some View {
+        VStack(spacing: 16) {
+            ZStack {
+                Image("ReferenceBust").resizable().scaledToFill().frame(width: 94, height: 116).clipShape(RoundedRectangle(cornerRadius: 9)).rotationEffect(.degrees(-7)).offset(x: -58, y: 4)
+                Image("ReferenceHand").resizable().scaledToFill().frame(width: 88, height: 108).clipShape(RoundedRectangle(cornerRadius: 9)).rotationEffect(.degrees(7)).offset(x: 58, y: 7)
+                Image("ReferenceFlower").resizable().scaledToFill().frame(width: 108, height: 132).clipShape(RoundedRectangle(cornerRadius: 11)).shadow(color: .black.opacity(0.15), radius: 9, y: 5)
+                Circle().fill(DTTheme.ink).frame(width: 38, height: 38).overlay { Image(systemName: "plus").font(.headline).foregroundStyle(DTTheme.vellum) }.offset(x: 58, y: 51)
+            }.frame(width: 250, height: 145)
+            Text("Add your first reference").font(DTTheme.title(27))
+            Text("Tap anywhere here to choose images").font(.system(.subheadline, design: .serif, weight: .semibold)).foregroundStyle(DTTheme.clay)
+            Text("Then drag, pinch and rotate to compose.").font(.system(.caption, design: .serif)).foregroundStyle(DTTheme.ink.opacity(0.50))
+        }.padding(.horizontal, 30).padding(.vertical, 25).vellumSurface(radius: 24).foregroundStyle(DTTheme.ink).contentShape(RoundedRectangle(cornerRadius: 24))
+    }
+}
 
 struct GridOverlay: Shape { func path(in rect: CGRect) -> Path { var p = Path(); let step: CGFloat = 44; stride(from: 0, through: rect.width, by: step).forEach { p.move(to: CGPoint(x: $0, y: 0)); p.addLine(to: CGPoint(x: $0, y: rect.height)) }; stride(from: 0, through: rect.height, by: step).forEach { p.move(to: CGPoint(x: 0, y: $0)); p.addLine(to: CGPoint(x: rect.width, y: $0)) }; return p } }

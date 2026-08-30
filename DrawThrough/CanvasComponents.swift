@@ -28,6 +28,7 @@ struct LayerCanvasItem: View {
             .scaleEffect(layer.scale * zoom).rotationEffect(layer.rotation + turn).offset(x: layer.position.width + drag.width, y: layer.position.height + drag.height)
             .contentShape(Rectangle()).onTapGesture(perform: select)
             .gesture(layer.locked ? nil : dragGesture.simultaneously(with: magnifyGesture).simultaneously(with: rotateGesture))
+            .allowsHitTesting(layer.opacity > 0.02)
             .accessibilityLabel(layer.name)
     }
     private var dragGesture: some Gesture { DragGesture().updating($drag) { value, state, _ in state = value.translation }.onEnded { layer.position.width += $0.translation.width; layer.position.height += $0.translation.height } }
@@ -42,17 +43,10 @@ private struct SelectionFrame: View {
         GeometryReader { geo in
             ZStack {
                 RoundedRectangle(cornerRadius: 2).stroke(DTTheme.ink, style: StrokeStyle(lineWidth: 1.4, dash: [7, 5]))
-                handle.position(x: 0, y: 0)
-                handle.position(x: geo.size.width, y: 0)
-                handle.position(x: 0, y: geo.size.height)
-                handle.position(x: geo.size.width, y: geo.size.height)
-                    .highPriorityGesture(DragGesture()
-                        .onChanged { value in
-                            if startingScale == nil { startingScale = layer.scale }
-                            let change = (value.translation.width + value.translation.height) / 240
-                            layer.scale = min(max((startingScale ?? layer.scale) + change, 0.15), 6)
-                        }
-                        .onEnded { _ in startingScale = nil })
+                resizeHandle(xDirection: -1, yDirection: -1).position(x: 0, y: 0)
+                resizeHandle(xDirection: 1, yDirection: -1).position(x: geo.size.width, y: 0)
+                resizeHandle(xDirection: -1, yDirection: 1).position(x: 0, y: geo.size.height)
+                resizeHandle(xDirection: 1, yDirection: 1).position(x: geo.size.width, y: geo.size.height)
             }
         }
     }
@@ -60,6 +54,15 @@ private struct SelectionFrame: View {
         RoundedRectangle(cornerRadius: 2).fill(DTTheme.vellum).frame(width: 13, height: 13)
             .overlay { RoundedRectangle(cornerRadius: 2).stroke(DTTheme.ink, lineWidth: 1.4) }
             .shadow(color: .black.opacity(0.12), radius: 2, y: 1)
+    }
+    private func resizeHandle(xDirection: CGFloat, yDirection: CGFloat) -> some View {
+        handle.highPriorityGesture(DragGesture(minimumDistance: 0)
+            .onChanged { value in
+                if startingScale == nil { startingScale = layer.scale }
+                let directionalDistance = value.translation.width * xDirection + value.translation.height * yDirection
+                layer.scale = min(max((startingScale ?? layer.scale) + directionalDistance / 240, 0.15), 6)
+            }
+            .onEnded { _ in startingScale = nil })
     }
 }
 
@@ -126,8 +129,9 @@ struct LayersPanel: View {
     @Binding var selection: UUID?
     var body: some View {
         NavigationStack { List { ForEach($layers.reversed()) { $layer in
-            HStack { Button { layer.hidden.toggle() } label: { Image(systemName: layer.hidden ? "eye.slash" : "eye") }; Image(uiImage: layer.image).resizable().scaledToFill().frame(width: 45, height: 45).clipShape(RoundedRectangle(cornerRadius: 6)); VStack(alignment: .leading) { TextField("Layer", text: $layer.name); Text("\(Int(layer.opacity * 100))% · \(layer.mode.rawValue)").font(.caption).foregroundStyle(.secondary) }; Spacer(); Button { layer.locked.toggle() } label: { Image(systemName: layer.locked ? "lock.fill" : "lock.open") } }
+            HStack { Button { layer.hidden.toggle() } label: { Image(systemName: layer.hidden ? "eye.slash" : "eye") }; Image(uiImage: layer.image).resizable().scaledToFill().frame(width: 45, height: 45).clipShape(RoundedRectangle(cornerRadius: 6)); VStack(alignment: .leading) { TextField("Layer", text: $layer.name); Text(selection == layer.id ? "ACTIVE · \(Int(layer.opacity * 100))% · \(layer.mode.rawValue)" : "\(Int(layer.opacity * 100))% · \(layer.mode.rawValue)").font(.caption).fontWeight(selection == layer.id ? .semibold : .regular).foregroundStyle(selection == layer.id ? DTTheme.clay : .secondary) }; Spacer(); if selection == layer.id { Image(systemName: "checkmark.circle.fill").foregroundStyle(DTTheme.clay) }; Button { layer.locked.toggle() } label: { Image(systemName: layer.locked ? "lock.fill" : "lock.open") } }
                 .contentShape(Rectangle()).onTapGesture { selection = layer.id }
+                .listRowBackground(selection == layer.id ? DTTheme.parchment.opacity(0.55) : Color.clear)
             }.onMove { source, destination in layers.move(fromOffsets: source, toOffset: max(0, layers.count - destination)) }.onDelete { offsets in let ids = offsets.map { Array(layers.reversed())[$0].id }; layers.removeAll { ids.contains($0.id) } }
         }.parchmentList().navigationTitle("Layers").navigationBarTitleDisplayMode(.inline).toolbar { EditButton() } }.presentationDetents([.medium, .large]).presentationBackground(.ultraThinMaterial)
     }

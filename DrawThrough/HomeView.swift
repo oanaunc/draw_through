@@ -57,17 +57,29 @@ struct ProjectCard: View {
     let project: ProjectSummary
     let open: () -> Void
     var body: some View {
-        Button(action: open) {
-            VStack(alignment: .leading, spacing: 10) {
-                ZStack {
-                    LinearGradient(colors: [DTTheme.vellum.opacity(0.72), DTTheme.parchment.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                    Image(systemName: "photo.artframe").font(.system(size: 44, weight: .thin)).foregroundStyle(DTTheme.clay.opacity(0.78))
-                    VStack { HStack { Spacer(); if project.favorite { Image(systemName: "heart.fill").font(.caption).padding(9) } }; Spacer() }
-                }.aspectRatio(1.18, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 15))
-                Text(project.name).font(.system(.headline, design: .serif, weight: .semibold)).lineLimit(1)
-                Text(project.modifiedAt, style: .relative).font(.caption).foregroundStyle(.secondary)
-            }.padding(10).vellumSurface(radius: 18)
-        }.buttonStyle(.plain).contextMenu {
+        ZStack(alignment: .topTrailing) {
+            Button(action: open) {
+                VStack(alignment: .leading, spacing: 10) {
+                    ZStack {
+                        LinearGradient(colors: [DTTheme.vellum.opacity(0.72), DTTheme.parchment.opacity(0.55)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                        if let thumbnail = store.loadThumbnail(for: project.id) {
+                            Image(uiImage: thumbnail).resizable().scaledToFill()
+                        } else {
+                            Image(systemName: "photo.artframe").font(.system(size: 44, weight: .thin)).foregroundStyle(DTTheme.clay.opacity(0.78))
+                        }
+                    }.aspectRatio(1.18, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 15))
+                    Text(project.name).font(.system(.headline, design: .serif, weight: .semibold)).lineLimit(1)
+                    Text(project.modifiedAt, style: .relative).font(.caption).foregroundStyle(.secondary)
+                }.padding(10).vellumSurface(radius: 18)
+            }.buttonStyle(.plain)
+            Button {
+                var value = project; value.favorite.toggle(); store.update(value)
+            } label: {
+                Image(systemName: project.favorite ? "heart.fill" : "heart")
+                    .font(.system(size: 14, weight: .semibold)).foregroundStyle(project.favorite ? DTTheme.clay : DTTheme.ink)
+                    .frame(width: 34, height: 34).background(.ultraThinMaterial, in: Circle())
+            }.padding(17).accessibilityLabel(project.favorite ? "Remove from favorites" : "Add to favorites")
+        }.contextMenu {
             Button { var copy = project; copy.id = UUID(); copy.name += " Copy"; store.projects.insert(copy, at: 0) } label: { Label("Duplicate", systemImage: "plus.square.on.square") }
             Button { var value = project; value.favorite.toggle(); store.update(value) } label: { Label(project.favorite ? "Unfavorite" : "Favorite", systemImage: "heart") }
             Button(role: .destructive) { store.delete(project) } label: { Label("Delete", systemImage: "trash") }
