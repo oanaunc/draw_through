@@ -8,7 +8,9 @@ struct DrawThroughApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
-                if hasSeenOnboarding {
+                if let screenshotScene = ScreenshotScene.launchScene {
+                    ScreenshotShowcaseView(scene: screenshotScene)
+                } else if hasSeenOnboarding {
                     HomeView()
                 } else {
                     OnboardingView { hasSeenOnboarding = true }

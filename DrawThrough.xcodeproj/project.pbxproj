@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A54B6F1C9CF372125C3DC8F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */; };
 		1F97C45EE0A18534C57C5D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94908477B142A3593EF65555 /* Assets.xcassets */; };
+		36465441AC73791C6665FC4F /* ScreenshotShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457EFAFC08FFC4B3C51C426 /* ScreenshotShowcaseView.swift */; };
 		5AB8E17826BF6714E9AE7DF0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386279A82FA2E048A5BA9D5 /* Models.swift */; };
 		67CC9E4AF0324AAF83693D66 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1B721C440482A06C01114 /* Theme.swift */; };
 		6B15BCCA74BF1F3B4DC84AD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */; };
@@ -22,6 +23,7 @@
 		52D1B721C440482A06C01114 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9386279A82FA2E048A5BA9D5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9457EFAFC08FFC4B3C51C426 /* ScreenshotShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotShowcaseView.swift; sourceTree = "<group>"; };
 		94908477B142A3593EF65555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76965161ABA2FBC61DBC50B /* CanvasComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasComponents.swift; sourceTree = "<group>"; };
 		BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */,
 				9386279A82FA2E048A5BA9D5 /* Models.swift */,
 				7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */,
+				9457EFAFC08FFC4B3C51C426 /* ScreenshotShowcaseView.swift */,
 				C918D41A7CF3B2825438703B /* SettingsAndTips.swift */,
 				52D1B721C440482A06C01114 /* Theme.swift */,
 				33447D132791BC60F4C77685 /* Resources */,
@@ -145,6 +148,7 @@
 				6B15BCCA74BF1F3B4DC84AD2 /* HomeView.swift in Sources */,
 				5AB8E17826BF6714E9AE7DF0 /* Models.swift in Sources */,
 				0A54B6F1C9CF372125C3DC8F /* OnboardingView.swift in Sources */,
+				36465441AC73791C6665FC4F /* ScreenshotShowcaseView.swift in Sources */,
 				A4363DF9BB130A5B529CBFB8 /* SettingsAndTips.swift in Sources */,
 				67CC9E4AF0324AAF83693D66 /* Theme.swift in Sources */,
 			);
