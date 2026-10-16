@@ -1,0 +1,7 @@
+Thank you for the feedback on submission 0722215f-36b6-4803-86e8-72e6fd0e61f6. We have substantially revised DrawThrough and uploaded version 1.0.0, build 3 on the existing app record and bundle ID.
+
+The app now provides a complete drawing-learning workflow: read an original illustrated lesson, practice with a guide, fade the guide, draw independently, and reflect on the saved study. Build 3 adds 20 lessons across four chapters, native PencilKit tools with undo/redo, Guide/Faint/Freehand modes, persistent lesson drawings, reflections, bookmarks, progress, and a journal displaying the user's actual drawings. The photo-reference composition tool is a separate Studio tab. These features work without an account, purchase, backend, or photo permission.
+
+We have replaced the storefront screenshots with captures of the revised working app and attached DrawThrough-Build3-Reviewer-Walkthrough.mp4 to App Review Information. The recording demonstrates actual drawing, changing guidance modes, undo/redo, study completion, and the practice journal. Detailed testing steps are included in the review notes.
+
+Please evaluate the revised build and its distinct learning content and practice functionality. If a similarity concern remains, please identify the functionality, metadata, or content that should be addressed so we can respond precisely. Thank you.

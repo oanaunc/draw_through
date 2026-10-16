@@ -1,16 +1,16 @@
-# Draw Through — revised App Store submission draft
+# Draw Through — revised App Store submission
 
-Prepared 16 October 2026 after the 4.3(a) rejection. This file is submission copy and instructions, not confirmation of an upload or approval. See `docs/ProductResearch.md` for research and product reasoning.
+Prepared 16 October 2026 after the 4.3(a) rejection. Build 3 was resubmitted through the Codex in-app browser at 10:23 PM Europe/Bucharest and verified as **Waiting for Review**. See `SubmissionArtifacts/2026-10-16/SubmissionReceipt.md` for the actual submission record and `docs/ProductResearch.md` for research and product reasoning. The remaining reference sections include preparation guidance; the receipt records what was actually submitted.
 
 ## App record
 
 - **Platforms:** iOS and iPadOS
-- **App name:** Draw Through
+- **App name:** DrawThrough
 - **Primary language:** English (U.S.)
 - **Bundle ID:** `com.oanarinaldi.drawthrough`
-- **SKU:** `drawthrough-ios-001`
+- **SKU:** `com.oanarinaldi.drawthrough`
 - **Version:** `1.0.0`
-- **Build:** `2`
+- **Build:** `3`
 - **Copyright:** `2026 Oana Rinaldi`
 - **Primary category:** Graphics & Design
 - **Secondary category:** Education
@@ -177,20 +177,20 @@ This draft must accompany the actual revised build. Do not assert that Apple mas
 - **Distribution:** Public App Store
 - **Countries/regions:** All available territories, unless you have a business reason to limit them
 - **Pre-order:** No
-- **Release option:** Manually release this version after approval
+- **Release option:** Automatically release this version after approval (existing App Store Connect setting retained)
 - **Phased release:** Not relevant for the first release
 
 ## Screenshots and review media
 
 The original numbered JPEG screenshot sets and `AppStoreReview/DrawThrough-Reviewer-Walkthrough.mp4` describe the earlier version and are historical materials. Do not upload them with this build. Some were made from promotional demo screens, which have now been removed from the app's executable source.
 
-Capture fresh screenshots of the running app on the required iPhone and iPad simulator sizes: Learn, a lesson page, the drawing practice pad, My practice with a real saved drawing, and the reference studio. Use only functionality present in the shipping build. Automated UI-test screenshots are QA evidence, not automatically a complete App Store screenshot set.
+Fresh screenshots of the running app are in `SubmissionArtifacts/2026-10-16/`: four iPhone 6.9-inch JPEGs (1320 × 2868) and three iPad 13-inch JPEGs (2064 × 2752). They show Learn, a lesson, native practice, and the iPhone journal with a real saved drawing. The new reviewer-only walkthrough is `DrawThrough-Build3-Reviewer-Walkthrough.mp4` in the same directory (3 minutes 51 seconds). It records actual drawing, guidance modes, undo/redo, completion, and the journal. It is an App Review attachment, not a public App Preview.
 
 ## Build selection
 
-- Keep marketing version `1.0.0` for the rejected initial version and select a newly uploaded build `2`.
+- Marketing version `1.0.0`, build `3`; the existing App Store version record is displayed as `1.0`.
 - Bundle identifier: `com.oanarinaldi.drawthrough`.
-- Build 2 is the local project setting; it has not been uploaded just because this document exists. If already used in App Store Connect, increase it before uploading.
+- Build 3 was archived and uploaded successfully with Xcode on 16 October 2026. The binary is processed and available in App Store Connect.
 - Preserve the existing signing team. Archive and validate a signed Release build, upload it, and wait for processing before selecting it.
 
 ## App Review declarations
@@ -211,14 +211,14 @@ Capture fresh screenshots of the running app on the required iPhone and iPad sim
 ## Final submission checklist
 
 - Confirm the App Store Connect app record exists for `com.oanarinaldi.drawthrough`
-- Confirm version is `1.0.0`, not `1`
+- Confirm binary version `1.0.0` is selected under the existing `1.0` App Store record
 - Upload the public privacy page
 - Verify the support URL opens and visibly contains the contact email
 - Upload newly captured, accurate screenshots of this revision
 - Complete the age rating questionnaire
 - Publish the “Data Not Collected” privacy response
 - Complete pricing, tax category, territory availability, and DSA status
-- Upload/select the new build (`2`, or the next unused number)
+- Select the uploaded build `3`
 - Add the App Review contact phone number
 - Answer export compliance
 - Save every section until no required-field warnings remain

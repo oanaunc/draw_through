@@ -1,5 +1,5 @@
 DRAW THROUGH — REVISED REVIEW NOTES
-Version 1.0.0, build 2 (local preparation; upload required)
+Version 1.0.0, build 3 (uploaded 16 October 2026)
 
 Draw Through has been substantially revised following the 4.3(a) rejection for submission 0722215f-36b6-4803-86e8-72e6fd0e61f6. The revised app remains on its existing bundle ID. It adds an original drawing curriculum and a native practice workflow to the existing reference-composition studio.
 
