@@ -1,6 +1,6 @@
 import Foundation
 
-struct DrawingLesson: Identifiable, Hashable {
+struct DrawingLesson: Identifiable, Hashable, Decodable {
     let id: Int
     let title: String
     let subtitle: String
@@ -11,12 +11,16 @@ struct DrawingLesson: Identifiable, Hashable {
     let check: String
     let transfer: String
 
-    var chapter: Int { (id - 1) / 5 }
-    static let chapters = ["The language of line", "Learning to see", "Giving things form", "Making it your own"]
+    var chapter: Int { id <= 20 ? (id - 1) / 5 : 4 + (id - 21) / 10 }
+    static let chapters = ["The language of line", "Learning to see", "Giving things form", "Making it your own", "Botanical sketchbook", "The quiet still life", "Forms from nature", "Landscape & atmosphere", "Spaces & perspective", "People & expression", "Animals in motion", "Your artist’s voice"]
+    var reference: StudyReference { StudyReference.forLesson(id) }
+    var level: String { id <= 20 ? "Foundation" : id <= 60 ? "Developing" : "Exploring" }
+    static var count: Int { all.count }
+    static let chapterNotes = ["Confidence, rhythm, contour", "Shape, space, proportion", "Value, light, volume", "Gesture, composition, memory", "Growth, petals, natural rhythms", "Objects, surfaces, shared light", "Spirals, planes, tactile marks", "Distance, weather, open space", "Depth, architecture, interiors", "Portraits, hands, observation", "Structure, balance, character", "Design, storytelling, personal studies"]
     var chapterTitle: String { Self.chapters[chapter] }
     var number: String { String(format: "%02d", id) }
 
-    static let all: [DrawingLesson] = [
+    static let foundations: [DrawingLesson] = [
         .init(id: 1, title: "A line with intention", subtitle: "Let your eye lead your hand.", minutes: 5,
               idea: "A useful line begins before the pencil touches the page. Choose a starting point and an ending point, rehearse the movement above the surface, then make one unhurried stroke. A slightly uneven line can still be confident.",
               observation: "The dots in the study are destinations. Notice how each line travels between them without a cluster of little corrections. Confidence comes from committing to a direction, not from drawing perfectly straight.",
@@ -118,4 +122,37 @@ struct DrawingLesson: Identifiable, Hashable {
               steps: ["Make a tiny composition plan, then block in the large shapes lightly.", "Check negative spaces and proportions before adding three clear values.", "Hide the guide and make your own variation. Write one observation and one next step in your journal."],
               check: "Is there one clear focal point, and do my shadows share a light direction?", transfer: "Return to the same objects tomorrow and draw them again from a new viewpoint.")
     ]
+
+    static let all: [DrawingLesson] = foundations + extendedCourse
+    private static let extendedCourse: [DrawingLesson] = {
+        guard let url = Bundle.main.url(forResource: "ExtendedCourse", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let lessons = try? JSONDecoder().decode([DrawingLesson].self, from: data) else {
+            assertionFailure("The offline course could not be loaded")
+            return []
+        }
+        return lessons
+    }()
+}
+
+struct LessonWorkshop: Decodable {
+    let lessonID: Int
+    let setup: String
+    let demonstration: String
+    let mistakes: String
+    let challenge: String
+    static let all: [LessonWorkshop] = {
+        guard let url = Bundle.main.url(forResource: "LessonWorkshops", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let result = try? JSONDecoder().decode([LessonWorkshop].self, from: data) else { return [] }
+        return result
+    }()
+}
+
+extension DrawingLesson {
+    var workshop: LessonWorkshop? { LessonWorkshop.all.first { $0.lessonID == id } }
+    var readingWordCount: Int {
+        let extra = workshop.map { [$0.setup, $0.demonstration, $0.mistakes, $0.challenge] } ?? []
+        return ([idea, observation, check, transfer] + steps + extra).joined(separator: " ").split { $0.isWhitespace }.count
+    }
 }

@@ -26,8 +26,8 @@ struct LayerCanvasItem: View {
             .frame(width: fittedSize.width, height: fittedSize.height)
             .opacity(layer.opacity).brightness(layer.brightness).contrast(layer.contrast)
             .overlay { if selected { SelectionFrame(layer: $layer) } }
-            .scaleEffect(layer.scale * zoom).rotationEffect(layer.rotation + turn).offset(x: layer.position.width + drag.width, y: layer.position.height + drag.height)
             .contentShape(Rectangle())
+            .scaleEffect(layer.scale * zoom).rotationEffect(layer.rotation + turn).offset(x: layer.position.width + drag.width, y: layer.position.height + drag.height)
             .gesture(layer.locked ? nil : dragGesture.simultaneously(with: magnifyGesture).simultaneously(with: rotateGesture))
             .allowsHitTesting(interactionEnabled && layer.opacity > 0.02)
             .accessibilityLabel(layer.name)

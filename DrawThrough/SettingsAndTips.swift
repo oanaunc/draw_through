@@ -33,7 +33,7 @@ struct SettingsView: View {
                         }.buttonStyle(.plain)
                         FineDivider()
                         HStack {
-                            SettingLabel(icon: "info", title: "Draw Through", detail: "20 lessons · guided drawing · reference studio")
+                            SettingLabel(icon: "info", title: "Draw Through", detail: "100 lessons · 100 unique references")
                         }
                     }
                     Text("Learn to look. Practice a little. Make it your own.").font(.system(.footnote, design: .serif)).italic().foregroundStyle(DTTheme.ink.opacity(0.45)).frame(maxWidth: .infinity).padding(.vertical, 8)

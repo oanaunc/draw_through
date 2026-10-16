@@ -57,6 +57,21 @@ struct LearningProgress: Codable {
         persistProgress()
     }
 
+    func personalReference(for id: Int) -> UIImage? {
+        UIImage(contentsOfFile: directory.appendingPathComponent("lesson-\(id)-reference.jpg").path)
+    }
+    func savePersonalReference(_ image: UIImage, for id: Int) throws {
+        guard let data = image.jpegData(compressionQuality: 0.88) else { throw CocoaError(.fileWriteUnknown) }
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        try data.write(to: directory.appendingPathComponent("lesson-\(id)-reference.jpg"), options: .atomic)
+    }
+    func referenceChoice(for id: Int) -> Int {
+        defaults.object(forKey: "lessonReferenceChoice.\(id)") as? Int ?? (id <= 20 ? 0 : 1)
+    }
+    func setReferenceChoice(_ choice: Int, for id: Int) {
+        defaults.set(choice, forKey: "lessonReferenceChoice.\(id)")
+    }
+
     private func drawingURL(_ id: Int) -> URL { directory.appendingPathComponent("lesson-\(id).drawing") }
     private func persistProgress() {
         if let data = try? JSONEncoder().encode(progress) { defaults.set(data, forKey: key) }

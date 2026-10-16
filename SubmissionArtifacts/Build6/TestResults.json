@@ -1,0 +1,148 @@
+{
+  "phone": {
+    "build": 6,
+    "unitPassed": 8,
+    "uiPassed": 5,
+    "failedCases": [],
+    "tests": [
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testCorruptDrawingIsReportedAndPreserved",
+        "seconds": 0.014
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testCurriculumAndBundledReferencesAreComplete",
+        "seconds": 0.206
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testEmptyDrawingCannotCompleteLesson",
+        "seconds": 0.003
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testFailedDrawingWriteDoesNotAwardProgress",
+        "seconds": 0.007
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testPersonalPhotoAndReferenceChoiceSurviveRecreation",
+        "seconds": 0.011
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testResizeKeepsDrawingInCanonicalCoordinates",
+        "seconds": 0.012
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testRevisitingCompletedStudyKeepsCompletionDate",
+        "seconds": 0.005
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testStudyAndBookmarkSurviveStoreRecreation",
+        "seconds": 0.004
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testCompleteWorkshopAndFinalLessonAreReadable",
+        "seconds": 21.211
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testOnboardingAndSavedLessons",
+        "seconds": 19.458
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testPracticeSaveAndReturnThroughJournal",
+        "seconds": 39.837
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testReferenceGalleryToExpandedLessonAndLightTable",
+        "seconds": 24.329
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testSearchAndStudioRemainAccessible",
+        "seconds": 17.823
+      }
+    ]
+  },
+  "ipad": {
+    "build": 6,
+    "unitPassed": 8,
+    "uiPassed": 5,
+    "failedCases": [],
+    "tests": [
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testCorruptDrawingIsReportedAndPreserved",
+        "seconds": 0.009
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testCurriculumAndBundledReferencesAreComplete",
+        "seconds": 0.15
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testEmptyDrawingCannotCompleteLesson",
+        "seconds": 0.003
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testFailedDrawingWriteDoesNotAwardProgress",
+        "seconds": 0.009
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testPersonalPhotoAndReferenceChoiceSurviveRecreation",
+        "seconds": 0.01
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testResizeKeepsDrawingInCanonicalCoordinates",
+        "seconds": 0.011
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testRevisitingCompletedStudyKeepsCompletionDate",
+        "seconds": 0.004
+      },
+      {
+        "suite": "DrawThroughTests.LearningStoreTests",
+        "name": "testStudyAndBookmarkSurviveStoreRecreation",
+        "seconds": 0.004
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testCompleteWorkshopAndFinalLessonAreReadable",
+        "seconds": 15.949
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testOnboardingAndSavedLessons",
+        "seconds": 19.941
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testPracticeSaveAndReturnThroughJournal",
+        "seconds": 40.678
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testReferenceGalleryToExpandedLessonAndLightTable",
+        "seconds": 25.711
+      },
+      {
+        "suite": "DrawThroughUITests.LearningFlowTests",
+        "name": "testSearchAndStudioRemainAccessible",
+        "seconds": 17.166
+      }
+    ]
+  }
+}

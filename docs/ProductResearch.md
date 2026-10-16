@@ -32,7 +32,7 @@ The product direction below is our inference from these feature descriptions, no
 
 Use the sequence **Read → Guide → Faint → Freehand → Reflect**. Preserve the light table as the place for the user's own reference compositions. Make learning the first-run experience so new users and reviewers can immediately explore useful bundled content without photo permissions, downloads, or account creation.
 
-## Implemented in this revision
+## Initial revision (builds 2–3, historical)
 
 - Twenty original lessons in four chapters: line; observation; form and light; personal studies.
 - Each lesson includes a core idea, an explanation of its illustration, three exercise steps, a self-review question, and an off-screen exercise.
@@ -63,4 +63,16 @@ Working descriptor: **Draw Through · Field School**. This is in-app language, n
 4. Audit the developer's other submitted apps against this product's code, artwork, metadata, and purpose. That evidence is unavailable in this workspace.
 5. Submit the revised build with the concrete reviewer walkthrough in `AppStoreSubmission.md`. If necessary, request clarification or appeal with evidence instead of assuming the rejection's cause.
 
-Potential later features: multiple dated attempts per lesson with side-by-side comparison, imported photos for lesson-specific observation studies, and accessible audio descriptions of diagrams. These are not advertised as present. The current journal holds one revisitable drawing per lesson; sharing exports a copy, and clearing or redrawing updates that lesson's saved drawing.
+Potential later features: multiple dated attempts per lesson with side-by-side comparison, and accessible audio descriptions of diagrams. These are not advertised as present. The current journal holds one revisitable drawing per lesson; sharing exports a copy, and clearing or redrawing updates that lesson's saved drawing.
+
+## Expanded release, build 6 (17 October 2026)
+
+The course now contains 100 complete workshops in 12 chapters. Each has a unique offline reference and a developed demonstration, preparation, three exercises, troubleshooting, an independent assignment, self-review, and an off-screen exercise. New workshop sections add 26,861 words beyond the existing summaries. A unit test checks all 100 workshops and at least 330 combined reading words per lesson.
+
+The References destination adds subject filters, zoom, monochrome, and an observation grid, with links to the matching lesson and a real Studio composition. Practice accepts a personal photograph for each lesson and saves it locally with the reference choice. The lesson asks users to study structure, reduce guidance, and apply the idea to a fresh subject. Build 6 corrects the Studio hit area after moving a layer.
+
+The 100 raster references are original AI-created imaginary subjects, labeled in the app. Generation prompts, one-to-one assignments, and distinct asset hashes are recorded in `reference-art/unique-lesson-prompts.json`. Images are teaching references rather than claims of photographic or anatomical truth. Users are encouraged to compare physical and anatomical details with life or personal photographs. Original vector construction studies remain available for the first 20 lessons.
+
+The educational direction also draws on the [National Gallery of Art drawing resources](https://www.nga.gov/educational-resources/lesson-drawing-everyday-objects) and [Getty drawing activities](https://www.getty.edu/education/teachers/building_lessons/formal_analysis.html): close observation, visual relationships, practice, and reflection. Lesson text and examples in this app were authored for the product; external curricula are not reproduced.
+
+Ten promotional screenshots per device family put concise headings above actual native captures. Reviewer media demonstrates real navigation, reading, personal-photo import, drawing, and reference arrangement. The existing app record and bundle identifier are retained.

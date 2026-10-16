@@ -97,6 +97,17 @@ struct ProjectSummary: Identifiable, Codable, Hashable {
         return project
     }
 
+    func create(reference: StudyReference) -> ProjectSummary? {
+        guard let image = UIImage(named: reference.imageName), let data = image.jpegData(compressionQuality: 0.92) else { return nil }
+        var project = create(kind: .a4)
+        project.name = reference.title
+        update(project)
+        let layer = LayerItem(id: UUID(), name: reference.title, image: image, sourceData: data)
+        saveDocument(for: project.id, layers: [layer], showGrid: false, background: DTTheme.warmPaper, canvasOffset: .zero, canvasScale: 1)
+        saveThumbnail(image, for: project.id)
+        return project
+    }
+
     func update(_ project: ProjectSummary) {
         guard let index = projects.firstIndex(where: { $0.id == project.id }) else { return }
         projects[index] = project

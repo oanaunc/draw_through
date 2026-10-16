@@ -7,23 +7,126 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0165253D4408EED95DA00B9B /* Lesson-087.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B53D53EC168A8C44D61CFE5B /* Lesson-087.jpg */; };
+		077A45A54452049C0855DF7D /* Lesson-018.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC0CC60B541194770CB295AA /* Lesson-018.jpg */; };
 		0A54B6F1C9CF372125C3DC8F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */; };
+		0CF8DE58B4FADA32B9D5ACCA /* Lesson-015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CE69D320C025DC5680C6288 /* Lesson-015.jpg */; };
+		0EA0D43FAB18731CF764D79F /* Lesson-093.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7FF9ABCE991BD71704DDBBC /* Lesson-093.jpg */; };
 		113BF8FBEAC3A0540CAB2027 /* LessonPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD696250A0ADE183A53B9F10 /* LessonPracticeView.swift */; };
+		13213B8AAE2BD6BF8A109E09 /* Lesson-072.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7E14D49F491DA51471A00CD /* Lesson-072.jpg */; };
+		13AE033281E0E2B4D662B38E /* Lesson-085.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59921313E754EA34A51FD42C /* Lesson-085.jpg */; };
+		13E8BD792475DE7E5F37D0E6 /* Lesson-049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0788BFAA2B96B62D939C3C7 /* Lesson-049.jpg */; };
+		141D30353A63DAF669818AEC /* Lesson-027.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 68D09C4949FBE06EE957D3AA /* Lesson-027.jpg */; };
+		17E646C33A5B8B71DCA92765 /* Lesson-006.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03949D9DD68B1C1CA139157C /* Lesson-006.jpg */; };
+		1A701FF806ABD856B6D17CE1 /* Lesson-095.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 455F4CA2924FD58535AB66CD /* Lesson-095.jpg */; };
 		1F97C45EE0A18534C57C5D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94908477B142A3593EF65555 /* Assets.xcassets */; };
+		22D858F8322B8EF6844AD175 /* Lesson-046.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0A5F0C933080858D384BFA3 /* Lesson-046.jpg */; };
+		2491C9CCB4518593D0B42551 /* Lesson-075.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB0876BED109976B49757088 /* Lesson-075.jpg */; };
+		25B6F83E32A575337EEA2EA4 /* StudyReferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4331A0850C9DA283ADB132 /* StudyReferences.swift */; };
+		27A3C84B19EDE232B5B0E6EC /* Lesson-089.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16A8697AC7ECC550A0B80AA9 /* Lesson-089.jpg */; };
+		27DF3BAE869A1DB19B71C49F /* Lesson-063.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAA639A43D4BA1487ED97193 /* Lesson-063.jpg */; };
+		2C5BF385E5C18070B6730E30 /* Lesson-076.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEC54051D7BF07D945D0F1B5 /* Lesson-076.jpg */; };
+		2E2B7205578099F4EA07AFC5 /* Lesson-083.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 066BB9A51191C5319DD84F32 /* Lesson-083.jpg */; };
+		2E599BBCD7BBC6AEB91CBA7F /* Lesson-003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A67545E651F150E4A60092E /* Lesson-003.jpg */; };
 		32EC513CD0A655E16201F621 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F693C73EA23E6653B5ACDCD /* LearningView.swift */; };
+		3483CD556009F6E44DEFD63F /* Lesson-001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F3057286402C64F48A4208F /* Lesson-001.jpg */; };
+		35ACBE826E4E961AB99BC527 /* Lesson-071.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82C68F379AB9CE5D8593CDAF /* Lesson-071.jpg */; };
 		378E2581451158C0F81846BD /* LessonIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBE222FEDC0A7B4C82F99 /* LessonIllustration.swift */; };
+		38B32AE3E0D8463C4FA21C00 /* Lesson-052.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF8B8C4188AD97B46A6A699A /* Lesson-052.jpg */; };
+		3AA7142076B903F34D79E0D9 /* Lesson-033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6FDAAB36F66432556C9D0AA /* Lesson-033.jpg */; };
+		3CB9A3DB2BE58E162ABC1F6A /* Lesson-048.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB56422421A07719FE79E901 /* Lesson-048.jpg */; };
+		3CCFC60234A578C8063541E3 /* Lesson-025.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1225EE4FCD77C9AB468D747 /* Lesson-025.jpg */; };
+		414877766399CA007D2BA43E /* Lesson-029.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99F0831580A51E6B1AA132FE /* Lesson-029.jpg */; };
+		495073BC913412CB353F347B /* Lesson-030.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 672838A53879C9590E25025C /* Lesson-030.jpg */; };
+		4BCB86BE30BBDB4C742621BC /* Lesson-067.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01D409DE5093EDAC0117F834 /* Lesson-067.jpg */; };
+		4E2974E4AA1BAD07E0434F73 /* Lesson-012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7004F7218B81794193F97425 /* Lesson-012.jpg */; };
+		4F75EFEB4CB4572C0C3366B8 /* Lesson-050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 33AAD98CED202EB150D9D9B7 /* Lesson-050.jpg */; };
+		51A9320DC6A3CBDAC2EBF9DD /* Lesson-079.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F94ED952AE732E4A8D26563A /* Lesson-079.jpg */; };
+		55A07F922A2A67079BB76B63 /* Lesson-091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F99349CB7EDF52EB391C553 /* Lesson-091.jpg */; };
+		55A278DC182127CA079F4CCA /* Lesson-005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A1FE15DB1F582739F2A291B /* Lesson-005.jpg */; };
+		57AB03897138FA96F86376FD /* Lesson-064.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F286E56E92A164541C4418F5 /* Lesson-064.jpg */; };
 		5AB8E17826BF6714E9AE7DF0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386279A82FA2E048A5BA9D5 /* Models.swift */; };
+		5E128961A3297447353712A5 /* Lesson-070.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83C3272555F316711A9DE010 /* Lesson-070.jpg */; };
+		65BBD2FDA4675DB83C894193 /* Lesson-038.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C34714982E9AE8FC4354A6D /* Lesson-038.jpg */; };
+		6655753F4AF65D9B1B0A5348 /* Lesson-017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCC50663EB4223E2FF8063F6 /* Lesson-017.jpg */; };
+		66A60F42706EF1CD80CF389A /* Lesson-080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E4AACC0E1D380E1E645D92C /* Lesson-080.jpg */; };
+		66BB30156E9BD8829DF204A4 /* LessonWorkshops.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B83B398792CB7C111204C49 /* LessonWorkshops.json */; };
+		66C524A611ACA655EF7A44C1 /* Lesson-007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 424C2846A1E32752EEF722D7 /* Lesson-007.jpg */; };
+		677A55E1F3BB464425371969 /* Lesson-086.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BC21B4ED7360984A5E57BA8 /* Lesson-086.jpg */; };
+		67950D477DB0243CE4B2B863 /* Lesson-040.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B713D93C74134478421B7DDD /* Lesson-040.jpg */; };
+		67BF47BFB6E3745CBB6521E4 /* Lesson-084.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C3565AC02019614FF380B46 /* Lesson-084.jpg */; };
 		67CC9E4AF0324AAF83693D66 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1B721C440482A06C01114 /* Theme.swift */; };
+		6902121E69E89822000049D9 /* Lesson-013.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29231E92A7661C000C386062 /* Lesson-013.jpg */; };
 		6B15BCCA74BF1F3B4DC84AD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */; };
+		6D123894FB7220E507A16549 /* Lesson-039.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 919C099064EF3117F0D85CDD /* Lesson-039.jpg */; };
+		70A8D34C5F8A0858DDD19BC0 /* Lesson-099.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FC484871629B5F0218C7D56 /* Lesson-099.jpg */; };
+		74DD1AF0B7D4E7FDFDB85B04 /* Lesson-068.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 721E7634927DCBDDD189C36B /* Lesson-068.jpg */; };
+		7945AD370862DE287B0641A8 /* Lesson-020.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ADBF3605B2F9D8DB2474B26 /* Lesson-020.jpg */; };
+		7BE2DFE1D33432BCBA574DFE /* Lesson-021.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21BA2640B92646E4901EE26E /* Lesson-021.jpg */; };
+		7DD2D38170D5D3947DDFC46D /* Lesson-043.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E7B83A4CC02BA2708CB4708F /* Lesson-043.jpg */; };
+		807834EBCD662071AAF125B2 /* Lesson-062.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90FDF61901A316B450AAE706 /* Lesson-062.jpg */; };
+		81617F0B17B4399D95CC0B25 /* Lesson-004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D285702CF851F53CA11CAD9 /* Lesson-004.jpg */; };
+		85A2D8DF8B116C5CBBCCCA40 /* Lesson-032.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 254CFB0C22BA284797C0A71B /* Lesson-032.jpg */; };
+		85DDD3686A6EEB1C39AF5798 /* Lesson-037.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C4FA5AB289B85807B45B818 /* Lesson-037.jpg */; };
+		88BD8B18FA30C34BB5262A7D /* Lesson-045.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B2B47096D80723189D72D77 /* Lesson-045.jpg */; };
+		8901EBD5AE58360B2204FE03 /* Lesson-035.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F802805803DE5D89124EE08 /* Lesson-035.jpg */; };
+		8ABAC7E60807DA543987C5CB /* Lesson-026.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2B7B9158277A928757367B8E /* Lesson-026.jpg */; };
+		8CFA1965D909463A6B4EB3CF /* Lesson-097.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86FCBE612C3F245D1C2DAC53 /* Lesson-097.jpg */; };
+		8F3FD8460D3EF28F083A62D5 /* Lesson-057.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D93E230637BE1F535844BED /* Lesson-057.jpg */; };
+		8FF513C022A6BA0B6D40E6B5 /* Lesson-096.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 123BA3390667DB56956B165E /* Lesson-096.jpg */; };
+		90686D4D342F877ABF075E93 /* Lesson-008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCAD5E53F6B1A8AF25777711 /* Lesson-008.jpg */; };
+		91A0685C00EA04CBE897C65F /* Lesson-031.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD4AAB34E12CE5E0E9990688 /* Lesson-031.jpg */; };
+		92E302BD857A75ED46075121 /* Lesson-028.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72D6CB5A5A234D45F1E90D3D /* Lesson-028.jpg */; };
+		932AE8F7878EA3950A68DBD9 /* Lesson-058.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD242A6731702B444E1057ED /* Lesson-058.jpg */; };
+		95F16E0A907A4F5AAAEF4027 /* Lesson-047.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 462BB77BDA77B0910E66300F /* Lesson-047.jpg */; };
 		97FC96BC42C51BFCBF3D4FFD /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */; };
+		980AF19F4B304EA09AF8434F /* Lesson-081.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8A6EAFB9C7EB582169034E6 /* Lesson-081.jpg */; };
 		986D3418D4FA18A799E63E4D /* DrawThroughApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C323FFF7C1ECA6F19C35DF /* DrawThroughApp.swift */; };
+		99D2F51D2EDCB6C82AC7F443 /* Lesson-019.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38A3986FC7B3245CDA1D25A7 /* Lesson-019.jpg */; };
+		9E260D571671FD0F0AC3D66A /* Lesson-014.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92E6BC0F8BD825AAA0702736 /* Lesson-014.jpg */; };
+		A0BCC3794522A2825F0256A2 /* Lesson-010.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE30996324F9385E72D15EF7 /* Lesson-010.jpg */; };
+		A178C5ED9C2EE8242961A06A /* Lesson-041.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0246543F4D95A2EE6EE26246 /* Lesson-041.jpg */; };
+		A21F030928415F6F8C9C7291 /* Lesson-002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 380D3433DCC3DBF0CCB93501 /* Lesson-002.jpg */; };
 		A303D9D9FE29F2DCDDF03339 /* LearningStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98B01A6B26F52A4CF6D4A0 /* LearningStoreTests.swift */; };
 		A4363DF9BB130A5B529CBFB8 /* SettingsAndTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C918D41A7CF3B2825438703B /* SettingsAndTips.swift */; };
+		A8D67AAD815C01CC7CBE0359 /* Lesson-090.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50ADE3972A0409C58B04D489 /* Lesson-090.jpg */; };
 		ADEAB21A42117A24C5E78D45 /* LearningFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DE6FC8F55CCA36A93F3D8D /* LearningFlowTests.swift */; };
+		B09A8934AEA5A2D9B42A3E96 /* Lesson-016.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14CEF19C4D7E4A71530818E4 /* Lesson-016.jpg */; };
 		B5B1307A962A68311055CAD1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F42DEAC4ADBB384C4A7FC699 /* PrivacyInfo.xcprivacy */; };
+		B83A133221F49C97267CAB10 /* Lesson-053.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17ED93D918982FDE4E798DE6 /* Lesson-053.jpg */; };
 		B8A5C46AD81409254071459C /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACD9B8CF230DFF3433D5E3 /* Lessons.swift */; };
 		BCB1193BF775F7E009062B3C /* CanvasComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76965161ABA2FBC61DBC50B /* CanvasComponents.swift */; };
+		BCB53C6CC3C943FD26EBDE19 /* Lesson-036.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F26EE947F44B0C4DB042013C /* Lesson-036.jpg */; };
+		C00AB255944B1A421F56D059 /* Lesson-069.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B7748FE4C8A110ECE59E0AF /* Lesson-069.jpg */; };
+		C544CC46920EDD7AE66C5A10 /* Lesson-074.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D47401FA213D5C5B2949FE41 /* Lesson-074.jpg */; };
+		C71B3D0469D03C1E23C92845 /* Lesson-077.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FA5B94AD3FE61F26C853F7B /* Lesson-077.jpg */; };
+		C9B228F1D748252CB7268403 /* Lesson-092.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D0E1DFEA87209FF82BBECAD /* Lesson-092.jpg */; };
+		C9C96D58AE6A67B8C79C49C0 /* Lesson-082.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AD9AF2EBAB9508E9E5430C8 /* Lesson-082.jpg */; };
+		CD3DF055F19754E5A4D8DC0F /* Lesson-100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21CB7362E894842172B7E26F /* Lesson-100.jpg */; };
+		CD95916518429B8316766B6E /* Lesson-088.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78F841CD0864F88662618224 /* Lesson-088.jpg */; };
+		D60EE6E344BA41539F980D03 /* Lesson-054.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CA17982F1FB47FCDD1E6B1 /* Lesson-054.jpg */; };
+		D8156711926FD6BF21056629 /* Lesson-034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E475E10DE13F0EFAD81525BA /* Lesson-034.jpg */; };
+		D8C14E6767EA230F97064758 /* Lesson-065.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190F8037C665AED7EF812711 /* Lesson-065.jpg */; };
+		D978774C6FD87F46908FE129 /* Lesson-009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 153D70F95127FDBA32091B3D /* Lesson-009.jpg */; };
+		D9CA65796F003497DBF510A5 /* Lesson-094.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95180A4D3450776AD63EEB4C /* Lesson-094.jpg */; };
+		DC767520052F75316FB6CC0B /* Lesson-042.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F43798A67B61C64B2C5B80AB /* Lesson-042.jpg */; };
+		DF0060C12C2D48B993254E72 /* Lesson-022.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72C4E28E60C1F9B8CC19430B /* Lesson-022.jpg */; };
+		E342096275ED74E034B0BD95 /* Lesson-059.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB6BEEB8975D5EF34BA53E45 /* Lesson-059.jpg */; };
+		E572644C5DDD4B9443A427BF /* Lesson-051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A14989EF6D2C2F88E11D7 /* Lesson-051.jpg */; };
 		E6235D08213F65ABBD74439A /* LearningStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8BBE486D2D46AEA1FF760 /* LearningStore.swift */; };
+		E8FE8B6AFC9B7430AB777CC3 /* ExtendedCourse.json in Resources */ = {isa = PBXBuildFile; fileRef = 99B66632518944F651DA3C2C /* ExtendedCourse.json */; };
+		EB1C637AC78126209D077FCC /* Lesson-078.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4E07EE7ACE375100923795A8 /* Lesson-078.jpg */; };
+		EC2226AF229F8F7CF98F1653 /* Lesson-011.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C454882F8FC430D068883AB /* Lesson-011.jpg */; };
+		F121E34E3A9E0FB52EABE294 /* Lesson-056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 66DE0BB36E11384BB8457833 /* Lesson-056.jpg */; };
+		F289EFD7240203B510F40521 /* Lesson-055.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 325B4B864495D9F9EA845583 /* Lesson-055.jpg */; };
+		F331CA6AA5BA8E824E70D645 /* Lesson-061.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93F05DC7A6FFB0D32A567E2F /* Lesson-061.jpg */; };
+		F38527EE0C354840A5DB9D2C /* Lesson-066.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD82B8CC84E5EB52C5806D09 /* Lesson-066.jpg */; };
+		F5F48B154B6E1D8156A63B8C /* Lesson-098.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90EFA07D639E938764337A8D /* Lesson-098.jpg */; };
+		F8184BCB019562A8EA5066DB /* Lesson-073.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26041AE9C515F4800E055D02 /* Lesson-073.jpg */; };
+		F8A06A6DD68DF711383E3D29 /* Lesson-044.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D64A3C463987DB83320C09B /* Lesson-044.jpg */; };
+		FBFFE9DA82CF1001AA9607D1 /* Lesson-023.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 148CB37ACBDBEF46F588A6F3 /* Lesson-023.jpg */; };
+		FD6F62637C863DFCA87E77B9 /* Lesson-060.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D90EAE0EA905CD20E58F5C0 /* Lesson-060.jpg */; };
+		FF16FB748286DB43F7266025 /* Lesson-024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B8DA744864765F937F3FB5A /* Lesson-024.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,34 +147,247 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D409DE5093EDAC0117F834 /* Lesson-067.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-067.jpg"; sourceTree = "<group>"; };
+		0246543F4D95A2EE6EE26246 /* Lesson-041.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-041.jpg"; sourceTree = "<group>"; };
+		03949D9DD68B1C1CA139157C /* Lesson-006.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-006.jpg"; sourceTree = "<group>"; };
+		066BB9A51191C5319DD84F32 /* Lesson-083.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-083.jpg"; sourceTree = "<group>"; };
 		08BBCE2841C49090029C7925 /* DrawThroughTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DrawThroughTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		123BA3390667DB56956B165E /* Lesson-096.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-096.jpg"; sourceTree = "<group>"; };
+		148CB37ACBDBEF46F588A6F3 /* Lesson-023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-023.jpg"; sourceTree = "<group>"; };
+		14CEF19C4D7E4A71530818E4 /* Lesson-016.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-016.jpg"; sourceTree = "<group>"; };
+		153D70F95127FDBA32091B3D /* Lesson-009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-009.jpg"; sourceTree = "<group>"; };
+		16A8697AC7ECC550A0B80AA9 /* Lesson-089.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-089.jpg"; sourceTree = "<group>"; };
+		17ED93D918982FDE4E798DE6 /* Lesson-053.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-053.jpg"; sourceTree = "<group>"; };
+		190F8037C665AED7EF812711 /* Lesson-065.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-065.jpg"; sourceTree = "<group>"; };
+		1B7748FE4C8A110ECE59E0AF /* Lesson-069.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-069.jpg"; sourceTree = "<group>"; };
+		1F99349CB7EDF52EB391C553 /* Lesson-091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-091.jpg"; sourceTree = "<group>"; };
+		1FA5B94AD3FE61F26C853F7B /* Lesson-077.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-077.jpg"; sourceTree = "<group>"; };
+		21BA2640B92646E4901EE26E /* Lesson-021.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-021.jpg"; sourceTree = "<group>"; };
+		21CB7362E894842172B7E26F /* Lesson-100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-100.jpg"; sourceTree = "<group>"; };
+		254CFB0C22BA284797C0A71B /* Lesson-032.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-032.jpg"; sourceTree = "<group>"; };
+		26041AE9C515F4800E055D02 /* Lesson-073.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-073.jpg"; sourceTree = "<group>"; };
+		29231E92A7661C000C386062 /* Lesson-013.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-013.jpg"; sourceTree = "<group>"; };
+		2A1FE15DB1F582739F2A291B /* Lesson-005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-005.jpg"; sourceTree = "<group>"; };
+		2B7B9158277A928757367B8E /* Lesson-026.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-026.jpg"; sourceTree = "<group>"; };
+		2D64A3C463987DB83320C09B /* Lesson-044.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-044.jpg"; sourceTree = "<group>"; };
+		325B4B864495D9F9EA845583 /* Lesson-055.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-055.jpg"; sourceTree = "<group>"; };
+		33AAD98CED202EB150D9D9B7 /* Lesson-050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-050.jpg"; sourceTree = "<group>"; };
+		380D3433DCC3DBF0CCB93501 /* Lesson-002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-002.jpg"; sourceTree = "<group>"; };
+		38A3986FC7B3245CDA1D25A7 /* Lesson-019.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-019.jpg"; sourceTree = "<group>"; };
+		3AD9AF2EBAB9508E9E5430C8 /* Lesson-082.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-082.jpg"; sourceTree = "<group>"; };
+		3ADBF3605B2F9D8DB2474B26 /* Lesson-020.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-020.jpg"; sourceTree = "<group>"; };
+		3B5A14989EF6D2C2F88E11D7 /* Lesson-051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-051.jpg"; sourceTree = "<group>"; };
+		3CE69D320C025DC5680C6288 /* Lesson-015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-015.jpg"; sourceTree = "<group>"; };
+		424C2846A1E32752EEF722D7 /* Lesson-007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-007.jpg"; sourceTree = "<group>"; };
+		455F4CA2924FD58535AB66CD /* Lesson-095.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-095.jpg"; sourceTree = "<group>"; };
+		462BB77BDA77B0910E66300F /* Lesson-047.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-047.jpg"; sourceTree = "<group>"; };
+		4C3565AC02019614FF380B46 /* Lesson-084.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-084.jpg"; sourceTree = "<group>"; };
+		4E07EE7ACE375100923795A8 /* Lesson-078.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-078.jpg"; sourceTree = "<group>"; };
 		4E98B01A6B26F52A4CF6D4A0 /* LearningStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningStoreTests.swift; sourceTree = "<group>"; };
 		4FD81188CA5A1B9E2C44756D /* DrawThroughUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DrawThroughUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50ADE3972A0409C58B04D489 /* Lesson-090.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-090.jpg"; sourceTree = "<group>"; };
 		52D1B721C440482A06C01114 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		59921313E754EA34A51FD42C /* Lesson-085.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-085.jpg"; sourceTree = "<group>"; };
+		5D0E1DFEA87209FF82BBECAD /* Lesson-092.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-092.jpg"; sourceTree = "<group>"; };
+		5D285702CF851F53CA11CAD9 /* Lesson-004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-004.jpg"; sourceTree = "<group>"; };
+		5E4AACC0E1D380E1E645D92C /* Lesson-080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-080.jpg"; sourceTree = "<group>"; };
 		5F693C73EA23E6653B5ACDCD /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		66DE0BB36E11384BB8457833 /* Lesson-056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-056.jpg"; sourceTree = "<group>"; };
+		672838A53879C9590E25025C /* Lesson-030.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-030.jpg"; sourceTree = "<group>"; };
+		68D09C4949FBE06EE957D3AA /* Lesson-027.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-027.jpg"; sourceTree = "<group>"; };
+		6C34714982E9AE8FC4354A6D /* Lesson-038.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-038.jpg"; sourceTree = "<group>"; };
+		6C454882F8FC430D068883AB /* Lesson-011.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-011.jpg"; sourceTree = "<group>"; };
+		6FC484871629B5F0218C7D56 /* Lesson-099.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-099.jpg"; sourceTree = "<group>"; };
+		7004F7218B81794193F97425 /* Lesson-012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-012.jpg"; sourceTree = "<group>"; };
+		721E7634927DCBDDD189C36B /* Lesson-068.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-068.jpg"; sourceTree = "<group>"; };
+		72C4E28E60C1F9B8CC19430B /* Lesson-022.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-022.jpg"; sourceTree = "<group>"; };
+		72D6CB5A5A234D45F1E90D3D /* Lesson-028.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-028.jpg"; sourceTree = "<group>"; };
+		78F841CD0864F88662618224 /* Lesson-088.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-088.jpg"; sourceTree = "<group>"; };
+		7A67545E651F150E4A60092E /* Lesson-003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-003.jpg"; sourceTree = "<group>"; };
+		7B2B47096D80723189D72D77 /* Lesson-045.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-045.jpg"; sourceTree = "<group>"; };
+		7B8DA744864765F937F3FB5A /* Lesson-024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-024.jpg"; sourceTree = "<group>"; };
+		7BC21B4ED7360984A5E57BA8 /* Lesson-086.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-086.jpg"; sourceTree = "<group>"; };
 		7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7D90EAE0EA905CD20E58F5C0 /* Lesson-060.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-060.jpg"; sourceTree = "<group>"; };
+		7D93E230637BE1F535844BED /* Lesson-057.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-057.jpg"; sourceTree = "<group>"; };
 		7DACD9B8CF230DFF3433D5E3 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		82C68F379AB9CE5D8593CDAF /* Lesson-071.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-071.jpg"; sourceTree = "<group>"; };
+		83C3272555F316711A9DE010 /* Lesson-070.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-070.jpg"; sourceTree = "<group>"; };
+		84CA17982F1FB47FCDD1E6B1 /* Lesson-054.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-054.jpg"; sourceTree = "<group>"; };
+		86FCBE612C3F245D1C2DAC53 /* Lesson-097.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-097.jpg"; sourceTree = "<group>"; };
+		8B83B398792CB7C111204C49 /* LessonWorkshops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LessonWorkshops.json; sourceTree = "<group>"; };
+		8F802805803DE5D89124EE08 /* Lesson-035.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-035.jpg"; sourceTree = "<group>"; };
+		90EFA07D639E938764337A8D /* Lesson-098.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-098.jpg"; sourceTree = "<group>"; };
+		90FDF61901A316B450AAE706 /* Lesson-062.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-062.jpg"; sourceTree = "<group>"; };
+		919C099064EF3117F0D85CDD /* Lesson-039.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-039.jpg"; sourceTree = "<group>"; };
+		92E6BC0F8BD825AAA0702736 /* Lesson-014.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-014.jpg"; sourceTree = "<group>"; };
 		9386279A82FA2E048A5BA9D5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		93F05DC7A6FFB0D32A567E2F /* Lesson-061.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-061.jpg"; sourceTree = "<group>"; };
 		94908477B142A3593EF65555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95180A4D3450776AD63EEB4C /* Lesson-094.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-094.jpg"; sourceTree = "<group>"; };
+		99B66632518944F651DA3C2C /* ExtendedCourse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExtendedCourse.json; sourceTree = "<group>"; };
+		99F0831580A51E6B1AA132FE /* Lesson-029.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-029.jpg"; sourceTree = "<group>"; };
 		9AADBE222FEDC0A7B4C82F99 /* LessonIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonIllustration.swift; sourceTree = "<group>"; };
+		9C4FA5AB289B85807B45B818 /* Lesson-037.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-037.jpg"; sourceTree = "<group>"; };
+		9F3057286402C64F48A4208F /* Lesson-001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-001.jpg"; sourceTree = "<group>"; };
 		A3D8BBE486D2D46AEA1FF760 /* LearningStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningStore.swift; sourceTree = "<group>"; };
+		AD82B8CC84E5EB52C5806D09 /* Lesson-066.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-066.jpg"; sourceTree = "<group>"; };
+		AF4331A0850C9DA283ADB132 /* StudyReferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyReferences.swift; sourceTree = "<group>"; };
+		B0A5F0C933080858D384BFA3 /* Lesson-046.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-046.jpg"; sourceTree = "<group>"; };
+		B53D53EC168A8C44D61CFE5B /* Lesson-087.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-087.jpg"; sourceTree = "<group>"; };
+		B713D93C74134478421B7DDD /* Lesson-040.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-040.jpg"; sourceTree = "<group>"; };
 		B76965161ABA2FBC61DBC50B /* CanvasComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasComponents.swift; sourceTree = "<group>"; };
 		BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		BCC50663EB4223E2FF8063F6 /* Lesson-017.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-017.jpg"; sourceTree = "<group>"; };
+		BD242A6731702B444E1057ED /* Lesson-058.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-058.jpg"; sourceTree = "<group>"; };
+		BD4AAB34E12CE5E0E9990688 /* Lesson-031.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-031.jpg"; sourceTree = "<group>"; };
+		BF8B8C4188AD97B46A6A699A /* Lesson-052.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-052.jpg"; sourceTree = "<group>"; };
+		C1225EE4FCD77C9AB468D747 /* Lesson-025.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-025.jpg"; sourceTree = "<group>"; };
 		C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DrawThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FF9ABCE991BD71704DDBBC /* Lesson-093.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-093.jpg"; sourceTree = "<group>"; };
 		C918D41A7CF3B2825438703B /* SettingsAndTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAndTips.swift; sourceTree = "<group>"; };
+		CEC54051D7BF07D945D0F1B5 /* Lesson-076.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-076.jpg"; sourceTree = "<group>"; };
 		D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D3C323FFF7C1ECA6F19C35DF /* DrawThroughApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawThroughApp.swift; sourceTree = "<group>"; };
+		D47401FA213D5C5B2949FE41 /* Lesson-074.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-074.jpg"; sourceTree = "<group>"; };
+		D8A6EAFB9C7EB582169034E6 /* Lesson-081.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-081.jpg"; sourceTree = "<group>"; };
+		DAA639A43D4BA1487ED97193 /* Lesson-063.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-063.jpg"; sourceTree = "<group>"; };
 		DD696250A0ADE183A53B9F10 /* LessonPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPracticeView.swift; sourceTree = "<group>"; };
+		E0788BFAA2B96B62D939C3C7 /* Lesson-049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-049.jpg"; sourceTree = "<group>"; };
+		E475E10DE13F0EFAD81525BA /* Lesson-034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-034.jpg"; sourceTree = "<group>"; };
+		E7B83A4CC02BA2708CB4708F /* Lesson-043.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-043.jpg"; sourceTree = "<group>"; };
 		E7DE6FC8F55CCA36A93F3D8D /* LearningFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningFlowTests.swift; sourceTree = "<group>"; };
+		E7E14D49F491DA51471A00CD /* Lesson-072.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-072.jpg"; sourceTree = "<group>"; };
+		EB0876BED109976B49757088 /* Lesson-075.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-075.jpg"; sourceTree = "<group>"; };
+		EB56422421A07719FE79E901 /* Lesson-048.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-048.jpg"; sourceTree = "<group>"; };
+		EB6BEEB8975D5EF34BA53E45 /* Lesson-059.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-059.jpg"; sourceTree = "<group>"; };
+		EE30996324F9385E72D15EF7 /* Lesson-010.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-010.jpg"; sourceTree = "<group>"; };
+		F26EE947F44B0C4DB042013C /* Lesson-036.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-036.jpg"; sourceTree = "<group>"; };
+		F286E56E92A164541C4418F5 /* Lesson-064.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-064.jpg"; sourceTree = "<group>"; };
 		F42DEAC4ADBB384C4A7FC699 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F43798A67B61C64B2C5B80AB /* Lesson-042.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-042.jpg"; sourceTree = "<group>"; };
+		F6FDAAB36F66432556C9D0AA /* Lesson-033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-033.jpg"; sourceTree = "<group>"; };
+		F94ED952AE732E4A8D26563A /* Lesson-079.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-079.jpg"; sourceTree = "<group>"; };
+		FC0CC60B541194770CB295AA /* Lesson-018.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-018.jpg"; sourceTree = "<group>"; };
+		FCAD5E53F6B1A8AF25777711 /* Lesson-008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lesson-008.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		282A41936D0E42640DE63DF2 /* CourseReferences */ = {
+			isa = PBXGroup;
+			children = (
+				9F3057286402C64F48A4208F /* Lesson-001.jpg */,
+				380D3433DCC3DBF0CCB93501 /* Lesson-002.jpg */,
+				7A67545E651F150E4A60092E /* Lesson-003.jpg */,
+				5D285702CF851F53CA11CAD9 /* Lesson-004.jpg */,
+				2A1FE15DB1F582739F2A291B /* Lesson-005.jpg */,
+				03949D9DD68B1C1CA139157C /* Lesson-006.jpg */,
+				424C2846A1E32752EEF722D7 /* Lesson-007.jpg */,
+				FCAD5E53F6B1A8AF25777711 /* Lesson-008.jpg */,
+				153D70F95127FDBA32091B3D /* Lesson-009.jpg */,
+				EE30996324F9385E72D15EF7 /* Lesson-010.jpg */,
+				6C454882F8FC430D068883AB /* Lesson-011.jpg */,
+				7004F7218B81794193F97425 /* Lesson-012.jpg */,
+				29231E92A7661C000C386062 /* Lesson-013.jpg */,
+				92E6BC0F8BD825AAA0702736 /* Lesson-014.jpg */,
+				3CE69D320C025DC5680C6288 /* Lesson-015.jpg */,
+				14CEF19C4D7E4A71530818E4 /* Lesson-016.jpg */,
+				BCC50663EB4223E2FF8063F6 /* Lesson-017.jpg */,
+				FC0CC60B541194770CB295AA /* Lesson-018.jpg */,
+				38A3986FC7B3245CDA1D25A7 /* Lesson-019.jpg */,
+				3ADBF3605B2F9D8DB2474B26 /* Lesson-020.jpg */,
+				21BA2640B92646E4901EE26E /* Lesson-021.jpg */,
+				72C4E28E60C1F9B8CC19430B /* Lesson-022.jpg */,
+				148CB37ACBDBEF46F588A6F3 /* Lesson-023.jpg */,
+				7B8DA744864765F937F3FB5A /* Lesson-024.jpg */,
+				C1225EE4FCD77C9AB468D747 /* Lesson-025.jpg */,
+				2B7B9158277A928757367B8E /* Lesson-026.jpg */,
+				68D09C4949FBE06EE957D3AA /* Lesson-027.jpg */,
+				72D6CB5A5A234D45F1E90D3D /* Lesson-028.jpg */,
+				99F0831580A51E6B1AA132FE /* Lesson-029.jpg */,
+				672838A53879C9590E25025C /* Lesson-030.jpg */,
+				BD4AAB34E12CE5E0E9990688 /* Lesson-031.jpg */,
+				254CFB0C22BA284797C0A71B /* Lesson-032.jpg */,
+				F6FDAAB36F66432556C9D0AA /* Lesson-033.jpg */,
+				E475E10DE13F0EFAD81525BA /* Lesson-034.jpg */,
+				8F802805803DE5D89124EE08 /* Lesson-035.jpg */,
+				F26EE947F44B0C4DB042013C /* Lesson-036.jpg */,
+				9C4FA5AB289B85807B45B818 /* Lesson-037.jpg */,
+				6C34714982E9AE8FC4354A6D /* Lesson-038.jpg */,
+				919C099064EF3117F0D85CDD /* Lesson-039.jpg */,
+				B713D93C74134478421B7DDD /* Lesson-040.jpg */,
+				0246543F4D95A2EE6EE26246 /* Lesson-041.jpg */,
+				F43798A67B61C64B2C5B80AB /* Lesson-042.jpg */,
+				E7B83A4CC02BA2708CB4708F /* Lesson-043.jpg */,
+				2D64A3C463987DB83320C09B /* Lesson-044.jpg */,
+				7B2B47096D80723189D72D77 /* Lesson-045.jpg */,
+				B0A5F0C933080858D384BFA3 /* Lesson-046.jpg */,
+				462BB77BDA77B0910E66300F /* Lesson-047.jpg */,
+				EB56422421A07719FE79E901 /* Lesson-048.jpg */,
+				E0788BFAA2B96B62D939C3C7 /* Lesson-049.jpg */,
+				33AAD98CED202EB150D9D9B7 /* Lesson-050.jpg */,
+				3B5A14989EF6D2C2F88E11D7 /* Lesson-051.jpg */,
+				BF8B8C4188AD97B46A6A699A /* Lesson-052.jpg */,
+				17ED93D918982FDE4E798DE6 /* Lesson-053.jpg */,
+				84CA17982F1FB47FCDD1E6B1 /* Lesson-054.jpg */,
+				325B4B864495D9F9EA845583 /* Lesson-055.jpg */,
+				66DE0BB36E11384BB8457833 /* Lesson-056.jpg */,
+				7D93E230637BE1F535844BED /* Lesson-057.jpg */,
+				BD242A6731702B444E1057ED /* Lesson-058.jpg */,
+				EB6BEEB8975D5EF34BA53E45 /* Lesson-059.jpg */,
+				7D90EAE0EA905CD20E58F5C0 /* Lesson-060.jpg */,
+				93F05DC7A6FFB0D32A567E2F /* Lesson-061.jpg */,
+				90FDF61901A316B450AAE706 /* Lesson-062.jpg */,
+				DAA639A43D4BA1487ED97193 /* Lesson-063.jpg */,
+				F286E56E92A164541C4418F5 /* Lesson-064.jpg */,
+				190F8037C665AED7EF812711 /* Lesson-065.jpg */,
+				AD82B8CC84E5EB52C5806D09 /* Lesson-066.jpg */,
+				01D409DE5093EDAC0117F834 /* Lesson-067.jpg */,
+				721E7634927DCBDDD189C36B /* Lesson-068.jpg */,
+				1B7748FE4C8A110ECE59E0AF /* Lesson-069.jpg */,
+				83C3272555F316711A9DE010 /* Lesson-070.jpg */,
+				82C68F379AB9CE5D8593CDAF /* Lesson-071.jpg */,
+				E7E14D49F491DA51471A00CD /* Lesson-072.jpg */,
+				26041AE9C515F4800E055D02 /* Lesson-073.jpg */,
+				D47401FA213D5C5B2949FE41 /* Lesson-074.jpg */,
+				EB0876BED109976B49757088 /* Lesson-075.jpg */,
+				CEC54051D7BF07D945D0F1B5 /* Lesson-076.jpg */,
+				1FA5B94AD3FE61F26C853F7B /* Lesson-077.jpg */,
+				4E07EE7ACE375100923795A8 /* Lesson-078.jpg */,
+				F94ED952AE732E4A8D26563A /* Lesson-079.jpg */,
+				5E4AACC0E1D380E1E645D92C /* Lesson-080.jpg */,
+				D8A6EAFB9C7EB582169034E6 /* Lesson-081.jpg */,
+				3AD9AF2EBAB9508E9E5430C8 /* Lesson-082.jpg */,
+				066BB9A51191C5319DD84F32 /* Lesson-083.jpg */,
+				4C3565AC02019614FF380B46 /* Lesson-084.jpg */,
+				59921313E754EA34A51FD42C /* Lesson-085.jpg */,
+				7BC21B4ED7360984A5E57BA8 /* Lesson-086.jpg */,
+				B53D53EC168A8C44D61CFE5B /* Lesson-087.jpg */,
+				78F841CD0864F88662618224 /* Lesson-088.jpg */,
+				16A8697AC7ECC550A0B80AA9 /* Lesson-089.jpg */,
+				50ADE3972A0409C58B04D489 /* Lesson-090.jpg */,
+				1F99349CB7EDF52EB391C553 /* Lesson-091.jpg */,
+				5D0E1DFEA87209FF82BBECAD /* Lesson-092.jpg */,
+				C7FF9ABCE991BD71704DDBBC /* Lesson-093.jpg */,
+				95180A4D3450776AD63EEB4C /* Lesson-094.jpg */,
+				455F4CA2924FD58535AB66CD /* Lesson-095.jpg */,
+				123BA3390667DB56956B165E /* Lesson-096.jpg */,
+				86FCBE612C3F245D1C2DAC53 /* Lesson-097.jpg */,
+				90EFA07D639E938764337A8D /* Lesson-098.jpg */,
+				6FC484871629B5F0218C7D56 /* Lesson-099.jpg */,
+				21CB7362E894842172B7E26F /* Lesson-100.jpg */,
+			);
+			path = CourseReferences;
+			sourceTree = "<group>";
+		};
 		33447D132791BC60F4C77685 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				94908477B142A3593EF65555 /* Assets.xcassets */,
+				99B66632518944F651DA3C2C /* ExtendedCourse.json */,
+				8B83B398792CB7C111204C49 /* LessonWorkshops.json */,
 				F42DEAC4ADBB384C4A7FC699 /* PrivacyInfo.xcprivacy */,
+				282A41936D0E42640DE63DF2 /* CourseReferences */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -119,6 +435,7 @@
 				9386279A82FA2E048A5BA9D5 /* Models.swift */,
 				7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */,
 				C918D41A7CF3B2825438703B /* SettingsAndTips.swift */,
+				AF4331A0850C9DA283ADB132 /* StudyReferences.swift */,
 				52D1B721C440482A06C01114 /* Theme.swift */,
 				33447D132791BC60F4C77685 /* Resources */,
 			);
@@ -238,6 +555,108 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F97C45EE0A18534C57C5D7A /* Assets.xcassets in Resources */,
+				E8FE8B6AFC9B7430AB777CC3 /* ExtendedCourse.json in Resources */,
+				3483CD556009F6E44DEFD63F /* Lesson-001.jpg in Resources */,
+				A21F030928415F6F8C9C7291 /* Lesson-002.jpg in Resources */,
+				2E599BBCD7BBC6AEB91CBA7F /* Lesson-003.jpg in Resources */,
+				81617F0B17B4399D95CC0B25 /* Lesson-004.jpg in Resources */,
+				55A278DC182127CA079F4CCA /* Lesson-005.jpg in Resources */,
+				17E646C33A5B8B71DCA92765 /* Lesson-006.jpg in Resources */,
+				66C524A611ACA655EF7A44C1 /* Lesson-007.jpg in Resources */,
+				90686D4D342F877ABF075E93 /* Lesson-008.jpg in Resources */,
+				D978774C6FD87F46908FE129 /* Lesson-009.jpg in Resources */,
+				A0BCC3794522A2825F0256A2 /* Lesson-010.jpg in Resources */,
+				EC2226AF229F8F7CF98F1653 /* Lesson-011.jpg in Resources */,
+				4E2974E4AA1BAD07E0434F73 /* Lesson-012.jpg in Resources */,
+				6902121E69E89822000049D9 /* Lesson-013.jpg in Resources */,
+				9E260D571671FD0F0AC3D66A /* Lesson-014.jpg in Resources */,
+				0CF8DE58B4FADA32B9D5ACCA /* Lesson-015.jpg in Resources */,
+				B09A8934AEA5A2D9B42A3E96 /* Lesson-016.jpg in Resources */,
+				6655753F4AF65D9B1B0A5348 /* Lesson-017.jpg in Resources */,
+				077A45A54452049C0855DF7D /* Lesson-018.jpg in Resources */,
+				99D2F51D2EDCB6C82AC7F443 /* Lesson-019.jpg in Resources */,
+				7945AD370862DE287B0641A8 /* Lesson-020.jpg in Resources */,
+				7BE2DFE1D33432BCBA574DFE /* Lesson-021.jpg in Resources */,
+				DF0060C12C2D48B993254E72 /* Lesson-022.jpg in Resources */,
+				FBFFE9DA82CF1001AA9607D1 /* Lesson-023.jpg in Resources */,
+				FF16FB748286DB43F7266025 /* Lesson-024.jpg in Resources */,
+				3CCFC60234A578C8063541E3 /* Lesson-025.jpg in Resources */,
+				8ABAC7E60807DA543987C5CB /* Lesson-026.jpg in Resources */,
+				141D30353A63DAF669818AEC /* Lesson-027.jpg in Resources */,
+				92E302BD857A75ED46075121 /* Lesson-028.jpg in Resources */,
+				414877766399CA007D2BA43E /* Lesson-029.jpg in Resources */,
+				495073BC913412CB353F347B /* Lesson-030.jpg in Resources */,
+				91A0685C00EA04CBE897C65F /* Lesson-031.jpg in Resources */,
+				85A2D8DF8B116C5CBBCCCA40 /* Lesson-032.jpg in Resources */,
+				3AA7142076B903F34D79E0D9 /* Lesson-033.jpg in Resources */,
+				D8156711926FD6BF21056629 /* Lesson-034.jpg in Resources */,
+				8901EBD5AE58360B2204FE03 /* Lesson-035.jpg in Resources */,
+				BCB53C6CC3C943FD26EBDE19 /* Lesson-036.jpg in Resources */,
+				85DDD3686A6EEB1C39AF5798 /* Lesson-037.jpg in Resources */,
+				65BBD2FDA4675DB83C894193 /* Lesson-038.jpg in Resources */,
+				6D123894FB7220E507A16549 /* Lesson-039.jpg in Resources */,
+				67950D477DB0243CE4B2B863 /* Lesson-040.jpg in Resources */,
+				A178C5ED9C2EE8242961A06A /* Lesson-041.jpg in Resources */,
+				DC767520052F75316FB6CC0B /* Lesson-042.jpg in Resources */,
+				7DD2D38170D5D3947DDFC46D /* Lesson-043.jpg in Resources */,
+				F8A06A6DD68DF711383E3D29 /* Lesson-044.jpg in Resources */,
+				88BD8B18FA30C34BB5262A7D /* Lesson-045.jpg in Resources */,
+				22D858F8322B8EF6844AD175 /* Lesson-046.jpg in Resources */,
+				95F16E0A907A4F5AAAEF4027 /* Lesson-047.jpg in Resources */,
+				3CB9A3DB2BE58E162ABC1F6A /* Lesson-048.jpg in Resources */,
+				13E8BD792475DE7E5F37D0E6 /* Lesson-049.jpg in Resources */,
+				4F75EFEB4CB4572C0C3366B8 /* Lesson-050.jpg in Resources */,
+				E572644C5DDD4B9443A427BF /* Lesson-051.jpg in Resources */,
+				38B32AE3E0D8463C4FA21C00 /* Lesson-052.jpg in Resources */,
+				B83A133221F49C97267CAB10 /* Lesson-053.jpg in Resources */,
+				D60EE6E344BA41539F980D03 /* Lesson-054.jpg in Resources */,
+				F289EFD7240203B510F40521 /* Lesson-055.jpg in Resources */,
+				F121E34E3A9E0FB52EABE294 /* Lesson-056.jpg in Resources */,
+				8F3FD8460D3EF28F083A62D5 /* Lesson-057.jpg in Resources */,
+				932AE8F7878EA3950A68DBD9 /* Lesson-058.jpg in Resources */,
+				E342096275ED74E034B0BD95 /* Lesson-059.jpg in Resources */,
+				FD6F62637C863DFCA87E77B9 /* Lesson-060.jpg in Resources */,
+				F331CA6AA5BA8E824E70D645 /* Lesson-061.jpg in Resources */,
+				807834EBCD662071AAF125B2 /* Lesson-062.jpg in Resources */,
+				27DF3BAE869A1DB19B71C49F /* Lesson-063.jpg in Resources */,
+				57AB03897138FA96F86376FD /* Lesson-064.jpg in Resources */,
+				D8C14E6767EA230F97064758 /* Lesson-065.jpg in Resources */,
+				F38527EE0C354840A5DB9D2C /* Lesson-066.jpg in Resources */,
+				4BCB86BE30BBDB4C742621BC /* Lesson-067.jpg in Resources */,
+				74DD1AF0B7D4E7FDFDB85B04 /* Lesson-068.jpg in Resources */,
+				C00AB255944B1A421F56D059 /* Lesson-069.jpg in Resources */,
+				5E128961A3297447353712A5 /* Lesson-070.jpg in Resources */,
+				35ACBE826E4E961AB99BC527 /* Lesson-071.jpg in Resources */,
+				13213B8AAE2BD6BF8A109E09 /* Lesson-072.jpg in Resources */,
+				F8184BCB019562A8EA5066DB /* Lesson-073.jpg in Resources */,
+				C544CC46920EDD7AE66C5A10 /* Lesson-074.jpg in Resources */,
+				2491C9CCB4518593D0B42551 /* Lesson-075.jpg in Resources */,
+				2C5BF385E5C18070B6730E30 /* Lesson-076.jpg in Resources */,
+				C71B3D0469D03C1E23C92845 /* Lesson-077.jpg in Resources */,
+				EB1C637AC78126209D077FCC /* Lesson-078.jpg in Resources */,
+				51A9320DC6A3CBDAC2EBF9DD /* Lesson-079.jpg in Resources */,
+				66A60F42706EF1CD80CF389A /* Lesson-080.jpg in Resources */,
+				980AF19F4B304EA09AF8434F /* Lesson-081.jpg in Resources */,
+				C9C96D58AE6A67B8C79C49C0 /* Lesson-082.jpg in Resources */,
+				2E2B7205578099F4EA07AFC5 /* Lesson-083.jpg in Resources */,
+				67BF47BFB6E3745CBB6521E4 /* Lesson-084.jpg in Resources */,
+				13AE033281E0E2B4D662B38E /* Lesson-085.jpg in Resources */,
+				677A55E1F3BB464425371969 /* Lesson-086.jpg in Resources */,
+				0165253D4408EED95DA00B9B /* Lesson-087.jpg in Resources */,
+				CD95916518429B8316766B6E /* Lesson-088.jpg in Resources */,
+				27A3C84B19EDE232B5B0E6EC /* Lesson-089.jpg in Resources */,
+				A8D67AAD815C01CC7CBE0359 /* Lesson-090.jpg in Resources */,
+				55A07F922A2A67079BB76B63 /* Lesson-091.jpg in Resources */,
+				C9B228F1D748252CB7268403 /* Lesson-092.jpg in Resources */,
+				0EA0D43FAB18731CF764D79F /* Lesson-093.jpg in Resources */,
+				D9CA65796F003497DBF510A5 /* Lesson-094.jpg in Resources */,
+				1A701FF806ABD856B6D17CE1 /* Lesson-095.jpg in Resources */,
+				8FF513C022A6BA0B6D40E6B5 /* Lesson-096.jpg in Resources */,
+				8CFA1965D909463A6B4EB3CF /* Lesson-097.jpg in Resources */,
+				F5F48B154B6E1D8156A63B8C /* Lesson-098.jpg in Resources */,
+				70A8D34C5F8A0858DDD19BC0 /* Lesson-099.jpg in Resources */,
+				CD3DF055F19754E5A4D8DC0F /* Lesson-100.jpg in Resources */,
+				66BB30156E9BD8829DF204A4 /* LessonWorkshops.json in Resources */,
 				B5B1307A962A68311055CAD1 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +680,7 @@
 				5AB8E17826BF6714E9AE7DF0 /* Models.swift in Sources */,
 				0A54B6F1C9CF372125C3DC8F /* OnboardingView.swift in Sources */,
 				A4363DF9BB130A5B529CBFB8 /* SettingsAndTips.swift in Sources */,
+				25B6F83E32A575337EEA2EA4 /* StudyReferences.swift in Sources */,
 				67CC9E4AF0324AAF83693D66 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,7 +775,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HBD3XXQK45;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -449,7 +869,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = HBD3XXQK45;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

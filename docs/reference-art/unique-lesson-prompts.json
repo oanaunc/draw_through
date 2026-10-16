@@ -1,0 +1,931 @@
+{
+  "generator": "Built-in image_gen",
+  "existingUniqueAssignments": {
+    "31": "pear",
+    "21": "fern",
+    "26": "bouquet",
+    "36": "pitcher",
+    "41": "shell",
+    "46": "stones",
+    "51": "mountain",
+    "56": "coast",
+    "61": "hallway",
+    "66": "doorway",
+    "71": "portrait",
+    "76": "hands",
+    "81": "bird",
+    "86": "cat",
+    "91": "courtyard",
+    "96": "bicycle",
+    "7": "cup",
+    "13": "cloth",
+    "12": "forms",
+    "20": "desk"
+  },
+  "newReferences": [
+    {
+      "lessonID": 1,
+      "prompt": "Use case: scientific-educational. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A beautiful art-school graphite study on ivory paper: six long deliberate pencil strokes connecting small gray starting and ending dots, varied diagonal directions, natural graphite texture, wide quiet margins. No handwriting or labels, no hand or pencil in frame. A genuine drawing reference, not an app screen. Exceptionally beautiful graphite instructional artwork with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-001.jpg"
+    },
+    {
+      "lessonID": 2,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One wide ivory silk ribbon resting in a loose S curve beside a narrower muted sage ribbon forming a C curve, on a warm matte gray tabletop. The full ribbon curves are visible, softly side-lit, graceful clear silhouettes and no knots. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-002.jpg"
+    },
+    {
+      "lessonID": 3,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single shallow white ceramic bowl viewed at low eye level with its oval opening and rounded rim fully visible, beside its own soft shadow on pale gray stone. Nothing inside the bowl. Close but uncropped three-quarter view. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-003.jpg"
+    },
+    {
+      "lessonID": 4,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Three overlapping simple wooden solids, a sphere in front of a cube and an upright cylinder, on ivory paper. Near overlap edges strongly lit against darker rear surfaces, distant boundaries quieter. Sculptural still life with credible geometry. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-004.jpg"
+    },
+    {
+      "lessonID": 5,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One fresh ginkgo leaf, fan-shaped with a shallow central notch and long thin stem, laid on warm ivory handmade paper. Whole leaf uncropped, subtle irregular outer contour, delicate veins, soft light from left. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-005.jpg"
+    },
+    {
+      "lessonID": 6,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One ripe red pear with a narrow neck and broad asymmetrical base, upright on a muted blue-gray stone surface. Whole pear including stem visible with generous margin, softly lit from upper left and a simple dark cast shadow. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-006.jpg"
+    },
+    {
+      "lessonID": 8,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single transparent amber glass bottle with a slender neck, sloping shoulders, and broad simple cylindrical body, centered on a warm gray tabletop. Entire bottle visible, neutral backdrop, gentle window light and readable width-to-height proportion. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-008.jpg"
+    },
+    {
+      "lessonID": 9,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Ochre linen draped over two low uneven blocks, forming a silhouette of five distinct angular peaks and valleys. Large folds with clear slopes, neutral pale background, strong but soft side light. No detailed weave dominating the composition. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-009.jpg"
+    },
+    {
+      "lessonID": 10,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One large split monstera leaf on pale drawing paper printed with a faint regular square grid, full leaf and stem visible, overhead botanical still life, subtle shadows, muted natural green. No writing, numbers, or labels. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-010.jpg"
+    },
+    {
+      "lessonID": 11,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Five small matte paper squares laid in a clean horizontal row on warm ivory paper, progressing from near-white through pale gray, medium gray, dark gray to charcoal black. Each square clearly different in lightness, simple softly lit material study, no labels or numerals. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-011.jpg"
+    },
+    {
+      "lessonID": 14,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. An empty minimalist artist's room viewed straight toward a rectangular back wall, white plaster walls, bare oak floor, one simple window in the left wall. Coherent one-point perspective, level camera, clear floor-wall-ceiling edges and soft daylight, no furniture. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-014.jpg"
+    },
+    {
+      "lessonID": 15,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One plain galvanized steel cylindrical tin, without branding or lid, standing below eye level on a warm gray tabletop. Entire cylinder visible, clear upper rim ellipse, gently rounded ends, natural soft window light and simple cast shadow. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-015.jpg"
+    },
+    {
+      "lessonID": 16,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A fresh rosemary sprig with an irregular gently curving central stem and narrow branching leaves, on pale parchment. Botanical macro reference with the whole sprig uncropped and legible gaps, subtle gray-green tones and soft side shadows. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-016.jpg"
+    },
+    {
+      "lessonID": 17,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One plain wooden articulated artist's mannequin in a balanced stepping pose with a gentle torso lean, one leg supporting the body and one arm reaching forward. All limbs visible and correctly attached, warm neutral background, soft side lighting, no display stand through the body. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-017.jpg"
+    },
+    {
+      "lessonID": 18,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A small ivory cup, one orange, and a closed plain dark sketchbook arranged asymmetrically on warm gray stone with generous empty space to the right. Clear overlap and one focal area, soft morning light, an elegant simple composition study. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-018.jpg"
+    },
+    {
+      "lessonID": 19,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single white daisy with a yellow central disk, eight to twelve irregular natural petals, and a long curved green stem with two small leaves, lying diagonally on pale gray paper. Entire flower visible, clean simple structure and calm lighting. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-019.jpg"
+    },
+    {
+      "lessonID": 22,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One fresh maple leaf, its broad lobed envelope clearly visible, placed diagonally on muted blue-gray paper. Entire leaf and short stem visible, natural asymmetry and readable widest point, soft window light, no other objects. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-022.jpg"
+    },
+    {
+      "lessonID": 23,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single airy eucalyptus branch with six separated rounded leaves, varied spacing and tilt, laid across warm ivory paper. Distinct triangular and narrow negative gaps between the leaf pairs, entire branch visible, gentle side shadows. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-023.jpg"
+    },
+    {
+      "lessonID": 24,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A glossy magnolia leaf bent gently along its central vein and viewed obliquely so one half is foreshortened, beside a second flatter leaf. Whole leaves visible, warm gray matte background, readable changing widths and subtle natural light. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-024.jpg"
+    },
+    {
+      "lessonID": 25,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One green fig leaf tilted over a pale stone tabletop, softly side-lit to reveal a central vein and curved light and shadow areas. Whole leaf visible, broad coherent surfaces, small veins subordinate to the large form. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-025.jpg"
+    },
+    {
+      "lessonID": 27,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One pale blush peony flower with an open center and layered overlapping petals, viewed three-quarter against a quiet gray-green background. Entire flower head visible with breathing room, clear front and rear petal junctions, soft side light. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-027.jpg"
+    },
+    {
+      "lessonID": 28,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A clear plain cylindrical glass half filled with water holding three slender yellow wildflower stems. The rim, water boundary and displaced stem segments are all visibly distinct. Warm gray tabletop, quiet dark olive background, gentle window light, whole glass and stems visible. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-028.jpg"
+    },
+    {
+      "lessonID": 29,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A loose white anemone bouquet in a simple dark ceramic vase, against a deep warm gray wall. Bright petals, middle-value stems and compact dark gaps form a clear three-value composition. Entire bouquet and vase visible, restrained side light. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-029.jpg"
+    },
+    {
+      "lessonID": 30,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A small basil plant with several irregular branching stems, broad leaves and one small new growth cluster, in a plain ivory pot on pale stone. Full plant visible, generous empty background and legible growth directions, beautiful botanical study. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-030.jpg"
+    },
+    {
+      "lessonID": 32,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One small ivory cup, a tall brown glass bottle and a single red apple arranged side by side on a pale tabletop. Entire objects visible, clear gaps and easy relative height comparison, soft window light and a neutral gray wall. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-032.jpg"
+    },
+    {
+      "lessonID": 33,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Two small pears and a plain white cup on a bare pale oak surface, lit by a single lamp from high left. Deliberately long readable cast shadows all extend toward lower right, compact dark contact shadows, entire arrangement uncropped and no cloth. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-033.jpg"
+    },
+    {
+      "lessonID": 34,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A pale white porcelain pear resting on rumpled ivory cloth against a pale warm wall. Similar light values gently merge along part of the contour while one edge stays distinct. Soft diffuse side light, entire pear visible and generous quiet space. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-034.jpg"
+    },
+    {
+      "lessonID": 35,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A dusty mauve linen napkin draped across a closed plain cream book, with three large folds and one overlapping edge. Neutral warm gray background, clear ridges and valleys, natural window light, no lettering on book. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-035.jpg"
+    },
+    {
+      "lessonID": 37,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single handmade rusty red ceramic mug with a wide asymmetric handle, photographed so the opening inside the handle is fully visible. Entire object uncropped, warm ivory background, side-lit to show changing handle thickness and its attachment to the mug. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-037.jpg"
+    },
+    {
+      "lessonID": 38,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A deep ivory ceramic bowl with a substantial rounded rim, viewed from above at a gentle angle so inner and outer surfaces are both visible. Empty bowl on muted slate-gray stone, side light defines rim thickness, whole object visible. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-038.jpg"
+    },
+    {
+      "lessonID": 39,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A glazed deep green ceramic jug next to a small matte off-white cup on warm linen. One compact window reflection on the jug contrasts with the cup's broad soft light. Entire objects visible, quiet putty wall and restrained natural color. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-039.jpg"
+    },
+    {
+      "lessonID": 40,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One lemon, a small pale earthenware jug and a charcoal bowl on muted blue linen, arranged with a deliberately spacious gap to one side. Whole still life visible, one soft window light direction, calm editorial composition and clean silhouettes. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-040.jpg"
+    },
+    {
+      "lessonID": 42,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A pink-lipped conch shell resting upright with its elongated aperture facing the viewer, on pale warm gray paper. Whole shell visible, distinct opening silhouette and visible inner lip, directional daylight revealing depth without turning the opening solid black. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-042.jpg"
+    },
+    {
+      "lessonID": 43,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single broad scallop shell with pronounced radial ridges, leaning slightly on pale sand-colored stone. Whole shell visible, ridges turn with its curved surface and disappear around its far side, soft raking daylight, quiet neutral background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-043.jpg"
+    },
+    {
+      "lessonID": 44,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One pale cowrie shell tilted to show its narrow aperture and the thin turning lip around it, against matte sage-gray paper. Whole shell visible, clear distinction between outer rounded surface and inner recess, gentle controlled side light. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-044.jpg"
+    },
+    {
+      "lessonID": 45,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A small brown-and-ivory spiral snail shell seen from a three-quarter angle, resting on muted blue paper. Whole shell visible, center offset toward the top right, broad outer sweep and clear opening, quiet light from upper left. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-045.jpg"
+    },
+    {
+      "lessonID": 47,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Three smooth river pebbles arranged in a small overlapping group: a flat slate stone nearest, a pale oval behind it, and a small ochre pebble partly hidden. Clear interrupted contours and compact contact shadows, warm ivory paper, top-down three-quarter view. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-047.jpg"
+    },
+    {
+      "lessonID": 48,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One charcoal-black basalt pebble beside a chalk-white marble pebble of similar size, both fully visible under the same soft upper-left light. Warm gray tabletop, each stone has visible light and shadow while retaining its different local value. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-048.jpg"
+    },
+    {
+      "lessonID": 49,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One rough gray granite stone with a small crystalline textured patch and a broad quieter worn surface, whole stone visible against matte warm paper. Side light reveals three rounded planes, texture strongest near one turning edge, not an extreme macro crop. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-049.jpg"
+    },
+    {
+      "lessonID": 50,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A small natural-history arrangement of one acorn, one gray river pebble, and one short brown bird feather on pale handmade paper. Clearly separated whole objects, realistic relative scale, soft side shadows, generous clean margins. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-050.jpg"
+    },
+    {
+      "lessonID": 52,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Three layers of rolling hills at dawn, nearest hillside dark olive, middle hills muted gray-green, far hills pale blue in light haze. Wide calm landscape, clear overlapping silhouettes, a little foreground grass and a broad quiet sky. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-052.jpg"
+    },
+    {
+      "lessonID": 53,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single windswept pine growing from a rocky ridge, whole trunk and crown visible against a pale overcast sky. Clear irregular foliage groups with open sky wedges between branches, believable rooted balance and restrained green-gray color. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-053.jpg"
+    },
+    {
+      "lessonID": 54,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A still stretch of river reflecting a willow tree and a pale stone bank, with a few gentle horizontal ripples breaking the reflection. Calm wide landscape, whole reflected masses visible, soft autumn morning light, no people or buildings. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-054.jpg"
+    },
+    {
+      "lessonID": 55,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Large angular foreground rocks beside a mountain lake with a small dark middle-distance shore and very distant soft blue-gray ridges. Clear plane changes in the near rocks, reduced far detail, coherent scale and quiet natural daylight. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-055.jpg"
+    },
+    {
+      "lessonID": 57,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A low rocky coastal headland seen as a simple silhouette against a broad pearly sky, with a narrow band of blue-green water below. Spacious composition with distinctive wedge-shaped negative sky above the land, soft overcast light and level horizon. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-057.jpg"
+    },
+    {
+      "lessonID": 58,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Soft low clouds passing over a firm dark coastal cliff and a pale calm sea, broad cloud value transitions contrast with one crisp rock silhouette. Quiet cool-gray atmosphere, wide landscape with very little texture and no dramatic fantasy weather. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-058.jpg"
+    },
+    {
+      "lessonID": 59,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A still garden pond surface with broad soft reflections and only a few short horizontal ripple accents, one simple bank edge and two near reeds. Quiet muted sage and blue-gray colors, spacious minimal landscape, realistic water plane and gentle morning light. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-059.jpg"
+    },
+    {
+      "lessonID": 60,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A quiet rural valley with a winding dirt path passing a near olive tree toward a small distant hill, warm late afternoon light and broad empty sky. Clear foreground, middle ground, and background; calm personal landscape composition, no buildings or people. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-060.jpg"
+    },
+    {
+      "lessonID": 62,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. An old terracotta tile floor receding toward a plain warm plaster wall and a narrow doorway, low level camera, clear perspective rays and tile rows progressively compressing with distance. Natural side light, simple coherent one-point geometry, no furniture. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-062.jpg"
+    },
+    {
+      "lessonID": 63,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Three nested rectangular doorways in a quiet modern white gallery corridor, centered level viewpoint, straight verticals and coherent one-point perspective. Soft gray floor, broad quiet wall planes, no artwork, labels, people, or signs. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-063.jpg"
+    },
+    {
+      "lessonID": 64,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One tall side window casting a soft trapezoidal patch of morning light across a bare pale oak floor and warm plaster wall. Clear wall-floor boundary and believable perspective, mostly empty interior, quiet natural tones and no furniture. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-064.jpg"
+    },
+    {
+      "lessonID": 65,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. An empty small attic room with a sloping ceiling, two pale plaster walls, bare wooden floor and one small far window. Level camera, clean enclosing planes, soft diffuse daylight, simple coherent depth and no surface decoration or furniture. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-065.jpg"
+    },
+    {
+      "lessonID": 67,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Two worn pale stone steps seen from a gentle three-quarter angle, top front and side planes clearly visible with compact shadows beneath their edges. Warm gray plaster wall, entire steps visible, natural afternoon light and minimal surface cracks. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-067.jpg"
+    },
+    {
+      "lessonID": 68,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A broad warm ochre plaster wall with a few irregular softly edged weathered patches beside the partial vertical edge of a muted green wooden doorway. Quiet continuous plane, subtle side light, most of the wall unmarked, no graffiti or writing. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-068.jpg"
+    },
+    {
+      "lessonID": 69,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A simple terracotta flowerpot with a clear elliptical rim, containing one sparse young olive sapling, beside a low pale stone step. Entire pot and plant visible, tapered cylindrical form and clear contact shadow, warm quiet wall background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-069.jpg"
+    },
+    {
+      "lessonID": 70,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A small faded blue arched wooden window set in pale plaster above a shallow stone sill and one simple terracotta pot. Slight three-quarter view, whole architectural vignette visible, restrained weathering, natural side light, no numbers or text. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-070.jpg"
+    },
+    {
+      "lessonID": 72,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A fictional adult man around thirty with short curly dark hair and a simple dark shirt, head and shoulders visible, face turned gently three-quarter toward the right. Natural proportions and asymmetry, clear brow nose mouth center direction, soft side light and neutral warm gray backdrop. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-072.jpg"
+    },
+    {
+      "lessonID": 73,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A fictional adult woman around fifty with short silver-brown hair, head and shoulders visible, gently turned three-quarter so near and far eye widths differ naturally. Calm expression, believable eye alignment and nose bridge, soft window light, plain dark clothing and warm gray background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-073.jpg"
+    },
+    {
+      "lessonID": 74,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A fictional adult man's head in a gentle three-quarter view, medium brown skin, cropped short hair, no beard, soft side light making the nose bridge, side and underside planes readable. Whole head and neck visible, natural realistic anatomy, no glamour retouching, neutral olive-gray background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-074.jpg"
+    },
+    {
+      "lessonID": 75,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A fictional older adult woman with loosely tied gray hair and a simple charcoal shirt, whole head and shoulders visible. Strong soft window light divides the face into a connected shadow family and a broad light family, understated warm gray background and thoughtful neutral expression. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-075.jpg"
+    },
+    {
+      "lessonID": 77,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One anatomically correct adult right hand with five digits gently spread and curved, palm facing diagonally toward the viewer, wrist included. Clear unequal finger lengths and different gestures, no second hand, natural side light, warm matte gray background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-077.jpg"
+    },
+    {
+      "lessonID": 78,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One anatomically correct adult left hand seen from the back, fingers gently curled without making a tight fist, all five digits clearly accounted for, knuckles arranged on a natural arc and wrist included. Soft upper-left light, neutral warm gray background, no jewelry. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-078.jpg"
+    },
+    {
+      "lessonID": 79,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. One anatomically correct adult hand resting lightly on a pale wooden tabletop with fingers relaxed and separated by narrow visible gaps. Whole hand and wrist visible, realistic contact shadows between fingers and palm, soft side light and no other objects. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-079.jpg"
+    },
+    {
+      "lessonID": 80,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Two anatomically correct adult hands resting gently together in a loose open gesture on gray linen, exactly five fingers on each hand with natural partial overlaps, no extra digits or fused fingers. Wrists included, broad soft side light, quiet warm gray background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-080.jpg"
+    },
+    {
+      "lessonID": 82,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single wood pigeon in side profile standing on a simple pale stone ledge, whole bird visible, one naturally folded wing clearly outlined against the rounded torso, normal tail and two legs, quiet soft olive background and gentle daylight. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-082.jpg"
+    },
+    {
+      "lessonID": 83,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single kingfisher in profile perched on a plain branch, whole bird visible, long straight beak and eye placement clearly readable within the head silhouette, anatomically natural body and two feet, muted blue-green background and soft natural light. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-083.jpg"
+    },
+    {
+      "lessonID": 84,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single small house sparrow perched on a moderately thick branch, whole body and both feet visible, natural toe arrangement wrapping the branch with clear support contacts, quiet gray-green background, soft side light and realistic anatomy. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-084.jpg"
+    },
+    {
+      "lessonID": 85,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A single starling in a calm three-quarter standing pose, whole body visible, folded wings and breast show directional feather groups with quiet light areas between them. Soft subdued iridescence without exaggerated fantasy color, simple warm gray background and natural daylight. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-085.jpg"
+    },
+    {
+      "lessonID": 87,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A relaxed Siamese cat's head and shoulders in a gentle three-quarter view, full ears and muzzle visible, natural head proportions and differently visible ear shapes, quiet blue-gray background, soft side light, realistic eyes and no collar. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-087.jpg"
+    },
+    {
+      "lessonID": 88,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. An orange tabby cat resting on a pale linen cushion, whole curled body and head visible, fur direction changes naturally across cheek shoulder and flank, no exaggerated tufts. Gentle upper-left window light, broad quiet background and anatomically believable pose. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-088.jpg"
+    },
+    {
+      "lessonID": 89,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A black-and-white cat curled comfortably on a soft ochre cushion, whole animal including tail visible, cushion visibly compresses under its body with small compact contact shadows. Soft diffuse natural light, quiet warm gray setting, believable relaxed anatomy. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-089.jpg"
+    },
+    {
+      "lessonID": 90,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A calm small brown dog resting with its chin slightly raised and head tilted thoughtfully, whole body and visible paws included on pale linen. Clear silhouette and support contacts, natural anatomy and expression without caricature, soft window light and quiet neutral background. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-090.jpg"
+    },
+    {
+      "lessonID": 92,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. An airy ivy plant climbing across a pale plaster wall with broad empty wall areas and several clear irregular gaps between foliage clusters. Entire small growth area visible, gentle natural side light and restrained green, no doorway, text or pots. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-092.jpg"
+    },
+    {
+      "lessonID": 93,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. Three plain terracotta pots of clearly different heights and widths arranged on limestone paving, one slight overlap and varied gaps, all empty with visible elliptical openings. A pale plaster wall behind them, gentle natural side light and believable shared ground plane. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-093.jpg"
+    },
+    {
+      "lessonID": 94,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A simple cobbled path crossing a quiet small courtyard toward a distant plain doorway, foreground paving intervals clearly larger and receding toward the background. One small plant at the side, warm natural morning light, coherent level perspective and no signs. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-094.jpg"
+    },
+    {
+      "lessonID": 95,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A quiet courtyard corner with a muted blue plaster wall, warm terracotta pots, green foliage and pale stone paving, colors chosen so some different hues share similar lightness. Whole simple arrangement visible, soft side light and no people or writing. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-095.jpg"
+    },
+    {
+      "lessonID": 97,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A plain dark blue city bicycle parked side-on against a pale gray wall, full wheels and diamond frame visible. Clear mechanically plausible triangular frame gaps, straight fork, seat and handlebars correctly connected, minimal extra accessories, soft morning light and no branding. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-097.jpg"
+    },
+    {
+      "lessonID": 98,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A close but uncropped view of a single vintage bicycle's front wheel, fork, handlebar and part of its main frame, visible spokes interrupted correctly by nearer frame parts, credible mechanical construction. Warm ivory plaster backdrop, natural side light, no extra wheels or lettering. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-098.jpg"
+    },
+    {
+      "lessonID": 99,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A small cream city bicycle parked beside a quiet doorway on a stone lane, whole bicycle and its contact with the ground visible, generous empty wall and surrounding place. Coherent mechanical structure, soft early morning light, no people, store signs or lettering. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-099.jpg"
+    },
+    {
+      "lessonID": 100,
+      "prompt": "Use case: photorealistic-natural. Asset type: unique offline lesson reference for a drawing-learning app, landscape 4:3 composition. A final personal-study still life: one ripe ochre pear, a simple white vase with a single long green branch, and a closed charcoal sketchbook on a worn wooden table beside a window. Deliberate spacious crop, clear shared light and shadow, beautiful tactile surfaces and no text. Exceptionally beautiful fine-art editorial photograph with realistic natural proportions, legible silhouettes, clear light and shadow and a calm uncluttered background. This is one distinct reference image, not a collage or an app mockup. No text, lettering, labels, watermark, logos, borders or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-100.jpg"
+    }
+  ],
+  "sourcePNGs": [
+    {
+      "lessonID": 1,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-001.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-cadaed4a-deff-46ae-beba-1b43d34315a7.png"
+    },
+    {
+      "lessonID": 2,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-002.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-e6156fe9-5d7b-4130-9c8c-63e76182c2a6.png"
+    },
+    {
+      "lessonID": 3,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-003.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-8f1a1480-2296-4791-ad47-8f65cce72436.png"
+    },
+    {
+      "lessonID": 4,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-004.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-1f06261d-1ffd-4863-ab95-3b7a191aca91.png"
+    },
+    {
+      "lessonID": 5,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-005.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-81047cf5-47b9-4e6b-a90d-5479176f98e0.png"
+    },
+    {
+      "lessonID": 6,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-006.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-e253acd0-6cb8-4e4b-a80b-ad8dd968cb6b.png"
+    },
+    {
+      "lessonID": 8,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-008.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-f94b3c2a-00a9-4456-81f1-25985809fc06.png"
+    },
+    {
+      "lessonID": 9,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-009.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-7c5c9dab-04a3-4d89-bfca-021d44190279.png"
+    },
+    {
+      "lessonID": 10,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-010.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-b47d2855-d4e8-437c-9774-41cae90f777d.png"
+    },
+    {
+      "lessonID": 11,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-011.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-fbe17755-9e3b-4b3e-87e8-d0910b3b4571.png"
+    },
+    {
+      "lessonID": 14,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-014.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-a8c0b472-29e8-4f54-9b50-098be7de8e44.png"
+    },
+    {
+      "lessonID": 15,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-015.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-0d5353c5-6f82-4660-836f-f5ec731e031c.png"
+    },
+    {
+      "lessonID": 16,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-016.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-99307af5-beba-423e-a391-39cb2f885b58.png"
+    },
+    {
+      "lessonID": 17,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-017.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-0a1e13d1-ec5e-4ae2-a113-459e2b62558a.png"
+    },
+    {
+      "lessonID": 18,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-018.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-f30f3614-e976-4d5c-b006-a54c97af53f9.png"
+    },
+    {
+      "lessonID": 19,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-019.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-447c343c-20d3-45da-9105-9140d5b410e6.png"
+    },
+    {
+      "lessonID": 22,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-022.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-a4d05b6a-9dea-4097-b7d0-9db38272580c.png"
+    },
+    {
+      "lessonID": 23,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-023.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-9bc09028-ee27-4cac-ba10-283305861a99.png"
+    },
+    {
+      "lessonID": 24,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-024.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-13bb95a2-bd34-41f2-933b-4cd626b04396.png"
+    },
+    {
+      "lessonID": 25,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-025.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-2a7ea058-5b83-4a08-ab6f-069b2e7f4b87.png"
+    },
+    {
+      "lessonID": 27,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-027.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-837e269f-0e19-43a7-b1a0-b71555fa0818.png"
+    },
+    {
+      "lessonID": 28,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-028.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-75e44da2-bae8-4575-b446-e9abee171818.png"
+    },
+    {
+      "lessonID": 29,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-029.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-0b5e1600-d596-4745-8b48-184907d12f92.png"
+    },
+    {
+      "lessonID": 30,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-030.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-64941610-b73e-4443-887b-6c0dd10b0cde.png"
+    },
+    {
+      "lessonID": 32,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-032.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-b934d3fd-22cd-4023-94e8-5f6434e7d584.png"
+    },
+    {
+      "lessonID": 33,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-033.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-3c2f08ec-1cef-44bc-88bc-ef2e63c0e103.png"
+    },
+    {
+      "lessonID": 34,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-034.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-9d1fe93c-612f-49a9-86ed-128b7ce9d08d.png"
+    },
+    {
+      "lessonID": 35,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-035.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-a16bffc0-ff86-4046-952e-6d38d1febf57.png"
+    },
+    {
+      "lessonID": 37,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-037.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-95e21e58-ba74-4073-90ed-4ae8ccd23572.png"
+    },
+    {
+      "lessonID": 38,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-038.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-20d328c2-9342-4f0a-be72-48ab5d06551e.png"
+    },
+    {
+      "lessonID": 39,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-039.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-477f35a7-f040-46e6-811a-d2a03162120e.png"
+    },
+    {
+      "lessonID": 40,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-040.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-69979d92-a27f-40a4-bb92-3a5781c79ace.png"
+    },
+    {
+      "lessonID": 42,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-042.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-53cec717-5107-4d6f-b2b9-feb8f99da166.png"
+    },
+    {
+      "lessonID": 43,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-043.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-6a62d739-9e97-42bb-b065-82c6e72e4d14.png"
+    },
+    {
+      "lessonID": 44,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-044.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-b047bd7a-aa91-42ef-a773-712440dbc1e6.png"
+    },
+    {
+      "lessonID": 45,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-045.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-95dde6b6-213d-453e-9130-f36454b0fcd0.png"
+    },
+    {
+      "lessonID": 47,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-047.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-9f61fed1-2acb-46b3-83a8-e13026398c67.png"
+    },
+    {
+      "lessonID": 48,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-048.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-f681734f-fb93-4578-bbd5-98ca844afbf7.png"
+    },
+    {
+      "lessonID": 49,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-049.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-e3ea4e4c-6910-42e3-8cb6-da4f26f5be9f.png"
+    },
+    {
+      "lessonID": 50,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-050.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-43ac3839-dc35-4546-9f8d-1e347e2e687f.png"
+    },
+    {
+      "lessonID": 52,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-052.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-ed45dfdb-fb52-4f14-926e-4ae5ebc1b5c1.png"
+    },
+    {
+      "lessonID": 53,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-053.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-4dbfa1a1-2425-429f-8a65-956aa64b4998.png"
+    },
+    {
+      "lessonID": 54,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-054.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-d9b09fe2-2c5f-4948-9a6b-3e95dcb10781.png"
+    },
+    {
+      "lessonID": 55,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-055.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-9338a8eb-19f8-4200-9e50-af7e0c77d421.png"
+    },
+    {
+      "lessonID": 57,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-057.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-c29d683a-82e7-4f37-a029-cb40a6e22eb8.png"
+    },
+    {
+      "lessonID": 58,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-058.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-3f58e7a9-e6d2-4578-85df-4b72222518e7.png"
+    },
+    {
+      "lessonID": 59,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-059.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-8acf3bd6-a3b6-41f8-9207-0cd43ec75e80.png"
+    },
+    {
+      "lessonID": 60,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-060.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-15e6da0e-b68f-41d0-86c8-a77fa1bc8c84.png"
+    },
+    {
+      "lessonID": 62,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-062.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-eea296e4-2298-4b53-96dd-b06670e3fc81.png"
+    },
+    {
+      "lessonID": 63,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-063.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-48dead04-d349-4eba-8869-1ac06d6988ee.png"
+    },
+    {
+      "lessonID": 64,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-064.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-db6ecb01-a4ba-4c14-83b7-c05746682466.png"
+    },
+    {
+      "lessonID": 65,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-065.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-42cf1114-9ac0-4b47-95c4-aa727ac57bc2.png"
+    },
+    {
+      "lessonID": 67,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-067.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-ebac3e43-78a7-4c9f-b78e-da9212fe5f3d.png"
+    },
+    {
+      "lessonID": 68,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-068.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-00ad246a-96de-4d16-ac74-e8d47c61a187.png"
+    },
+    {
+      "lessonID": 69,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-069.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-bed8c324-df55-4f8a-a39e-b03786d2d4f9.png"
+    },
+    {
+      "lessonID": 70,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-070.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-5e723b1c-3610-43ff-9170-79f56140e8a1.png"
+    },
+    {
+      "lessonID": 72,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-072.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-310ddcb6-65df-494d-969f-ac7b2cb3ea10.png"
+    },
+    {
+      "lessonID": 73,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-073.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-df4e5c63-0682-41dc-bfcc-6bd9af5989bc.png"
+    },
+    {
+      "lessonID": 74,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-074.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-42e25434-9a2a-4eae-9c6e-5452d00e5eb5.png"
+    },
+    {
+      "lessonID": 75,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-075.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-6843450f-0feb-4ffe-baa0-abf4b8fe556b.png"
+    },
+    {
+      "lessonID": 77,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-077.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-a9c88cc5-d566-40e6-8fec-cd9f3b9a82e7.png"
+    },
+    {
+      "lessonID": 78,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-078.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-f566b6cc-3b8f-485d-ba4d-54c607736b23.png"
+    },
+    {
+      "lessonID": 79,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-079.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-bf34f43c-9ad5-4275-9c46-fe95f5351fa7.png"
+    },
+    {
+      "lessonID": 80,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-080.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-76a0af92-d1e2-420b-927c-aac85143ac90.png"
+    },
+    {
+      "lessonID": 82,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-082.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-374c8d3d-3c7b-4ff7-afe0-4af4c8e8b45a.png"
+    },
+    {
+      "lessonID": 83,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-083.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-37b85454-f440-4c1f-abc7-f45c65c2076d.png"
+    },
+    {
+      "lessonID": 84,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-084.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-75ee3cdb-29b3-4960-a685-72d9f7def7e8.png"
+    },
+    {
+      "lessonID": 85,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-085.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-7c20180d-9c1e-4a3e-8f4a-6928d6b480d6.png"
+    },
+    {
+      "lessonID": 87,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-087.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-26bac54f-1769-4aca-a3bc-ea070c501d55.png"
+    },
+    {
+      "lessonID": 88,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-088.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-63965ce2-2e45-496b-9d02-17946c831ac9.png"
+    },
+    {
+      "lessonID": 89,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-089.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-a74d89c7-7e7e-4768-82a2-7ede29887e3c.png"
+    },
+    {
+      "lessonID": 90,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-090.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-f80e20c8-8d7d-4951-98a1-68dd1c55d64c.png"
+    },
+    {
+      "lessonID": 92,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-092.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-f97cb5c5-2163-4b17-9aff-856a071b3649.png"
+    },
+    {
+      "lessonID": 93,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-093.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-5beaff28-465b-420d-abb0-ef113c44cbcc.png"
+    },
+    {
+      "lessonID": 94,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-094.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-2f8bd0f1-5f3c-4c52-8101-a2d9184e6d1b.png"
+    },
+    {
+      "lessonID": 95,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-095.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-6ff7af7e-add5-423d-8859-557c81e5d136.png"
+    },
+    {
+      "lessonID": 97,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-097.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-208f0df9-fb01-4c18-bfa4-23edd8a86b80.png"
+    },
+    {
+      "lessonID": 98,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-098.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-70b88101-f2c1-4581-91e0-2ffab8862490.png"
+    },
+    {
+      "lessonID": 99,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-099.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-71b2194e-8a26-4ff8-9812-70b2b7765ad6.png"
+    },
+    {
+      "lessonID": 100,
+      "asset": "DrawThrough/Resources/CourseReferences/Lesson-100.jpg",
+      "path": "/Users/oanarinaldi/.codex/generated_images/01a145ff-577e-7052-9286-08928d5e8618/exec-25a8da50-10a1-4644-8eb0-f3e1debdc807.png"
+    }
+  ],
+  "bundledAssetSHA256": {
+    "Lesson-001.jpg": "8e1a43324f7542fa36bbba0b5aec547b7abc97a37cf858383b37283e16105879",
+    "Lesson-002.jpg": "ea96587993122f9205eb62f89b82bcaea56907062bd7ba0da744bc02015024e8",
+    "Lesson-003.jpg": "a7d1e99ade4d3365f6301353147bcd856475804af5b78cb21d6ebd6111f832b9",
+    "Lesson-004.jpg": "fe5041d52f7a1abc43553d7cc445f288883ebdb626a2a064a7d017ab48eb64ac",
+    "Lesson-005.jpg": "5980d4b17ac15bf2bec92f50fca95fcdf628922e3caa728229d7f8ff9c2b7929",
+    "Lesson-006.jpg": "54986d971349119dd79f01ec07b9a24ea8329bb5a122ed4294914ce73f43edf4",
+    "Lesson-007.jpg": "02b5323530c2c2ee531d111010ba7bd949e7ded2e33cb7d2f9ab1bba9556942c",
+    "Lesson-008.jpg": "f8762dfbadf018d74cc5cd44955ce075f2514d3878f254cde9f72e518b59f456",
+    "Lesson-009.jpg": "e26bed053ced0e5401f02d6f0706fcc0417b28d2cb59c5aeb855f1013c02e1df",
+    "Lesson-010.jpg": "35253326014fb3e747ce45bc95fbdcfffbd5139671782e9e4a33430ba82ce1fe",
+    "Lesson-011.jpg": "83d9d5e624c76e475db34c7738d4b6e3aa188148600b61607e46d641a41a9b47",
+    "Lesson-012.jpg": "027f46168fe67c8ef73e1f9bed58c5220a11bf2272ede10fa7eea206f3434ac8",
+    "Lesson-013.jpg": "3c284b48a2327ef21a7da4880560e04224f20bf5e0f75eec4c1f627ef0e597c1",
+    "Lesson-014.jpg": "34b604ccc0560726e73522fdfb444e6e4bf072c3e096d75d49b160492cffaefd",
+    "Lesson-015.jpg": "40c046a01933e921895d7c528c642aa392772e436d99ec6de93374928c82b928",
+    "Lesson-016.jpg": "9a4dcdaee87359a6d5d83ab13b94ea40acceb3de7a9d25e1748937f5bf218c92",
+    "Lesson-017.jpg": "9be5384282fcfc0bafea6058bced31479dcc9f87b74116c472f8286a9f0df063",
+    "Lesson-018.jpg": "29a9ac55ab76f572c5b19280d08a3fa71cb11839f46e7022facef9810a7f0eb3",
+    "Lesson-019.jpg": "9a95c77e2bbc41af18fbee7c7c653ad0707bd9bf6f34cd1b7f7fbbe841f529ca",
+    "Lesson-020.jpg": "ee1eebc621f6015b7da3bb1e99e2aebe7b4aa20623dc898a80b987ce925662c2",
+    "Lesson-021.jpg": "4ec93ed044ccd42af9b097144a25a04f90c59fea8a71fbf088a21c6bbc617fe6",
+    "Lesson-022.jpg": "d11695dc5fb8c32b0fbc269768ce8e3be9e96c1ad26e9563ae7a0677d2cdba8e",
+    "Lesson-023.jpg": "2d02b7db36fe2ad7f8cb022bc6dc811dc5e930fda100ef8fe969088ac749d798",
+    "Lesson-024.jpg": "65a5870f0fddde5514f8e3dcfffadee978e3e7ce5a7bc49b551b615ac94fda63",
+    "Lesson-025.jpg": "e8bf9c6398b2bb354ae51436faa5be6eef4950c491872eb5993a55857591b2d5",
+    "Lesson-026.jpg": "50b87d786c412f7f4f2bc7ced37a6a33cfafc89c0a4c45e6c4a5da777aca79d8",
+    "Lesson-027.jpg": "c87eaad16c7a9ad1637e6ea86ec16f2caf36342665d43a7181fff586bfd4e12f",
+    "Lesson-028.jpg": "0096ee93a109e3f6d667286935ab05974ead28361def01cf1d52d52a8cd0e062",
+    "Lesson-029.jpg": "341b76d8ea8fea273c766168bc060c143509036e2bd1edb158c076145ce91b47",
+    "Lesson-030.jpg": "2003efa69c720ad7c16276a2554d425e212a6e490a0a3b993abd0fd3e2116fb9",
+    "Lesson-031.jpg": "8062498ef2c62c4a38009eded7859142d9516046b109471fc098fbade3e09cd5",
+    "Lesson-032.jpg": "a384376eec8175f7ffdf348a6ee1999a74e11e48d22f34315f44275f423df936",
+    "Lesson-033.jpg": "5d5a7d0e006f9e38abf7b0f5fe760060b82024f7865b225a00a41295af29d0af",
+    "Lesson-034.jpg": "90d14e2cd80e9f8b83637aa9cbbe20514e3313f598bf3c90686c08c256c8e76f",
+    "Lesson-035.jpg": "bf5aa33ecbe61a7fe183ae8e5a94d2f9419ca8af0b3ef87075eed7b371ec2071",
+    "Lesson-036.jpg": "6933a698a00ade64549ce78a5cd7aa5afb01a1149de6cf57c60906c9d64981a0",
+    "Lesson-037.jpg": "703cde4837dc4112e091ca52967975723c496cb8b606d861ff19b0952f76baef",
+    "Lesson-038.jpg": "ea00dcce5617728ff072f440be5215f94a9b89767785a9d8c96ecc5423f5e57e",
+    "Lesson-039.jpg": "e14a65870caef539fadaffabb93a4292b0eb7ebbb3542ae8ed953a7e84898c89",
+    "Lesson-040.jpg": "a0bbc94e18441de39c60e383907d46484d23306ec61c7d7f03fcad5efc3e0586",
+    "Lesson-041.jpg": "40f3002426741207e56b4c84eb9799f55cc6f702bfe7bf5d88324c5f97e453cc",
+    "Lesson-042.jpg": "b9dcee1f0c50adaa5f7e9bb2e91096b16b4a6fe45e1706380d944647e21921c1",
+    "Lesson-043.jpg": "679ad9babb7dfccfd4c505e63445765ffbe687daedbdedf5352db690cd36afd6",
+    "Lesson-044.jpg": "a1601f01ef123eb3178cb86e9b522def65c7f3dc920174e143b9fbe7dbb2621f",
+    "Lesson-045.jpg": "d13dc2e38d4edc0b360e0dfe54dcb1fc39afe20f6201637d5fdbb2ea3cf248db",
+    "Lesson-046.jpg": "d78bc8ae56dfbdc7818280089a63d785de5dcfb4ce7053029292cbca404d299e",
+    "Lesson-047.jpg": "da05e8e2c70787807a7f9128f824ab2451a2d44932de4314744ae52abc3bd6db",
+    "Lesson-048.jpg": "f6598bda7371dcce59ed1817a51f758ab87d31e3bd85b6597bb5667bcbeee395",
+    "Lesson-049.jpg": "be5112de8bc3e6f0cd080031ce2e4f3d1b0ba24a2db917d683b68d3c0a71560f",
+    "Lesson-050.jpg": "9a46dac9bc41c6e2a50f8e3183ff31d331213c9fe13b133a974747ba656561b0",
+    "Lesson-051.jpg": "b7d4853ffd11afd2403cf43b98aaeaa1cea6d0b75ea598416df50b7c72ca6a4e",
+    "Lesson-052.jpg": "0acf7589b62c82845bcd0f425e60f7e8bdfb22601e35151517ca8cbebc40e825",
+    "Lesson-053.jpg": "808160dc01542affa647de7357eee18c172519b344db3888714b6c4f8a1eaf3b",
+    "Lesson-054.jpg": "9db3682b1d3499e600495601e66ec9f9a385a3e657d3fc33665f04ad8f3015c8",
+    "Lesson-055.jpg": "608345c57f7473f39237ea13e6d9fa96d11f79d5a88b56612a43ce43574d30ba",
+    "Lesson-056.jpg": "ac0fe46abda6f860fbcae352089c7536955d297f995ceb6db93a7719037ea789",
+    "Lesson-057.jpg": "0fee09a40e0c9f1120648fc80e453f6241a7987243122cacfea090ac27088abb",
+    "Lesson-058.jpg": "6d24a34bbedf3b427b94f4f453ba5058aa99085580c076bdbc04eb90c3ff2328",
+    "Lesson-059.jpg": "73e500f260a4fceccb5a236b19fb505bd619c55bf106c6199f59d85b5207eef3",
+    "Lesson-060.jpg": "01d22596b28675a9b9ce629ae9f4919b6c7b82d6809aa5f2357b03a3062b9764",
+    "Lesson-061.jpg": "4f735d563fc70813ea220d933c2e783c1788b1045ecfa56b196176bce513b7ae",
+    "Lesson-062.jpg": "d71857b6ecde779c793d6e3b9e77e47d3b74794d1acbf8b6c8da675aea22455b",
+    "Lesson-063.jpg": "d88fb261d87087e66c6633162a5ce3c200639ba0d5c436c19a4d65f785e30522",
+    "Lesson-064.jpg": "ddef3c383dbb7f335d3a6cc488b5103b37a7d090f9c7ab432af4b253282cec59",
+    "Lesson-065.jpg": "b8afc6b097808bed6c3046b38bd5a114de90cfa6af5d4f369cebe826a446fc23",
+    "Lesson-066.jpg": "aed22574e498a9fdd26070a3b6d63dfc096850d091dd30481e970056be1fe520",
+    "Lesson-067.jpg": "472fd1baf542912d7b81c404f294c631cb3190dee72834b43d953cd6861a05eb",
+    "Lesson-068.jpg": "afe209762d5e607a7692ed29ca12a8486a2375046c5aa1fd6feeff494df69ecc",
+    "Lesson-069.jpg": "b9f34d6d8cf87f1edae857277e4635cb485cd7b807d531d7fb95e10caa744e18",
+    "Lesson-070.jpg": "7c6543654fd02f27f8be9956ce3165efd9f9d635f2e7d821d7fc25a0a0b92b7b",
+    "Lesson-071.jpg": "cf807788c8178fa97ba90bb05d7ea38d9928e4c6cd43db07c9e953801d079434",
+    "Lesson-072.jpg": "72c0ca1396a0ff4c0e2107ac19952f0be7f5ef23123696f93740d39a46fa9d35",
+    "Lesson-073.jpg": "baf603c5cd97a0aa93cea0ba9f94661105edfbf2bada46bebd77130abf0ddf3b",
+    "Lesson-074.jpg": "9234bc8b8814e06420bbaaa03bcccfe3acac90836dd10432d094e01511dacef6",
+    "Lesson-075.jpg": "f39cad148e9914eb6bb02d73465d3c2582aea022ca1e98e3e54fec0ad393ab99",
+    "Lesson-076.jpg": "0141a47b389e233f88573900cff86132489cfdaa7263101b8f591871ccb1f952",
+    "Lesson-077.jpg": "71828626a8cf8f60c0c63a5b39a620f87338385459742d2c7aca569364f5e935",
+    "Lesson-078.jpg": "a37d7f0da8d831175d9eb3561445d037dd28df7e91260b9a14d572454d2e02bd",
+    "Lesson-079.jpg": "752b612ec71506c0e5db1faad9be98230df0dd0f89954eeaa24099dc49a81420",
+    "Lesson-080.jpg": "173cf1e81aeda8b5324c5abbb56b56b975eec902f19b940c4d582443ab4e80f2",
+    "Lesson-081.jpg": "15d8f9e4f7ca12b85ac19be2eef9a3c58fa7555c5bbf26abec35c9cc4a821a83",
+    "Lesson-082.jpg": "d9a389c217ae36eea8885679f387039b73afd08b98e383e2c1bb7f21c91bf048",
+    "Lesson-083.jpg": "203e5277a83b61d2100d4bc0c581f48ce149f5d999da0fecbcf4b85f8f3af4c9",
+    "Lesson-084.jpg": "d214bc9f88546bcfebe800b8fa1c57a3a4bc85e353fb8cd7eb67669059bbea0b",
+    "Lesson-085.jpg": "819ecd57ec41fdf45f46de156bf63913fa9401ca4776491b17cab94ef36a90e9",
+    "Lesson-086.jpg": "5f6972fff73ce40e87dc25d716426d74df5d37dc446996329d941ee139cc7889",
+    "Lesson-087.jpg": "44e569270be77369a28236d9f4c86092e1854f2793c0cad7e6bdf0e6d1e62328",
+    "Lesson-088.jpg": "79256739db5126852f2e8039a407ae4f610c99e38c99dd352d889b8c416e4367",
+    "Lesson-089.jpg": "1c5485bfd5e0ad3a8a7cb2a198b7c054b40c22690582a31a58b065e60c11527d",
+    "Lesson-090.jpg": "b9e923fa11e5a0f95703bccdc7bddddb92949efc8d4eaad9567c90ba7e81e1d1",
+    "Lesson-091.jpg": "400cdad64afed4ddfeb1a300f9488bc570c0abeef58b0c5477976579ece492f3",
+    "Lesson-092.jpg": "888c6c4149b9d4661240f77fe15671908cd0bd827b509913b7783051b85f3bfb",
+    "Lesson-093.jpg": "2fcaa75ee7bd9a90cabf0ffdcda973fd23975157e5d6e633f53e017613f34e51",
+    "Lesson-094.jpg": "54727885c88a79e879d233c5ab9447c759edc47b3e6f159f39eb013f17f92696",
+    "Lesson-095.jpg": "3c0a6bce043ab894171ce9db49d855e8e29f7c5a193f9e70d05f9e2f086a68c3",
+    "Lesson-096.jpg": "2f898e21fb1fcb94114b1ab72661e05f9cc01185899eea32bc93e00f0f5788f4",
+    "Lesson-097.jpg": "f8405ab85a678e8dadd8d7b0a3e585612e6e3d6ad3639c33e95dd864f23c3915",
+    "Lesson-098.jpg": "cca2cee29fb0b09cff921897bbe4cb17935f46638ab1bc24c8613834da99e8c9",
+    "Lesson-099.jpg": "d6fcf3fae2cf18f937dcd5b5141c348137a18508328fe53eb0f892416dfcaba8",
+    "Lesson-100.jpg": "294a94bfe17598efb9b5e072134a9d6c38d5c83990084c04ca6bbb72d1303710"
+  }
+}

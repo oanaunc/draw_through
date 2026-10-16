@@ -1,5 +1,6 @@
 import XCTest
 import PencilKit
+import CryptoKit
 @testable import DrawThrough
 
 @MainActor final class LearningStoreTests: XCTestCase {
@@ -22,11 +23,28 @@ import PencilKit
         let path = PKStrokePath(controlPoints: points, creationDate: .now)
         return PKDrawing(strokes: [PKStroke(ink: PKInk(.pencil, color: .black), path: path)])
     }
-    func testCurriculumHasTwentyUniqueLessonsInFourChapters() {
-        XCTAssertEqual(DrawingLesson.all.map(\.id), Array(1...20))
-        XCTAssertEqual(Set(DrawingLesson.all.map(\.title)).count, 20)
-        for chapter in 0..<4 { XCTAssertEqual(DrawingLesson.all.filter { $0.chapter == chapter }.count, 5) }
+    func testCurriculumAndBundledReferencesAreComplete() {
+        XCTAssertEqual(DrawingLesson.all.map(\.id), Array(1...100))
+        XCTAssertEqual(Set(DrawingLesson.all.map(\.title)).count, 100)
+        XCTAssertEqual(DrawingLesson.chapters.count, 12)
+        for chapter in DrawingLesson.chapters.indices {
+            XCTAssertEqual(DrawingLesson.all.filter { $0.chapter == chapter }.count, chapter < 4 ? 5 : 10)
+        }
+        XCTAssertEqual(Set(StudyReference.all.map(\.id)).count, 100)
+        XCTAssertEqual(LessonWorkshop.all.count, 100)
+        var imageDigests = Set<String>()
+        for reference in StudyReference.all {
+            XCTAssertNotNil(UIImage(named: reference.imageName), "Missing offline artwork: \(reference.id)")
+            XCTAssertEqual(reference.lessons.count, 1)
+            if let url = Bundle.main.url(forResource: reference.imageName, withExtension: nil), let data = try? Data(contentsOf: url) {
+                imageDigests.insert(SHA256.hash(data: data).map { String(format: "%02x", $0) }.joined())
+            }
+        }
+        XCTAssertEqual(imageDigests.count, 100, "Every lesson must have its own distinct bundled reference")
         for lesson in DrawingLesson.all {
+            XCTAssertNotNil(lesson.workshop, "Missing full workshop for lesson \(lesson.id)")
+            XCTAssertGreaterThanOrEqual(lesson.readingWordCount, 330, "Lesson \(lesson.id) must have a developed reading and assignment")
+            XCTAssertEqual(Int(lesson.reference.id), lesson.id)
             XCTAssertEqual(lesson.steps.count, 3)
             XCTAssertFalse(lesson.idea.isEmpty || lesson.observation.isEmpty || lesson.check.isEmpty || lesson.transfer.isEmpty)
         }
@@ -43,6 +61,24 @@ import PencilKit
         XCTAssertEqual(try reopened.drawing(for: 1).strokes.count, 1)
         XCTAssertEqual(try reopened.drawing(for: 1).bounds.minX, drawing().bounds.minX, accuracy: 0.01)
     }
+    func testPersonalPhotoAndReferenceChoiceSurviveRecreation() throws {
+        let store = LearningStore(directory: folder, defaults: defaults)
+        let image = UIGraphicsImageRenderer(size: CGSize(width: 40, height: 60)).image { _ in
+            UIColor.red.setFill(); UIRectFill(CGRect(x: 0, y: 0, width: 40, height: 60))
+        }
+        try store.savePersonalReference(image, for: 100)
+        store.setReferenceChoice(2, for: 100)
+        try store.save(drawing(), lessonID: 100, reflection: "My own reference", complete: true)
+        let reopened = LearningStore(directory: folder, defaults: defaults)
+        XCTAssertEqual(reopened.referenceChoice(for: 100), 2)
+        XCTAssertEqual(reopened.personalReference(for: 100)?.cgImage?.width, image.cgImage?.width)
+        XCTAssertEqual(reopened.personalReference(for: 100)?.cgImage?.height, image.cgImage?.height)
+        XCTAssertEqual(try reopened.drawing(for: 100).strokes.count, 1)
+        XCTAssertEqual(reopened.progress.studies[100]?.reflection, "My own reference")
+        XCTAssertEqual(reopened.referenceChoice(for: 1), 0)
+        XCTAssertEqual(reopened.referenceChoice(for: 21), 1)
+    }
+
     func testEmptyDrawingCannotCompleteLesson() throws {
         let store = LearningStore(directory: folder, defaults: defaults)
         XCTAssertThrowsError(try store.save(PKDrawing(), lessonID: 1, reflection: "", complete: true))

@@ -1,0 +1,20 @@
+Build 6 substantially expands DrawThrough on its existing app record and bundle ID following the 4.3(a) feedback. Please evaluate this build's complete learning and personal-reference workflow.
+
+Included content and functionality:
+- 100 complete workshops in 12 chapters, each paired with a different offline reference image. All 100 include preparation, a developed demonstration, three exercise steps, troubleshooting, an independent assignment, self-review, and an off-screen exercise. The new workshop sections contain over 26,000 words beyond the lesson summaries.
+- 100 individually distinct AI-created references, clearly labeled as imaginary subjects. The app encourages checking anatomy and physical details against life and personal photographs. No image is reused across lessons.
+- A References gallery with subject filtering, zoom, Monochrome, and Grid, linked to the matching lesson and to Studio composition creation.
+- Native PencilKit drawing, Guide/Faint/Freehand, personal-photo import for each lesson, local photo and drawing persistence, reflections, bookmarks, completion, and a practice journal.
+- A personal light table with image layers, transforms, opacity, brightness, contrast, color/monochrome/outline modes, grid, tracing lock, and export.
+
+Suggested walkthrough:
+1. Complete onboarding and explore Learn. Search for a subject or expand a chapter.
+2. Open a lesson. Scroll through Work through the reference, Common mistakes & fixes, and Your independent assignment.
+3. Open the practice pad, draw with a finger, and try Faint and Freehand. Use your photo opens Apple's system picker; the selected image is saved locally for that lesson.
+4. Add an optional reflection and complete a nonempty study. My practice shows the actual saved drawing and reopens it. Completion is self-reported, not automated grading.
+5. In References, open a picture, use Look closer, Monochrome, and Grid. Open its lesson or Arrange in the light table.
+6. In Studio, add personal photos, arrange layers, adjust them, and save/share. Hold the lock control for two seconds to unlock a tracing composition.
+
+The attached 3-minute video (recorded on build 5 and accelerated 4x; pause as needed) records the real gallery, lesson, independent assignment, photo picker/import, drawing and erasing, guidance modes, personal reference board, and adjustment controls. Build 6 also fixes selection and dragging after a Studio image has been moved. Store screenshots use actual app captures from builds 5 and 6, whose course and UI are the same, with promotional headings above them.
+
+No sign-in, purchase, backend, or resource download is needed. There are no ads, tracking, or analytics. Data remains local unless deliberately shared. Original lesson IDs and existing saved studies are preserved.

@@ -1,0 +1,107 @@
+{
+  "generator": "Built-in image_gen",
+  "created": "2026-10-16",
+  "format": "JPEG, original generated landscape 4:3 composition; quality 90 packaging conversion",
+  "references": [
+    {
+      "id": "pear",
+      "prompt": "Fine-art window-lit reference: two pears, an ivory cup, oat linen on limestone; quiet neutral setting; a single upper-left light; landscape 4:3; no lettering or branding.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-pear.jpg"
+    },
+    {
+      "id": "fern",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A fresh fern frond and one small eucalyptus branch laid diagonally on warm ivory handmade paper. Entire leaves clearly separated, believable branching and varied gaps, a few soft cast shadows. Top-down botanical reference, soft daylight, restrained sage greens, generous negative space. Beautiful tactile fine-art editorial photograph, believable physical structure, carefully observed proportions, clean light and shadow families, sufficient sharp detail for drawing but calm background. No text, labels, watermark, logos, borders, collage, hands, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-fern.jpg"
+    },
+    {
+      "id": "bouquet",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A loose arrangement of three white cosmos flowers with ochre centers and slender stems in a small clear cylindrical glass, one flower faces forward and two turn sideways. Dark muted olive wall, warm side light, whole stems and vessel visible, no extra flowers, no crowded overlaps. Beautiful tactile fine-art editorial photograph, believable physical structure, carefully observed proportions, clean light and shadow families, sufficient sharp detail for drawing but calm background. No text, labels, watermark, logos, borders, collage, hands, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-bouquet.jpg"
+    },
+    {
+      "id": "pitcher",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. An unglazed pale terracotta pitcher with a broad handle beside one deep blue ceramic bowl on an oat linen table, three-quarter view. Simple readable ellipses, handle opening fully visible, credible cast shadow to lower right, quiet putty backdrop, single soft window light from upper left. Beautiful tactile fine-art editorial photograph, believable physical structure, carefully observed proportions, clean light and shadow families, sufficient sharp detail for drawing but calm background. No text, labels, watermark, logos, borders, collage, hands, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-pitcher.jpg"
+    },
+    {
+      "id": "shell",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A single beautiful ivory spiral seashell with a visible opening and subtle ridges, lying on warm matte sand-colored paper. Whole shell centered with room around it. Low three-quarter viewpoint, raking daylight from upper left revealing the rounded form, calm neutral tones, crisply readable silhouette. Beautiful tactile fine-art editorial photograph, believable physical structure, carefully observed proportions, clean light and shadow families, sufficient sharp detail for drawing but calm background. No text, labels, watermark, logos, borders, collage, hands, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-shell.jpg"
+    },
+    {
+      "id": "stones",
+      "prompt": "Use case: photorealistic-natural. Asset type: original observational drawing reference for an art-learning app, landscape 4:3 photograph. Five smooth coastal pebbles, slate gray, chalk white and warm ochre, resting with slight overlaps on pale sand. The largest stone is off center, tiny shell fragments kept sparse. Low side light from left reveals simple rounded planes and small contact shadows. Top-down three-quarter composition, no water covering stones. Exceptional natural fine-art editorial photography, tactile real textures, calm composition, fully readable forms useful for beginners. No people, text, labels, watermark, logos, frame, collage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-stones.jpg"
+    },
+    {
+      "id": "mountain",
+      "prompt": "Use case: photorealistic-natural. Asset type: original observational drawing reference for an art-learning app, landscape 4:3 photograph. An alpine lake with three staggered layers of mountain ridges, a dark pine and rocky shore in the near left foreground, muted sage water and distant blue-gray peaks in soft morning haze. Wide calm balanced landscape, clear foreground middle distance and background, believable scale and geology, one clear light direction. Exceptional natural fine-art editorial photography, tactile real textures, calm composition, fully readable forms useful for beginners. No people, text, labels, watermark, logos, frame, collage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-mountain.jpg"
+    },
+    {
+      "id": "coast",
+      "prompt": "Use case: photorealistic-natural. Asset type: original observational drawing reference for an art-learning app, landscape 4:3 photograph. A quiet rocky Mediterranean cove with a small stone headland at left, a pale winding shoreline, two near rocks and still blue-green water under an overcast pearly sky. Wide landscape, horizon perfectly level and visibly separate from shore, clear simplified masses, subtle atmospheric depth. Exceptional natural fine-art editorial photography, tactile real textures, calm composition, fully readable forms useful for beginners. No people, text, labels, watermark, logos, frame, collage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-coast.jpg"
+    },
+    {
+      "id": "hallway",
+      "prompt": "Use case: photorealistic-natural. Asset type: original observational drawing reference for an art-learning app, landscape 4:3 photograph. An empty old plaster studio hallway viewed straight toward a single open doorway at the far end. Pale warm walls, muted terracotta floor tiles forming clear one-point perspective, one side window casting soft rectangular light onto floor. Camera level with no wide-angle distortion, straight verticals, coherent vanishing point, timeless quiet beauty. Exceptional natural fine-art editorial photography, tactile real textures, calm composition, fully readable forms useful for beginners. No people, text, labels, watermark, logos, frame, collage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-hallway.jpg"
+    },
+    {
+      "id": "doorway",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A weathered muted sage wooden door set in a warm ochre plaster wall, viewed from a gentle three-quarter angle. One shallow stone step and a terracotta pot with a sparse olive sapling at its side. Entire door visible, straight architectural edges, coherent perspective, quiet late afternoon side light, no signs or numbers. Exquisite fine-art editorial photograph with real textures and clean legible silhouettes, balanced breathing room. No text, labels, watermark, logos, borders, montage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-doorway.jpg"
+    },
+    {
+      "id": "portrait",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A single fictional adult woman around forty in a simple charcoal linen top, hair loosely tied back, head and shoulders fully visible, three-quarter view looking slightly away. Natural asymmetry, realistic eyes and ears, neutral thoughtful expression. Soft window light from the left divides the face into readable light and shadow planes. Quiet warm gray backdrop, no jewelry or makeup emphasis, no glamour retouching. Exquisite fine-art editorial photograph with real textures and clean legible silhouettes, balanced breathing room. No text, labels, watermark, logos, borders, montage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-portrait.jpg"
+    },
+    {
+      "id": "hands",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. One anatomically accurate adult right hand, palm facing slightly upward, relaxed fingers gently curved with clear gaps, all five digits visible, wrist and part of forearm included, no other hands. Warm neutral background, soft side light from upper left to reveal knuckle planes and palm creases. A natural observational art-school hand study, no extreme foreshortening. Exquisite fine-art editorial photograph with real textures and clean legible silhouettes, balanced breathing room. No text, labels, watermark, logos, borders, montage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-hands.jpg"
+    },
+    {
+      "id": "bird",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A small European robin in side profile standing on a simple dry branch, entire body including beak tail two legs and both feet visible, wings folded naturally. Clear orange breast, rounded body, readable feet gripping branch, soft olive distant background with no distracting bokeh circles. Gentle daylight, poised and anatomically plausible. Exquisite fine-art editorial photograph with real textures and clean legible silhouettes, balanced breathing room. No text, labels, watermark, logos, borders, montage or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-bird.jpg"
+    },
+    {
+      "id": "cat",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. An anatomically plausible gray tabby cat resting in a relaxed loaf pose on an oat linen cushion, whole cat including tail visible, head turned gently three-quarter toward the viewer, two normal ears and natural quiet eyes. Body weight compresses the cushion, soft window light from upper left, warm gray background, no collar. Exquisite tactile fine-art photograph, natural realistic proportions, clean light and shadow families, calm uncluttered background. No text, labels, watermark, logos, borders, montage, people or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-cat.jpg"
+    },
+    {
+      "id": "courtyard",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A quiet Mediterranean courtyard corner with a single pale arched doorway, three terracotta pots of varied size with sparse olive and rosemary plants, warm plaster walls and limestone paving receding toward the doorway. Calm morning side light, broad empty wall areas, level camera, plausible coherent architectural perspective, no signs or numbers. Exquisite tactile fine-art photograph, natural realistic proportions, clean light and shadow families, calm uncluttered background. No text, labels, watermark, logos, borders, montage, people or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-courtyard.jpg"
+    },
+    {
+      "id": "bicycle",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A simple classic sage green city bicycle parked side-on against a warm pale plaster wall, whole bicycle and both full wheels visible with generous breathing room. Mechanically plausible diamond frame, two circular wheels on the same ground line, normal seat handlebar fork and pedal assembly, no basket or extra wheels. Gentle late afternoon side light, worn stone paving. Exquisite tactile fine-art photograph, natural realistic proportions, clean light and shadow families, calm uncluttered background. No text, labels, watermark, logos, borders, montage, people or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-bicycle.jpg"
+    },
+    {
+      "id": "cup",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A single handmade ivory ceramic mug with one broad curved handle, viewed from a gentle three-quarter angle on a warm gray tabletop. The handle opening is fully visible, the rim is an ellipse with realistic thickness, the mug empty. Soft upper-left window light creates a readable cast shadow and lit edge, understated editorial still-life composition, whole object visible. Exquisite tactile fine-art photograph, natural realistic proportions, clean light and shadow families, calm uncluttered background. No text, labels, watermark, logos, borders, montage, people or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-cup.jpg"
+    },
+    {
+      "id": "cloth",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A single ivory linen napkin draped over a low rectangular block, forming three clear large folds with visible ridges, valleys and one overlapping edge. Restrained warm gray studio background and tabletop. Single window light from upper left revealing the planes, subtle fabric weave only, simple whole-object arrangement for a beginner value study. Beautiful natural fine-art editorial photography, tactile textures, calm natural color, clean legible silhouettes, carefully observed realistic proportions. No text, labels, watermark, logos, borders, collage, people, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-cloth.jpg"
+    },
+    {
+      "id": "forms",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. An art-school still life of three solid matte white objects: one sphere, one upright short cylinder, and one cube, clearly separated with slight overlap on a warm gray tabletop. Entire objects and cast shadows visible. Single soft studio light from upper left, readable light shadow and contact shadows, neutral background, physically correct cube edges and cylinder ellipses. Beautiful natural fine-art editorial photography, tactile textures, calm natural color, clean legible silhouettes, carefully observed realistic proportions. No text, labels, watermark, logos, borders, collage, people, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-forms.jpg"
+    },
+    {
+      "id": "desk",
+      "prompt": "Use case: photorealistic-natural. Asset type: original offline drawing reference for an art-learning app, landscape 4:3 composition. A peaceful artist's work corner by a tall window: a closed plain ivory sketchbook, one simple amber glass bottle, a small white vase holding one green branch, and an empty wooden chair beside a worn oak desk. Broad warm plaster wall and quiet negative space. Soft morning window light, coherent level perspective, no drawing displayed, no lettering or brands. Beautiful natural fine-art editorial photography, tactile textures, calm natural color, clean legible silhouettes, carefully observed realistic proportions. No text, labels, watermark, logos, borders, collage, people, or drawing implements.",
+      "asset": "DrawThrough/Resources/CourseReferences/Study-desk.jpg"
+    }
+  ]
+}

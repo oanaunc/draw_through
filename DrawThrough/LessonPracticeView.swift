@@ -1,5 +1,7 @@
 import SwiftUI
 import PencilKit
+import PhotosUI
+import ImageIO
 
 /// Keeps artwork aligned with the illustration when the device or window changes size.
 final class StudyCanvas: PKCanvasView {
@@ -76,6 +78,12 @@ struct LessonPracticeView: View {
     let lesson: DrawingLesson
     @StateObject private var pad = StudyPad()
     @State private var guideMode = 0
+    @State private var referenceChoice = 0
+    @State private var personalReference: UIImage?
+    @State private var photoItem: PhotosPickerItem?
+    @State private var importing = false
+    @State private var monochrome = false
+    @State private var showGrid = false
     @State private var tool = 0
     @State private var reflection = ""
     @State private var loaded = false
@@ -93,13 +101,32 @@ struct LessonPracticeView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 18) {
                         Text(lesson.title).font(DTTheme.title(30))
-                        Text(lesson.steps[min(guideMode, 2)]).font(.system(.subheadline, design: .serif)).lineSpacing(4).fixedSize(horizontal: false, vertical: true)
+                        Text(lesson.id <= 20 ? lesson.steps[min(guideMode, 2)] : lesson.subtitle).font(.system(.subheadline, design: .serif)).lineSpacing(4).fixedSize(horizontal: false, vertical: true)
                         Picker("Reference guidance", selection: $guideMode) {
                             Text("Guide").tag(0); Text("Faint").tag(1); Text("Freehand").tag(2)
                         }.pickerStyle(.segmented)
+                        HStack {
+                            Menu {
+                                if lesson.id <= 20 { Button("Construction study") { referenceChoice = 0 } }
+                                Button("Course reference") { referenceChoice = 1 }
+                                if personalReference != nil { Button("Your photo") { referenceChoice = 2 } }
+                            } label: {
+                                Label(referenceChoice == 2 ? "Your photo" : referenceChoice == 0 ? "Construction" : "Course reference", systemImage: "photo")
+                            }.accessibilityLabel("Choose practice reference")
+                            Spacer()
+                            PhotosPicker(selection: $photoItem, matching: .images) {
+                                Label(importing ? "Importing…" : "Use your photo", systemImage: "plus")
+                            }.disabled(importing).accessibilityIdentifier("personalReferencePicker")
+                        }.font(.subheadline)
+                        HStack(spacing: 16) {
+                            Toggle("Monochrome", isOn: $monochrome).toggleStyle(.button)
+                            Toggle("Grid", isOn: $showGrid).toggleStyle(.button).accessibilityIdentifier("practiceGrid")
+                        }.font(.caption)
                         ZStack {
                             DTTheme.vellum
-                            LessonIllustration(lessonID: lesson.id).opacity(guideMode == 0 ? 0.65 : guideMode == 1 ? 0.16 : 0).allowsHitTesting(false).accessibilityHidden(true)
+                            practiceReference.saturation(monochrome ? 0 : 1)
+                                .opacity(guideMode == 0 ? 0.7 : guideMode == 1 ? 0.18 : 0).allowsHitTesting(false).accessibilityHidden(true)
+                            if showGrid { ObservationGrid().stroke(DTTheme.clay.opacity(0.35), lineWidth: 0.8).allowsHitTesting(false) }
                             PencilPracticePad(pad: pad, ink: tool == 1, eraser: tool == 2)
                                 .disabled(!loaded)
                         }
@@ -119,6 +146,13 @@ struct LessonPracticeView: View {
                             Spacer()
                             Button("Clear", role: .destructive) { showClear = true }.font(.subheadline).disabled(pad.strokeCount == 0)
                         }
+                        DisclosureGroup("Exercise steps") {
+                            VStack(alignment: .leading, spacing: 12) {
+                                ForEach(Array(lesson.steps.enumerated()), id: \.offset) { index, step in
+                                    Text("\(index + 1). \(step)").font(.system(.subheadline, design: .serif)).lineSpacing(4)
+                                }
+                            }.padding(.vertical, 10)
+                        }.font(.system(.headline, design: .serif))
                         Text("Look back at your study").font(DTTheme.title(25))
                         Text(lesson.check).font(.system(.body, design: .serif)).foregroundStyle(DTTheme.clay)
                         TextField("One thing I noticed. One thing to try next…", text: $reflection, axis: .vertical)
@@ -154,11 +188,40 @@ struct LessonPracticeView: View {
                 Button("OK", role: .cancel) { error = nil }
             } message: { Text(error ?? "") }
             .onAppear(perform: load)
+            .onChange(of: photoItem) { _, item in if let item { Task { await importReference(item) } } }
+            .onChange(of: referenceChoice) { _, choice in if loaded { learning.setReferenceChoice(choice, for: lesson.id) } }
             .onChange(of: pad.revision) { _, _ in scheduleSave() }
             .onChange(of: reflection) { _, _ in scheduleSave() }
             .onChange(of: scenePhase) { _, phase in if phase != .active && dirty { _ = save() } }
             .onDisappear { saveTask?.cancel(); if dirty { _ = save() } }
         }
+    }
+
+    @ViewBuilder private var practiceReference: some View {
+        if referenceChoice == 2, let personalReference {
+            Image(uiImage: personalReference).resizable().scaledToFit()
+        } else if referenceChoice == 0 && lesson.id <= 20 {
+            LessonIllustration(lessonID: lesson.id)
+        } else {
+            ReferenceArtwork(reference: lesson.reference)
+        }
+    }
+    private func importReference(_ item: PhotosPickerItem) async {
+        importing = true
+        defer { importing = false; photoItem = nil }
+        do {
+            guard let data = try await item.loadTransferable(type: Data.self),
+                  let source = CGImageSourceCreateWithData(data as CFData, nil),
+                  let cgImage = CGImageSourceCreateThumbnailAtIndex(source, 0, [
+                    kCGImageSourceCreateThumbnailFromImageAlways: true,
+                    kCGImageSourceThumbnailMaxPixelSize: 1600,
+                    kCGImageSourceCreateThumbnailWithTransform: true
+                  ] as CFDictionary) else { throw CocoaError(.fileReadCorruptFile) }
+            let image = UIImage(cgImage: cgImage)
+            try learning.savePersonalReference(image, for: lesson.id)
+            personalReference = image
+            referenceChoice = 2
+        } catch { self.error = "This photo could not be saved as a reference. Your drawing is safe. Try another photo. \(error.localizedDescription)" }
     }
 
     private var exportImage: UIImage {
@@ -176,6 +239,9 @@ struct LessonPracticeView: View {
             pad.canvas.load(drawing)
             pad.strokeCount = drawing.strokes.count
             reflection = learning.progress.studies[lesson.id]?.reflection ?? ""
+            personalReference = learning.personalReference(for: lesson.id)
+            let choice = learning.referenceChoice(for: lesson.id)
+            referenceChoice = choice == 2 && personalReference == nil ? (lesson.id <= 20 ? 0 : 1) : choice
             saved = learning.progress.studies[lesson.id] != nil
             loaded = true
         } catch { self.error = "The saved drawing could not be opened. It has been preserved. Close the pad and try again. \(error.localizedDescription)" }

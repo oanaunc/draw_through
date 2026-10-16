@@ -1,0 +1,166 @@
+{
+  "iPhone-6.9-inch": [
+    {
+      "file": "01-Learn.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "7c870f3245560057a05f42728b4de72eecb5bc33d3eb6bd96ada3d586d6beefa"
+    },
+    {
+      "file": "02-References.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "c1ad71b341efb4cea943ca263856bf9b3f7c260d10f538b534edaa869e6208d0"
+    },
+    {
+      "file": "03-Workshop.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "33c727ba1b55bcf2e6aff088fb9fc318d7f5da1289dcb0cba7884f0159e78929"
+    },
+    {
+      "file": "04-Own-Photo.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "c996132859585df8f4948c62849fab17989bf2defb77cc155ab2930314c53672"
+    },
+    {
+      "file": "05-Practice.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "586cf16c63e4e429baead77da6888a754467e5afceb60ebc30716124b314319b"
+    },
+    {
+      "file": "06-Observation.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "905a04f7e92603a796aa7dc3a9f0ce608114333c979d2695edcdd89cfa22603c"
+    },
+    {
+      "file": "07-Light-Table.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "cb3f0fd63531445e339838b6276800fc28f2ca12b1c6d54cd0e0d1b2b010b671"
+    },
+    {
+      "file": "08-Adjust.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "f6dd754d967eef07835d02b4846339cc90d91bb0e6ee9da2fb2834352ca5f489"
+    },
+    {
+      "file": "09-Journal.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "7c48bb4a3e9d03e430503d5cb3e33ea95d3d8a5f28f69e2fbf66106a38744eb3"
+    },
+    {
+      "file": "10-Assignment.jpg",
+      "size": [
+        1320,
+        2868
+      ],
+      "sha256": "77e83994d4d040594579b4ffe2a73a714bdfde2bbd096c846e3ee5238858b126"
+    }
+  ],
+  "iPad-13-inch": [
+    {
+      "file": "01-Learn.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "b8ef0d4a60ada97f10612b458112742e2be5436fd9f4370b6a4b518bb752ea47"
+    },
+    {
+      "file": "02-References.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "0ca16ed32e42dd4830fd3990970ad7abdd873a8fb831625fe70da4ad4e528d42"
+    },
+    {
+      "file": "03-Workshop.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "7e60e181b503bf995802095e1ec6fb9b95a66e8eed8fa2cb9e32a6cf6ba0652f"
+    },
+    {
+      "file": "04-Own-Photo.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "443216f7981b8a2cc27788b69ffb1f6c646169c154af69e21b000e797ff66122"
+    },
+    {
+      "file": "05-Practice.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "409d427f211d03b2f4138cf1fd4c30d980b25cef1a6a43985b4d0aa3832c25f5"
+    },
+    {
+      "file": "06-Observation.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "4869575f91c169d85b780ff72a62ccb638bf61c0ae13e98f33626b1e2a2237e6"
+    },
+    {
+      "file": "07-Light-Table.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "2ebef50ae2eaf2b0bc8eb622072ea30bba6e28fbcc845967e7393ac89da157e1"
+    },
+    {
+      "file": "08-Adjust.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "ed3adff5dbad00e6b78f6b0e7b47e6351f0263c8d834af3e9e86ae542be34bb6"
+    },
+    {
+      "file": "09-Journal.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "89aaad402386e3e948ece46e9f78edacd36178157d5f878fa38420e3f35b0d49"
+    },
+    {
+      "file": "10-Assignment.jpg",
+      "size": [
+        2064,
+        2752
+      ],
+      "sha256": "706b48ee5bb9c2ead3d0521c63b06999eccd41021c64fe494138337cade6e82a"
+    }
+  ]
+}

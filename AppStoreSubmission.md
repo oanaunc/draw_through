@@ -1,225 +1,111 @@
-# Draw Through — revised App Store submission
+# DrawThrough — expanded App Store release
 
-Prepared 16 October 2026 after the 4.3(a) rejection. Build 3 was resubmitted through the Codex in-app browser at 10:23 PM Europe/Bucharest and verified as **Waiting for Review**. See `SubmissionArtifacts/2026-10-16/SubmissionReceipt.md` for the actual submission record and `docs/ProductResearch.md` for research and product reasoning. The remaining reference sections include preparation guidance; the receipt records what was actually submitted.
+Submitted 17 October 2026 at 00:11 Europe/Bucharest through the visible Codex in-app browser. Build 6 is **Waiting for Review**, submission `8ebf8f73-f6a9-4ab5-9fe3-95201721a9c0`. The previous build-3 submission was replaced after testing. See `SubmissionArtifacts/Build6/SubmissionReceipt.md` for the final browser-verified outcome. Earlier build-3 submission materials are retained as history.
 
-## App record
+## App identity
 
-- **Platforms:** iOS and iPadOS
-- **App name:** DrawThrough
-- **Primary language:** English (U.S.)
-- **Bundle ID:** `com.oanarinaldi.drawthrough`
-- **SKU:** `com.oanarinaldi.drawthrough`
-- **Version:** `1.0.0`
-- **Build:** `3`
-- **Copyright:** `2026 Oana Rinaldi`
-- **Primary category:** Graphics & Design
-- **Secondary category:** Education
-- **Price:** Free
+- App Store ID: `6806776819`
+- Name: DrawThrough
+- Bundle and SKU: `com.oanarinaldi.drawthrough`
+- Version: `1.0.0` (App Store version record `1.0`)
+- Build: `6`
+- Signing team: `HBD3XXQK45`
+- Primary category: Graphics & Design; secondary: Education
+- Price: Free; automatic release after approval
 
-## Product page — English (U.S.)
+The original record and bundle are retained. A new identifier would not address Apple's similarity concern. App Review approval is not guaranteed by the expanded content.
+
+## English product page
 
 ### Subtitle
 
-Learn, Practice & Trace
+100 Lessons & Drawing Practice
 
 ### Promotional text
 
-Learn to look with 20 illustrated drawing lessons. Practice with a guide, fade it, try freehand, and keep your drawings and reflections in a personal journal.
+100 complete drawing lessons, 100 unique references, and room for your own photos. Read, practice, fade the guide, and keep a personal drawing journal.
 
 ### Description
 
 Draw Through is a drawing field school and personal reference studio for iPhone and iPad.
 
-LEARN TO SEE
+100 LESSONS. 100 DIFFERENT REFERENCES.
+Explore 12 chapters, from confident lines and observation to botanical studies, still life, natural forms, landscapes, perspective, portraits, hands, animals, and personal compositions. Every lesson has its own unique reference image and a complete workshop: preparation, a developed demonstration, three exercise steps, common mistakes and fixes, an independent assignment, and a self-review question.
 
-Explore 20 illustrated lessons across four chapters: the language of line, learning to see, giving things form, and making it your own. Study contours, negative space, proportion, value, perspective, botanical drawing, gesture, and composition. Each lesson includes a practical exercise and an idea to try away from the screen.
+LOOK CLOSER
+Browse the offline reference collection by subject. Enlarge an image, compare its values in Monochrome, and use an observation grid to study proportions. The collection contains AI-created imaginary subjects, clearly labeled in the app; use life and your own photographs to check anatomy and physical details.
 
 MAKE YOUR OWN MARKS
-
-Draw directly in the lesson practice pad with a finger or Apple Pencil. Use pencil, ink, or an eraser, with undo and redo. Begin with the guide, fade it, then hide it and draw independently. Completion is your own reflection on the exercise; the app does not automatically grade your drawing.
+Draw in the native practice pad with your finger or Apple Pencil. Use pencil, ink, an eraser, undo, and redo. Begin with a guide, fade it, then hide it for independent drawing. Import a personal photo into any lesson and keep that reference on your device for your next session. Add an optional grid or monochrome view. The first 20 lessons also include separate construction diagrams.
 
 KEEP A PRACTICE JOURNAL
+Drawings save locally as you work. Add a reflection, bookmark a lesson, and return to your study from My practice. Track the lessons you have studied and share copies of your drawings. Each lesson holds one revisitable saved drawing. Completion is your own reflection on the exercise; the app does not automatically grade your work.
 
-Your lesson drawings save locally as you work. Add a reflection, bookmark a lesson, and return to your saved study from My practice. Track the lessons you have studied and share copies of your drawings. Each lesson has one revisitable saved drawing.
+BUILD YOUR REFERENCE STUDIO
+Create a light-table composition from a course reference or your own photos. Move, resize, rotate, overlap, and organize image layers. Adjust opacity, brightness, and contrast; switch between color, monochrome, and outlines. Show a grid, lock the composition for tracing on paper, and save or share the arrangement.
 
-BRING YOUR REFERENCES
+The course, bundled references, and drawing tools work offline. No account, subscription, ads, or analytics is required. Drawings, reflections, projects, and selected reference photos remain on your device unless you choose to share them.
 
-Use the Studio light table to arrange photos you choose. Move, resize, rotate, overlap, and organize image layers. Switch between color, monochrome, and outlines; adjust opacity, brightness, and contrast. Show a grid, lock a composition for tracing on paper, and save or share your reference composition.
-
-The lessons and practice pad work offline. No account, subscription, advertising, or analytics is required. Drawings, reflections, projects, and reference images are stored on your device. Sharing sends only the content you choose through the system share sheet.
-
-Learn to look. Practice a little. Make it your own.
+Learn to look. Make your mark. Make it your own.
 
 ### Keywords
 
 drawing,lessons,sketch,practice,art,learn,trace,reference,pencil,shading,perspective,composition
 
-### What's New
+## App Review notes
 
-A new drawing path: 20 original illustrated lessons, a guided and freehand practice pad, saved studies and reflections, lesson bookmarks, and a practice journal. The reference-composition studio is available in the Studio tab.
+Build 6 substantially expands DrawThrough on its existing app record and bundle ID following the 4.3(a) feedback. Please evaluate this build's complete learning and personal-reference workflow.
 
-> App Store Connect normally does not require What's New for the first version. Keep this text for version 1.1 if the field is absent.
+Included content and functionality:
+- 100 complete workshops in 12 chapters, each paired with a different offline reference image. All 100 include preparation, a developed demonstration, three exercise steps, troubleshooting, an independent assignment, self-review, and an off-screen exercise. The new workshop sections contain over 26,000 words beyond the lesson summaries.
+- 100 individually distinct AI-created references, clearly labeled as imaginary subjects. The app encourages checking anatomy and physical details against life and personal photographs. No image is reused across lessons.
+- A References gallery with subject filtering, zoom, Monochrome, and Grid, linked to the matching lesson and to Studio composition creation.
+- Native PencilKit drawing, Guide/Faint/Freehand, personal-photo import for each lesson, local photo and drawing persistence, reflections, bookmarks, completion, and a practice journal.
+- A personal light table with image layers, transforms, opacity, brightness, contrast, color/monochrome/outline modes, grid, tracing lock, and export.
 
-## URLs
+Suggested walkthrough:
+1. Complete onboarding and explore Learn. Search for a subject or expand a chapter.
+2. Open a lesson. Scroll through Work through the reference, Common mistakes & fixes, and Your independent assignment.
+3. Open the practice pad, draw with a finger, and try Faint and Freehand. Use your photo opens Apple's system picker; the selected image is saved locally for that lesson.
+4. Add an optional reflection and complete a nonempty study. My practice shows the actual saved drawing and reopens it. Completion is self-reported, not automated grading.
+5. In References, open a picture, use Look closer, Monochrome, and Grid. Open its lesson or Arrange in the light table.
+6. In Studio, add personal photos, arrange layers, adjust them, and save/share. Hold the lock control for two seconds to unlock a tracing composition.
 
-- **Privacy Policy URL:** `https://oanarinaldi.com/drawthroughprivacy.html`
-- **Support URL:** `https://oanarinaldi.com/#contact`
-- **Marketing URL (optional):** `https://oanarinaldi.com/apps.html`
-- **User Privacy Choices URL:** Leave blank
-- **Age Suitability URL:** Leave blank
+The attached 3-minute video (recorded on build 5 and accelerated 4x; pause as needed) records the real gallery, lesson, independent assignment, photo picker/import, drawing and erasing, guidance modes, personal reference board, and adjustment controls. Build 6 also fixes selection and dragging after a Studio image has been moved. Store screenshots use actual app captures from builds 5 and 6, whose course and UI are the same, with promotional headings above them.
 
-The existing privacy page returned HTTP 200 on 16 October 2026. Update it for lesson drawings, reflections, bookmarks, and learning progress before submitting this revision; prepared wording is in `docs/PrivacyPolicyUpdate.md`.
+No sign-in, purchase, backend, or resource download is needed. There are no ads, tracking, or analytics. Data remains local unless deliberately shared. Original lesson IDs and existing saved studies are preserved.
 
-## App Privacy
+## Prepared reply to App Review (not separately sent)
 
-For **Data Collection**, select:
+No reply field was available on the removed or newly waiting submission. The detailed response is included in the submitted review notes.
 
-**No, we do not collect data from this app.**
+Thank you for the 4.3(a) feedback. We have further developed DrawThrough on its existing app record and bundle ID and are submitting build 6.
 
-The app stores selected photos, project information, lesson drawings, reflections, bookmarks, and learning progress locally. Apple defines collection for this disclosure as transmitting data off the device in a way that lets the developer or a third party access it. Draw Through does not do that.
+The app now includes 100 complete drawing workshops in 12 chapters, each with a different offline reference image. Every workshop has a developed demonstration, troubleshooting, and an independent assignment, alongside native drawing practice. A new reference gallery connects observation tools to lessons and the personal light table. Users can also import their own photo into any lesson, save drawings and reflections, and revisit their studies in a practice journal.
 
-- Tracking: No
-- Data linked to the user: None
-- Data not linked to the user: None
-- Analytics: None
-- Advertising: None
+We have replaced the screenshots with current app captures and attached a video of the real learning and personal-reference workflows. The AI-created references are labeled in the app. No account or purchase is required to review the course.
 
-## Age rating
+Please evaluate the revised content and functionality. If a similarity concern remains, we would appreciate clarification about the specific aspects that require further changes so we can address them precisely.
 
-Answer **None** or **No** for every content descriptor and capability, including:
+## Media and provenance
 
-- Parental controls or age assurance: No
-- Unrestricted web access: No
-- User-generated content shared with other users: No
-- Messaging, chat, or social features: No
-- Advertising: No
-- Violence: None
-- Sexual content or nudity: None
-- Profanity or crude humor: None
-- Horror or fear themes: None
-- Alcohol, tobacco, or drug references: None
-- Medical or wellness content: None
-- Gambling, simulated gambling, contests, or loot boxes: None
+`SubmissionArtifacts/Build6/iPhone-6.9-inch` contains ten 1320 × 2868 JPEGs; `iPad-13-inch` contains ten 2064 × 2752 JPEGs. Each uses an actual, uniformly scaled native capture inside a designed frame, with promotional text above it. `Raw` preserves the original captures. Most were captured on build 5; the iPad reference board and adjustments were captured on build 6. Both builds have the same expanded course and appearance.
 
-- **Age category/override:** Not Applicable
-- **Expected rating:** 4+ (the exact displayed rating is calculated by Apple and can vary by region or OS version)
-- **Made for Kids:** No
+`DrawThrough-Course-Reviewer-Walkthrough.mp4` is a reviewer-only video, recorded on build 5 and accelerated 4× to approximately 3 minutes. It shows the actual app, reading, personal-photo import, native marks, guidance modes, and Studio arrangement/adjustments. Build 6 adds the corrected Studio touch area after transforming images. The video is not a public App Preview. Test photos are generated course imagery imported through Apple's real photo picker, not private user photographs.
 
-Selecting “Made for Kids” is unnecessary even though the app is suitable for children; that option creates additional permanent Kids Category requirements.
+All 100 course images are individually distinct AI-created imaginary subjects. The app labels them accordingly. Prompt and SHA-256 records are in `docs/reference-art/unique-lesson-prompts.json`; no image is shared by multiple lessons.
 
-## App Review Information
+## Privacy and declarations
 
-- **First name:** Oana
-- **Last name:** Rinaldi
-- **Email:** `oanarinaldi@gmail.com`
-- **Phone:** Enter your current phone number
-- **Sign-in required:** No
-- **Demo account:** Not required
+- No account, ads, analytics, tracking, subscriptions, in-app purchases, or backend.
+- Photos, drawings, reflections, bookmarks and projects are stored on-device. Deliberate sharing uses the system share sheet.
+- Published App Privacy: Data Not Collected; rating: 4+.
+- Existing privacy URL: https://oanarinaldi.com/drawthroughprivacy.html
+- Support URL: https://oanarinaldi.com/#contact
+- Expanded privacy wording is drafted in `docs/PrivacyPolicyUpdate.md`; this task has not published changes to that external website.
+- No custom/nonexempt encryption, camera, microphone, contacts, location or notifications.
+- Existing review contact details, trader declaration, availability and release settings are preserved. No new agreement acceptance is authorized implicitly.
 
-### Review notes
+## Validation
 
-Draw Through has been substantially revised following the 4.3(a) rejection for submission 0722215f-36b6-4803-86e8-72e6fd0e61f6. The revised app remains on its existing bundle ID. It adds an original drawing curriculum and a native practice workflow to the existing reference-composition studio.
-
-The following are functional features in this build:
-
-- 20 original illustrated lessons, organized into four chapters, with exercises and self-review questions.
-- Native PencilKit drawing with finger or Apple Pencil, pencil/ink/eraser, undo/redo, and Guide/Faint/Freehand reference modes.
-- Local drawing storage, reflections, bookmarks, lesson completion, and a journal showing the user's actual drawings.
-- A separate Studio tab for composing the user's reference images and locking the screen for tracing on paper.
-
-To test without an account, network connection, or photo access:
-
-1. Finish the three onboarding pages. Learn is the first tab.
-2. Open the featured lesson, “A line with intention.” Read the lesson and tap Open practice pad.
-3. Draw on the pad with a finger. Try Faint and Freehand to reduce the reference guidance. Try pencil, ink, eraser, undo, and redo.
-4. Add an optional reflection and tap Complete study. Completion is self-reported and requires a nonempty drawing; the app does not claim automated grading.
-5. Return to the root screen and open My practice. The drawing and reflection appear there. Reopen the lesson to continue the saved drawing; close and reopen the app to verify persistence.
-6. Search lessons, filter by chapter, bookmark a lesson, and use the Saved filter.
-7. Open Studio, create a canvas, and optionally choose your own images with Apple's system photo picker. Arrange and adjust them, use the grid, and lock the composition. Hold the lock control for two seconds to unlock. Share exports a reference composition.
-
-No sign-in, purchase, backend, or resource download is required. Studies and references remain local unless the user deliberately shares or exports content. There are no ads, tracking, or analytics.
-
-### Draft reply to the rejection
-
-Thank you for the feedback on submission 0722215f-36b6-4803-86e8-72e6fd0e61f6. We have revised Draw Through around a concrete learning workflow: read an original lesson, practice with a guide, reduce that guide, draw independently, and reflect on the saved study.
-
-The revised build adds 20 original illustrated lessons, native drawing tools, three guidance levels, local drawing persistence, reflections, bookmarks, and a practice journal. These are working features available immediately without an account or photo access. The original photo-reference composition tool is now a separate Studio destination. We have also updated the onboarding and metadata to describe the current experience.
-
-We have retained the existing app record and bundle ID. Please see the walkthrough above to evaluate the revised functionality. If a similarity concern remains, could you clarify which functionality, metadata, or content should be addressed so that we can respond precisely?
-
-This draft must accompany the actual revised build. Do not assert that Apple mass-rejected the apps or that all code/assets are exclusive across other submissions unless verified separately.
-
-## Content rights
-
-- **Contains, shows, or accesses third-party content:** No, assuming all artwork bundled with the app is owned by you or properly licensed.
-- Users may select their own reference images through Apple's photo picker; those images remain local and are not published by the app.
-
-## Encryption and export compliance
-
-- **Uses non-exempt encryption:** No
-- The app does not implement custom encryption or provide networking features.
-- If App Store Connect asks whether the app uses encryption, answer **No** based on the current build.
-
-## Advertising identifier and tracking permission
-
-- Uses IDFA: No
-- Uses App Tracking Transparency: No
-- Displays ads: No
-
-## In-app purchases and subscriptions
-
-- In-app purchases: None
-- Subscriptions: None
-- Restore Purchases button: Not required
-
-## Availability and release
-
-- **Distribution:** Public App Store
-- **Countries/regions:** All available territories, unless you have a business reason to limit them
-- **Pre-order:** No
-- **Release option:** Automatically release this version after approval (existing App Store Connect setting retained)
-- **Phased release:** Not relevant for the first release
-
-## Screenshots and review media
-
-The original numbered JPEG screenshot sets and `AppStoreReview/DrawThrough-Reviewer-Walkthrough.mp4` describe the earlier version and are historical materials. Do not upload them with this build. Some were made from promotional demo screens, which have now been removed from the app's executable source.
-
-Fresh screenshots of the running app are in `SubmissionArtifacts/2026-10-16/`: four iPhone 6.9-inch JPEGs (1320 × 2868) and three iPad 13-inch JPEGs (2064 × 2752). They show Learn, a lesson, native practice, and the iPhone journal with a real saved drawing. The new reviewer-only walkthrough is `DrawThrough-Build3-Reviewer-Walkthrough.mp4` in the same directory (3 minutes 51 seconds). It records actual drawing, guidance modes, undo/redo, completion, and the journal. It is an App Review attachment, not a public App Preview.
-
-## Build selection
-
-- Marketing version `1.0.0`, build `3`; the existing App Store version record is displayed as `1.0`.
-- Bundle identifier: `com.oanarinaldi.drawthrough`.
-- Build 3 was archived and uploaded successfully with Xcode on 16 October 2026. The binary is processed and available in App Store Connect.
-- Preserve the existing signing team. Archive and validate a signed Release build, upload it, and wait for processing before selecting it.
-
-## App Review declarations
-
-- Sign-in or account deletion requirement: Not applicable; the app has no accounts
-- Digital goods: None
-- External purchases or payment links: None
-- Health or medical claims: None
-- Location services: None
-- Camera: Not used
-- Microphone: Not used
-- Contacts: Not used
-- Notifications: Not used
-- Background services: None
-- Regulated medical device: No
-- Digital Services Act trader status: Complete this using your real legal/business status; it cannot be inferred from the app
-
-## Final submission checklist
-
-- Confirm the App Store Connect app record exists for `com.oanarinaldi.drawthrough`
-- Confirm binary version `1.0.0` is selected under the existing `1.0` App Store record
-- Upload the public privacy page
-- Verify the support URL opens and visibly contains the contact email
-- Upload newly captured, accurate screenshots of this revision
-- Complete the age rating questionnaire
-- Publish the “Data Not Collected” privacy response
-- Complete pricing, tax category, territory availability, and DSA status
-- Select the uploaded build `3`
-- Add the App Review contact phone number
-- Answer export compliance
-- Save every section until no required-field warnings remain
-- Add for Review, then Submit to App Review
+See `docs/Validation.md`. Build 5 passed 8 unit and 5 UI tests on both phone and tablet. The final build 6 repeats that suite after the Studio correction. Simulator checks cannot establish physical Apple Pencil pressure or palm-rejection behavior. The app does not claim automated drawing assessment or teacher endorsement.

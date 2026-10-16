@@ -4,7 +4,7 @@ struct OnboardingView: View {
     let finish: () -> Void
     @State private var page = 0
     private let pages = [
-        ("OnboardingPlace", "Learn to look", "Explore 20 illustrated lessons, from your first confident line to a personal drawing study."),
+        ("OnboardingPlace", "Learn to look", "Explore 100 illustrated lessons, from your first confident line to a personal drawing study."),
         ("OnboardingArrange", "Make your own marks", "Draw with a finger or Apple Pencil. Fade the guide, try freehand, and save what you notice."),
         ("OnboardingTrace", "Bring your references", "Arrange your own images in the light table, or trace on paper. Keep your lesson drawings in My practice.")
     ]

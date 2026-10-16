@@ -2,13 +2,14 @@
 
 A native iPhone and iPad drawing field school and reference studio. Requires iOS 17+.
 
-- **Learn:** 20 original illustrated lessons, four chapters, search, bookmarks, and course progress.
-- **Practice:** PencilKit finger/Apple Pencil drawing with pencil, ink, eraser, undo/redo, and Guide → Faint → Freehand modes.
-- **My practice:** one saved drawing per lesson, optional reflections, completion, and sharing. Everything stays on-device unless shared.
-- **Studio:** arrange reference photos, adjust layers, use outlines and a grid, and lock a composition for tracing on paper.
+- **Learn:** 100 complete workshops in 12 chapters, each with its own unique reference image, detailed demonstration, troubleshooting, independent assignment, search, bookmarks, and course progress.
+- **References:** 100 offline AI-created images, subject filtering, zoom, monochrome and an observation grid. Open a related lesson or create a Studio composition from any reference.
+- **Practice:** PencilKit drawing with pencil, ink, eraser, undo/redo, Guide → Faint → Freehand, an optional grid, and a personal photo reference saved with each lesson.
+- **My practice:** one revisitable drawing per lesson, reflections, completion, and sharing. Data stays on-device unless shared.
+- **Studio:** arrange personal reference photos in layers, adjust opacity, contrast and outlines, and lock a composition for tracing on paper.
 
-Open `DrawThrough.xcodeproj` in Xcode. `project.yml` is the XcodeGen source of truth; regenerate with `xcodegen generate` after changing targets or files. The existing bundle ID and signing team are preserved. Build 2 is prepared locally; no App Store upload is implied.
+Open `DrawThrough.xcodeproj` in Xcode. `project.yml` is the XcodeGen source of truth; regenerate with `xcodegen generate` after changing files. The existing bundle ID and signing team are retained; the expanded release is version 1.0.0, build 6.
 
-Run the `DrawThrough` scheme's tests on an iOS simulator. The unit tests cover persistence, completion, failed writes, corrupt files, and drawing coordinates across resize. UI tests exercise drawing, guidance, completion, relaunch, the journal, search, and studio access.
+Run the `DrawThrough` scheme's tests on an iOS simulator. Unit tests cover curriculum completeness, 100 distinct bundled images, full workshop content, personal-reference persistence, drawing persistence, failed writes, corrupt files, and resize coordinates. UI tests cover drawing and journal flows, onboarding, search, gallery tools, the gallery-to-lesson-to-Studio path, and long workshop reading.
 
-See [validation and screenshots](docs/Validation.md). Read [product research](docs/ProductResearch.md) and the [revised App Store submission draft](AppStoreSubmission.md). Existing numbered screenshot sets and the walkthrough video are historical: replace them with current screenshots before submitting this revision.
+See [validation](docs/Validation.md), [product research](docs/ProductResearch.md), [image provenance and prompts](docs/reference-art/README.md), and [submission materials](AppStoreSubmission.md).

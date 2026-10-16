@@ -90,6 +90,62 @@ final class LearningFlowTests: XCTestCase {
         XCTAssertTrue(app.buttons["New Canvas"].exists)
     }
 
+    @MainActor func testReferenceGalleryToExpandedLessonAndLightTable() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-hasSeenOnboarding", "YES"]
+        app.launch()
+        app.buttons["References"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["reference-021"].waitForExistence(timeout: 5))
+        attach("05-Reference-Collection")
+        app.buttons["reference-021"].tap()
+        app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Look closer")).firstMatch.tap()
+        XCTAssertTrue(app.descendants(matching: .any).matching(identifier: "referenceMonochrome").firstMatch.waitForExistence(timeout: 5))
+        app.descendants(matching: .any).matching(identifier: "referenceMonochrome").firstMatch.tap(); app.descendants(matching: .any).matching(identifier: "referenceGrid").firstMatch.tap()
+        attach("06-Reference-Study")
+        app.buttons["Done"].tap()
+        app.swipeUp()
+        app.buttons.matching(NSPredicate(format: "label CONTAINS %@ AND label CONTAINS %@", "Stem before leaves", "MIN")).firstMatch.tap()
+        XCTAssertTrue(app.buttons["Open practice pad"].waitForExistence(timeout: 5) || app.buttons["Continue practice"].exists)
+        attach("07-Expanded-Lesson")
+        (app.buttons["Open practice pad"].exists ? app.buttons["Open practice pad"] : app.buttons["Continue practice"]).tap()
+        XCTAssertTrue(app.buttons["personalReferencePicker"].waitForExistence(timeout: 5))
+        app.descendants(matching: .any).matching(identifier: "practiceGrid").firstMatch.tap()
+        app.segmentedControls.buttons["Faint"].tap()
+        attach("08-Expanded-Practice")
+        app.buttons["Close"].tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.swipeDown()
+        app.buttons["Arrange in the light table"].tap()
+        XCTAssertTrue(app.buttons["Save composition"].waitForExistence(timeout: 5))
+        attach("09-Reference-Studio")
+    }
+
+    @MainActor func testCompleteWorkshopAndFinalLessonAreReadable() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["-hasSeenOnboarding", "YES"]
+        app.launch()
+        app.swipeUp()
+        let search = app.textFields["lessonSearch"]
+        search.tap(); search.typeText("portfolio")
+        app.keyboards.buttons["Search"].tap()
+        app.staticTexts["A small portfolio, a next step"].tap()
+        XCTAssertTrue(app.buttons["Open practice pad"].waitForExistence(timeout: 5) || app.buttons["Continue practice"].exists)
+        attach("10-Final-Workshop")
+        var foundDemonstration = false
+        var foundMistakes = false
+        var foundAssignment = false
+        for _ in 0..<12 {
+            foundDemonstration = foundDemonstration || app.staticTexts["Work through the reference"].isHittable
+            foundMistakes = foundMistakes || app.staticTexts["Common mistakes & fixes"].isHittable
+            foundAssignment = foundAssignment || app.staticTexts["Your independent assignment"].isHittable
+            if foundAssignment { attach("11-Independent-Assignment"); break }
+            app.swipeUp()
+        }
+        XCTAssertTrue(foundDemonstration)
+        XCTAssertTrue(foundMistakes)
+        XCTAssertTrue(foundAssignment)
+    }
+
     @MainActor private func attach(_ name: String) {
         let attachment = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         attachment.name = name; attachment.lifetime = .keepAlways

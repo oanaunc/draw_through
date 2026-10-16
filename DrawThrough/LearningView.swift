@@ -4,6 +4,7 @@ struct StudioRootView: View {
     var body: some View {
         TabView {
             LearnView().tabItem { Label("Learn", systemImage: "book.closed") }
+            ReferenceLibraryView().tabItem { Label("References", systemImage: "photo.on.rectangle.angled") }
             HomeView().tabItem { Label("Studio", systemImage: "square.3.layers.3d") }
             StudyJournalView().tabItem { Label("My practice", systemImage: "pencil.and.list.clipboard") }
         }
@@ -19,6 +20,7 @@ struct LearnView: View {
     @State private var bookmarkedOnly = false
     @State private var showSettings = false
     @State private var selectedChapter: Int?
+    @State private var expandedChapters: Set<Int> = [0]
 
     private var matching: [DrawingLesson] {
         DrawingLesson.all.filter { lesson in
@@ -33,7 +35,7 @@ struct LearnView: View {
             ZStack {
                 PaperBackground()
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 25) {
+                    LazyVStack(alignment: .leading, spacing: 25) {
                         HStack {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text("DRAW THROUGH · FIELD SCHOOL").font(DTTheme.smallCaps).tracking(1.8).foregroundStyle(DTTheme.clay)
@@ -42,15 +44,15 @@ struct LearnView: View {
                             Spacer(minLength: 0)
                             Button { showSettings = true } label: { Image(systemName: "gearshape").frame(width: 44, height: 44).background(.white.opacity(0.45), in: Circle()) }.accessibilityLabel("Settings")
                         }
-                        Text("20 small lessons. A little practice. A new way of seeing.")
+                        Text("100 complete lessons. 100 unique references. A practice that becomes your own.")
                             .font(.system(.body, design: .serif)).foregroundStyle(DTTheme.clay)
                         featuredLesson
                         HStack {
                             Text("THE DRAWING PATH").font(DTTheme.smallCaps).tracking(1.5)
                             Spacer()
-                            Text("\(learning.completedCount) / 20 studied").font(.subheadline).foregroundStyle(DTTheme.clay)
+                            Text("\(learning.completedCount) / \(DrawingLesson.count) studied").font(.subheadline).foregroundStyle(DTTheme.clay)
                         }
-                        ProgressView(value: Double(learning.completedCount), total: 20).tint(DTTheme.clay).accessibilityLabel("Course progress")
+                        ProgressView(value: Double(learning.completedCount), total: Double(DrawingLesson.count)).tint(DTTheme.clay).accessibilityLabel("Course progress")
                         HStack {
                             Image(systemName: "magnifyingglass").foregroundStyle(DTTheme.clay)
                             TextField("Find a skill or lesson", text: $search)
@@ -61,7 +63,7 @@ struct LearnView: View {
                         HStack {
                             Menu {
                                 Button("All chapters") { selectedChapter = nil }
-                                ForEach(0..<4) { chapter in Button(DrawingLesson.chapters[chapter]) { selectedChapter = chapter } }
+                                ForEach(DrawingLesson.chapters.indices, id: \.self) { chapter in Button(DrawingLesson.chapters[chapter]) { selectedChapter = chapter } }
                             } label: { Label(selectedChapter.map { "Chapter \($0 + 1)" } ?? "All chapters", systemImage: "line.3.horizontal.decrease") }
                             Spacer()
                             Toggle(isOn: $bookmarkedOnly) { Label("Saved", systemImage: "bookmark") }.toggleStyle(.button).accessibilityIdentifier("savedLessonsFilter")
@@ -69,15 +71,27 @@ struct LearnView: View {
                         if matching.isEmpty {
                             ContentUnavailableView("No lessons found", systemImage: "book.closed", description: Text("Try another search or turn off the Saved filter."))
                         }
-                        ForEach(0..<4) { chapter in
+                        ForEach(DrawingLesson.chapters.indices, id: \.self) { chapter in
                             let lessons = matching.filter { $0.chapter == chapter }
                             if !lessons.isEmpty {
-                                VStack(alignment: .leading, spacing: 12) {
-                                    HStack(alignment: .firstTextBaseline, spacing: 12) {
-                                        Text(String(format: "%02d", chapter + 1)).font(DTTheme.title(30)).foregroundStyle(DTTheme.sepia)
-                                        Text(DrawingLesson.chapters[chapter]).font(DTTheme.title(25))
+                                VStack(alignment: .leading, spacing: 14) {
+                                    Button {
+                                        if expandedChapters.contains(chapter) { expandedChapters.remove(chapter) } else { expandedChapters.insert(chapter) }
+                                    } label: {
+                                        HStack(spacing: 14) {
+                                            ReferenceArtwork(reference: lessons[0].reference).frame(width: 86, height: 76).clipShape(RoundedRectangle(cornerRadius: 12)).accessibilityHidden(true)
+                                            VStack(alignment: .leading, spacing: 5) {
+                                                Text("CHAPTER \(chapter + 1) · \(lessons.count) LESSONS").font(.caption2.weight(.medium)).tracking(0.8).foregroundStyle(DTTheme.clay)
+                                                Text(DrawingLesson.chapters[chapter]).font(DTTheme.title(25))
+                                                Text(DrawingLesson.chapterNotes[chapter]).font(.caption).foregroundStyle(DTTheme.clay)
+                                            }
+                                            Spacer(minLength: 0)
+                                            Image(systemName: expandedChapters.contains(chapter) ? "chevron.up" : "chevron.down").font(.caption)
+                                        }.padding(12).vellumSurface(radius: 16)
+                                    }.buttonStyle(.plain).accessibilityLabel("Chapter \(chapter + 1): \(DrawingLesson.chapters[chapter])")
+                                    if expandedChapters.contains(chapter) || selectedChapter != nil || !search.isEmpty || bookmarkedOnly {
+                                        ForEach(lessons) { lesson in NavigationLink(value: lesson) { LessonRow(lesson: lesson) }.buttonStyle(.plain) }
                                     }
-                                    ForEach(lessons) { lesson in NavigationLink(value: lesson) { LessonRow(lesson: lesson) }.buttonStyle(.plain) }
                                 }
                             }
                         }
@@ -97,11 +111,11 @@ struct LearnView: View {
     private var featuredLesson: some View {
         NavigationLink(value: learning.nextLesson) {
             VStack(alignment: .leading, spacing: 12) {
-                HStack { Text(learning.completedCount == 20 ? "RETURN TO THE BEGINNING" : "YOUR NEXT SMALL STEP").font(DTTheme.smallCaps).tracking(1.5); Spacer(); Image(systemName: "arrow.up.right") }
+                HStack { Text(learning.completedCount == DrawingLesson.count ? "RETURN TO THE BEGINNING" : "YOUR NEXT SMALL STEP").font(DTTheme.smallCaps).tracking(1.5); Spacer(); Image(systemName: "arrow.up.right") }
                 if sizeClass == .regular {
                     HStack(spacing: 28) {
-                        LessonIllustration(lessonID: learning.nextLesson.id)
-                            .frame(width: 280).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 12))
+                        ReferenceArtwork(reference: learning.nextLesson.reference)
+                            .frame(width: 280).clipShape(RoundedRectangle(cornerRadius: 12)).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 12))
                         VStack(alignment: .leading, spacing: 18) {
                             Text(learning.nextLesson.title).font(DTTheme.title(34))
                             Text(learning.nextLesson.subtitle).font(.system(.title3, design: .serif)).foregroundStyle(DTTheme.clay)
@@ -109,7 +123,7 @@ struct LearnView: View {
                         }.frame(maxWidth: .infinity, alignment: .leading)
                     }
                 } else {
-                    LessonIllustration(lessonID: learning.nextLesson.id).frame(maxHeight: 220).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 12)).clipped()
+                    ReferenceArtwork(reference: learning.nextLesson.reference).frame(maxHeight: 220).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 12)).clipped()
                     Text(learning.nextLesson.title).font(DTTheme.title(30))
                     featuredFooter
                 }
@@ -132,7 +146,7 @@ struct LessonRow: View {
     let lesson: DrawingLesson
     var body: some View {
         HStack(spacing: 14) {
-            LessonIllustration(lessonID: lesson.id).frame(width: 85, height: 70).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 10)).accessibilityHidden(true)
+            ReferenceArtwork(reference: lesson.reference).frame(width: 85, height: 70).clipShape(RoundedRectangle(cornerRadius: 10)).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 10)).accessibilityHidden(true)
             VStack(alignment: .leading, spacing: 5) {
                 Text("\(lesson.number)  ·  \(lesson.minutes) MIN").font(.caption.weight(.medium)).tracking(0.8).foregroundStyle(DTTheme.clay)
                 Text(lesson.title).font(.system(.headline, design: .serif))
@@ -149,6 +163,7 @@ struct LessonDetailView: View {
     @EnvironmentObject private var learning: LearningStore
     let lesson: DrawingLesson
     @State private var showPractice = false
+    @State private var showReference = false
     var body: some View {
         ZStack {
             PaperBackground()
@@ -157,9 +172,21 @@ struct LessonDetailView: View {
                     Text("CHAPTER \(lesson.chapter + 1) · LESSON \(lesson.number) · \(lesson.minutes) MIN").font(DTTheme.smallCaps).tracking(1.5).foregroundStyle(DTTheme.clay)
                     Text(lesson.title).font(DTTheme.display(42)).fixedSize(horizontal: false, vertical: true)
                     Text(lesson.subtitle).font(.system(.title3, design: .serif)).foregroundStyle(DTTheme.clay)
-                    LessonIllustration(lessonID: lesson.id).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 20))
+                    Button { showReference = true } label: {
+                        ReferenceArtwork(reference: lesson.reference).clipShape(RoundedRectangle(cornerRadius: 20))
+                            .overlay(alignment: .bottomTrailing) { Label("Study the reference", systemImage: "arrow.up.left.and.arrow.down.right").font(.caption.weight(.semibold)).padding(10).background(.regularMaterial, in: Capsule()).padding(12) }
+                    }.buttonStyle(.plain)
+                    Text("\(lesson.reference.title) · AI-created reference").font(.caption).foregroundStyle(DTTheme.clay)
+                    if lesson.id <= 20 {
+                        DisclosureGroup("The construction study") { LessonIllustration(lessonID: lesson.id).background(DTTheme.vellum, in: RoundedRectangle(cornerRadius: 16)) }
+                            .font(.system(.headline, design: .serif))
+                    }
                     lessonText("The idea", lesson.idea)
                     lessonText("Look closely", lesson.observation)
+                    if let workshop = lesson.workshop {
+                        lessonText("Before you draw", workshop.setup)
+                        lessonText("Work through the reference", workshop.demonstration)
+                    }
                     VStack(alignment: .leading, spacing: 18) {
                         Text("Try it, three ways").font(DTTheme.title(28))
                         ForEach(Array(lesson.steps.enumerated()), id: \.offset) { index, step in
@@ -169,6 +196,10 @@ struct LessonDetailView: View {
                             }
                         }
                     }.padding(20).vellumSurface()
+                    if let workshop = lesson.workshop {
+                        lessonText("Common mistakes & fixes", workshop.mistakes)
+                        lessonText("Your independent assignment", workshop.challenge)
+                    }
                     lessonText("Ask yourself", lesson.check)
                     lessonText("Take it off the screen", lesson.transfer)
                     if let next = DrawingLesson.all.first(where: { $0.id == lesson.id + 1 }) {
@@ -190,6 +221,7 @@ struct LessonDetailView: View {
                 .buttonStyle(InkButtonStyle()).padding(.horizontal, 22).padding(.vertical, 12).background(.regularMaterial)
         }
         .fullScreenCover(isPresented: $showPractice) { LessonPracticeView(lesson: lesson) }
+        .fullScreenCover(isPresented: $showReference) { ReferenceViewer(reference: lesson.reference) }
     }
     private func lessonText(_ title: String, _ text: String) -> some View {
         VStack(alignment: .leading, spacing: 10) {

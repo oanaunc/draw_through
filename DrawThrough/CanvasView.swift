@@ -233,9 +233,9 @@ struct EmptyCanvasHint: View {
     var body: some View {
         VStack(spacing: 16) {
             ZStack {
-                Image("ReferenceBust").resizable().scaledToFill().frame(width: 94, height: 116).clipShape(RoundedRectangle(cornerRadius: 9)).rotationEffect(.degrees(-7)).offset(x: -58, y: 4)
-                Image("ReferenceHand").resizable().scaledToFill().frame(width: 88, height: 108).clipShape(RoundedRectangle(cornerRadius: 9)).rotationEffect(.degrees(7)).offset(x: 58, y: 7)
-                Image("ReferenceFlower").resizable().scaledToFill().frame(width: 108, height: 132).clipShape(RoundedRectangle(cornerRadius: 11)).shadow(color: .black.opacity(0.15), radius: 9, y: 5)
+                Image(uiImage: UIImage(named: "Lesson-036.jpg") ?? UIImage()).resizable().scaledToFill().frame(width: 94, height: 116).clipShape(RoundedRectangle(cornerRadius: 9)).rotationEffect(.degrees(-7)).offset(x: -58, y: 4)
+                Image(uiImage: UIImage(named: "Lesson-021.jpg") ?? UIImage()).resizable().scaledToFill().frame(width: 88, height: 108).clipShape(RoundedRectangle(cornerRadius: 9)).rotationEffect(.degrees(7)).offset(x: 58, y: 7)
+                Image(uiImage: UIImage(named: "Lesson-026.jpg") ?? UIImage()).resizable().scaledToFill().frame(width: 108, height: 132).clipShape(RoundedRectangle(cornerRadius: 11)).shadow(color: .black.opacity(0.15), radius: 9, y: 5)
                 Circle().fill(DTTheme.ink).frame(width: 38, height: 38).overlay { Image(systemName: "plus").font(.headline).foregroundStyle(DTTheme.vellum) }.offset(x: 58, y: 51)
             }.frame(width: 250, height: 145)
             Text("Add your first reference").font(DTTheme.title(27))

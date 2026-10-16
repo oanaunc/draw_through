@@ -1,0 +1,7 @@
+Thank you for the 4.3(a) feedback. We have further developed DrawThrough on its existing app record and bundle ID and are submitting build 6.
+
+The app now includes 100 complete drawing workshops in 12 chapters, each with a different offline reference image. Every workshop has a developed demonstration, troubleshooting, and an independent assignment, alongside native drawing practice. A new reference gallery connects observation tools to lessons and the personal light table. Users can also import their own photo into any lesson, save drawings and reflections, and revisit their studies in a practice journal.
+
+We have replaced the screenshots with current app captures and attached a video of the real learning and personal-reference workflows. The AI-created references are labeled in the app. No account or purchase is required to review the course.
+
+Please evaluate the revised content and functionality. If a similarity concern remains, we would appreciate clarification about the specific aspects that require further changes so we can address them precisely.
