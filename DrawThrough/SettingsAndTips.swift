@@ -17,10 +17,15 @@ struct SettingsView: View {
                     }
                     SettingsSection(title: "TRACE MODE") {
                         ToggleRow(icon: "sun.max", title: "Keep screen awake", detail: "While the canvas is locked", isOn: $store.settings.keepAwake)
+                    }
+                    SettingsSection(title: "PRIVACY & SUPPORT") {
+                        Link(destination: URL(string: "https://oanarinaldi.com/drawthroughprivacy.html")!) {
+                            SettingLabel(icon: "hand.raised", title: "Privacy policy", detail: "How your drawings and references are stored")
+                        }.buttonStyle(.plain)
                         FineDivider()
-                        ToggleRow(icon: "viewfinder", title: "Alignment guides", detail: "Show while composing", isOn: $store.settings.guides)
-                        FineDivider()
-                        ToggleRow(icon: "waveform", title: "Haptic touches", detail: "Quiet physical feedback", isOn: $store.settings.haptics)
+                        Link(destination: URL(string: "mailto:oanarinaldi@gmail.com")!) {
+                            SettingLabel(icon: "envelope", title: "Contact support", detail: "oanarinaldi@gmail.com")
+                        }.buttonStyle(.plain)
                     }
                     SettingsSection(title: "ABOUT") {
                         Button { UserDefaults.standard.set(false, forKey: "hasSeenOnboarding"); dismiss() } label: {
@@ -28,10 +33,10 @@ struct SettingsView: View {
                         }.buttonStyle(.plain)
                         FineDivider()
                         HStack {
-                            SettingLabel(icon: "info", title: "Draw Through", detail: "Made for slow, careful looking")
+                            SettingLabel(icon: "info", title: "Draw Through", detail: "20 lessons · guided drawing · reference studio")
                         }
                     }
-                    Text("A quiet tool for turning references into drawings.").font(.system(.footnote, design: .serif)).italic().foregroundStyle(DTTheme.ink.opacity(0.45)).frame(maxWidth: .infinity).padding(.vertical, 8)
+                    Text("Learn to look. Practice a little. Make it your own.").font(.system(.footnote, design: .serif)).italic().foregroundStyle(DTTheme.ink.opacity(0.45)).frame(maxWidth: .infinity).padding(.vertical, 8)
                 }.padding(.horizontal, 22).padding(.bottom, 30)
             }
         }
@@ -53,7 +58,7 @@ struct TipsView: View {
             PaperBackground()
             ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 22) {
-                    EditorialHeader(kicker: "FIELD NOTES", title: "Learn", subtitle: "Small rituals for clearer, more expressive tracing.") { dismiss() }
+                    EditorialHeader(kicker: "FIELD NOTES", title: "Light table tips", subtitle: "Small rituals for clearer, more expressive tracing.") { dismiss() }
                     ForEach(tips, id: \.0) { tip in
                         HStack(alignment: .top, spacing: 17) {
                             ZStack {

@@ -4,9 +4,9 @@ struct OnboardingView: View {
     let finish: () -> Void
     @State private var page = 0
     private let pages = [
-        ("OnboardingPlace", "Place your reference", "Add one or more images to use as references."),
-        ("OnboardingArrange", "Arrange your composition", "Move, resize and rotate images to create the perfect composition."),
-        ("OnboardingTrace", "Lock and draw through", "Keep everything still while your paper rests on the screen.")
+        ("OnboardingPlace", "Learn to look", "Explore 20 illustrated lessons, from your first confident line to a personal drawing study."),
+        ("OnboardingArrange", "Make your own marks", "Draw with a finger or Apple Pencil. Fade the guide, try freehand, and save what you notice."),
+        ("OnboardingTrace", "Bring your references", "Arrange your own images in the light table, or trace on paper. Keep your lesson drawings in My practice.")
     ]
 
     var body: some View {
@@ -35,7 +35,7 @@ struct OnboardingView: View {
                     }
                 }.tabViewStyle(.page(indexDisplayMode: .never))
                 HStack(spacing: 7) { ForEach(pages.indices, id: \.self) { Circle().fill(page == $0 ? DTTheme.ink : .black.opacity(0.18)).frame(width: 7, height: 7) } }
-                Button(page == 2 ? "Start Drawing" : "Continue") { if page == 2 { finish() } else { withAnimation { page += 1 } } }
+                Button(page == 2 ? "Enter the studio" : "Continue") { if page == 2 { finish() } else { withAnimation { page += 1 } } }
                     .buttonStyle(InkButtonStyle()).padding(.horizontal, 24).padding(.bottom, 18)
             }
         }

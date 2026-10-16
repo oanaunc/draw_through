@@ -1,4 +1,6 @@
-# Draw Through — App Store Connect Submission
+# Draw Through — revised App Store submission draft
+
+Prepared 16 October 2026 after the 4.3(a) rejection. This file is submission copy and instructions, not confirmation of an upload or approval. See `docs/ProductResearch.md` for research and product reasoning.
 
 ## App record
 
@@ -8,7 +10,7 @@
 - **Bundle ID:** `com.oanarinaldi.drawthrough`
 - **SKU:** `drawthrough-ios-001`
 - **Version:** `1.0.0`
-- **Build:** `1`
+- **Build:** `2`
 - **Copyright:** `2026 Oana Rinaldi`
 - **Primary category:** Graphics & Design
 - **Secondary category:** Education
@@ -18,59 +20,43 @@
 
 ### Subtitle
 
-Trace, Compose & Draw
+Learn, Practice & Trace
 
 ### Promotional text
 
-Turn your favorite photos into thoughtful drawing references. Layer, transform, simplify, and lock your composition beneath the paper.
+Learn to look with 20 illustrated drawing lessons. Practice with a guide, fade it, try freehand, and keep your drawings and reflections in a personal journal.
 
 ### Description
 
-Draw Through is a quiet digital light table for artists, students, and anyone learning to draw.
+Draw Through is a drawing field school and personal reference studio for iPhone and iPad.
 
-Add one or more reference images, arrange them into a composition, and place paper over your iPhone or iPad. Lock the canvas to keep everything still while you trace proportions, study contours, or develop a drawing by hand.
+LEARN TO SEE
 
-BUILD YOUR COMPOSITION
+Explore 20 illustrated lessons across four chapters: the language of line, learning to see, giving things form, and making it your own. Study contours, negative space, proportion, value, perspective, botanical drawing, gesture, and composition. Each lesson includes a practical exercise and an idea to try away from the screen.
 
-• Add multiple reference images from Photos
-• Move, resize, rotate, and overlap every layer
-• Select layers directly on the canvas or from the Layers panel
-• Hide, reorder, rename, or lock individual layers
-• Mark favorite projects for quick access
+MAKE YOUR OWN MARKS
 
-SEE THE IMAGE DIFFERENTLY
+Draw directly in the lesson practice pad with a finger or Apple Pencil. Use pencil, ink, or an eraser, with undo and redo. Begin with the guide, fade it, then hide it and draw independently. Completion is your own reflection on the exercise; the app does not automatically grade your drawing.
 
-• Keep the original color
-• Switch to black and white
-• Reveal a simplified outline
-• Adjust opacity, brightness, and contrast
-• Add a grid and choose a canvas background
+KEEP A PRACTICE JOURNAL
 
-DRAW WITHOUT DISTRACTIONS
+Your lesson drawings save locally as you work. Add a reflection, bookmark a lesson, and return to your saved study from My practice. Track the lessons you have studied and share copies of your drawings. Each lesson has one revisitable saved drawing.
 
-• Lock the composition beneath your paper
-• Keep the display awake while the canvas is locked
-• Move around the infinite canvas with two fingers
-• Fit the full composition or reset the view at any time
+BRING YOUR REFERENCES
 
-KEEP YOUR WORK
+Use the Studio light table to arrange photos you choose. Move, resize, rotate, overlap, and organize image layers. Switch between color, monochrome, and outlines; adjust opacity, brightness, and contrast. Show a grid, lock a composition for tracing on paper, and save or share your reference composition.
 
-• Compositions save automatically after every change
-• A manual Save button gives you extra reassurance
-• Project thumbnails show a preview of each canvas
-• Export your composition to Photos or share it with another app
+The lessons and practice pad work offline. No account, subscription, advertising, or analytics is required. Drawings, reflections, projects, and reference images are stored on your device. Sharing sends only the content you choose through the system share sheet.
 
-Draw Through has no account, no advertising, and no tracking. Your projects and reference images stay on your device.
-
-Made for slow, careful looking—and for turning references into drawings of your own.
+Learn to look. Practice a little. Make it your own.
 
 ### Keywords
 
-tracing,sketch,artist,reference,lightbox,outline,portrait,grid,layer,composition,drawing aid
+drawing,lessons,sketch,practice,art,learn,trace,reference,pencil,shading,perspective,composition
 
 ### What's New
 
-Welcome to Draw Through. Create layered drawing references, adjust their appearance, lock the canvas beneath your paper, and save or share your finished composition.
+A new drawing path: 20 original illustrated lessons, a guided and freehand practice pad, saved studies and reflections, lesson bookmarks, and a practice journal. The reference-composition studio is available in the Studio tab.
 
 > App Store Connect normally does not require What's New for the first version. Keep this text for version 1.1 if the field is absent.
 
@@ -82,7 +68,7 @@ Welcome to Draw Through. Create layered drawing references, adjust their appeara
 - **User Privacy Choices URL:** Leave blank
 - **Age Suitability URL:** Leave blank
 
-The privacy page must be uploaded and publicly accessible before submission.
+The existing privacy page returned HTTP 200 on 16 October 2026. Update it for lesson drawings, reflections, bookmarks, and learning progress before submitting this revision; prepared wording is in `docs/PrivacyPolicyUpdate.md`.
 
 ## App Privacy
 
@@ -90,7 +76,7 @@ For **Data Collection**, select:
 
 **No, we do not collect data from this app.**
 
-The app stores selected photos and project information locally. Apple defines collection for this disclosure as transmitting data off the device in a way that lets the developer or a third party access it. Draw Through does not do that.
+The app stores selected photos, project information, lesson drawings, reflections, bookmarks, and learning progress locally. Apple defines collection for this disclosure as transmitting data off the device in a way that lets the developer or a third party access it. Draw Through does not do that.
 
 - Tracking: No
 - Data linked to the user: None
@@ -132,20 +118,36 @@ Selecting “Made for Kids” is unnecessary even though the app is suitable for
 
 ### Review notes
 
-Draw Through is an offline drawing-reference composition tool for iPhone and iPad. No account or sign-in is required.
+Draw Through has been substantially revised following the 4.3(a) rejection for submission 0722215f-36b6-4803-86e8-72e6fd0e61f6. The revised app remains on its existing bundle ID. It adds an original drawing curriculum and a native practice workflow to the existing reference-composition studio.
 
-To test the core workflow:
-1. Tap New Canvas and choose Infinite Canvas or a paper size.
-2. Tap Image, or tap the empty-canvas invitation, and select one or more photos with Apple's system photo picker.
-3. Tap any image to make that layer active. Drag to move it, pinch to resize it, rotate with two fingers, or drag a corner handle to resize.
-4. Open Layers to select, hide, reorder, rename, delete, or lock individual layers.
-5. Open Adjust to change Color, B&W, or Outline mode and adjust opacity, brightness, and contrast.
-6. Use two fingers on empty canvas space to move around the infinite canvas.
-7. Tap Lock to hold the composition still for tracing. Hold the on-screen lock control for two seconds to unlock.
-8. Tap the Save checkmark to save manually. The composition also saves automatically after changes.
-9. Tap Share to share the rendered composition or save it to Photos.
+The following are functional features in this build:
 
-Photo access is used only for reference images chosen by the reviewer and for saving an exported composition. All projects remain on the device. The app has no analytics, advertising, tracking, account system, purchases, or network service.
+- 20 original illustrated lessons, organized into four chapters, with exercises and self-review questions.
+- Native PencilKit drawing with finger or Apple Pencil, pencil/ink/eraser, undo/redo, and Guide/Faint/Freehand reference modes.
+- Local drawing storage, reflections, bookmarks, lesson completion, and a journal showing the user's actual drawings.
+- A separate Studio tab for composing the user's reference images and locking the screen for tracing on paper.
+
+To test without an account, network connection, or photo access:
+
+1. Finish the three onboarding pages. Learn is the first tab.
+2. Open the featured lesson, “A line with intention.” Read the lesson and tap Open practice pad.
+3. Draw on the pad with a finger. Try Faint and Freehand to reduce the reference guidance. Try pencil, ink, eraser, undo, and redo.
+4. Add an optional reflection and tap Complete study. Completion is self-reported and requires a nonempty drawing; the app does not claim automated grading.
+5. Return to the root screen and open My practice. The drawing and reflection appear there. Reopen the lesson to continue the saved drawing; close and reopen the app to verify persistence.
+6. Search lessons, filter by chapter, bookmark a lesson, and use the Saved filter.
+7. Open Studio, create a canvas, and optionally choose your own images with Apple's system photo picker. Arrange and adjust them, use the grid, and lock the composition. Hold the lock control for two seconds to unlock. Share exports a reference composition.
+
+No sign-in, purchase, backend, or resource download is required. Studies and references remain local unless the user deliberately shares or exports content. There are no ads, tracking, or analytics.
+
+### Draft reply to the rejection
+
+Thank you for the feedback on submission 0722215f-36b6-4803-86e8-72e6fd0e61f6. We have revised Draw Through around a concrete learning workflow: read an original lesson, practice with a guide, reduce that guide, draw independently, and reflect on the saved study.
+
+The revised build adds 20 original illustrated lessons, native drawing tools, three guidance levels, local drawing persistence, reflections, bookmarks, and a practice journal. These are working features available immediately without an account or photo access. The original photo-reference composition tool is now a separate Studio destination. We have also updated the onboarding and metadata to describe the current experience.
+
+We have retained the existing app record and bundle ID. Please see the walkthrough above to evaluate the revised functionality. If a similarity concern remains, could you clarify which functionality, metadata, or content should be addressed so that we can respond precisely?
+
+This draft must accompany the actual revised build. Do not assert that Apple mass-rejected the apps or that all code/assets are exclusive across other submissions unless verified separately.
 
 ## Content rights
 
@@ -178,17 +180,18 @@ Photo access is used only for reference images chosen by the reviewer and for sa
 - **Release option:** Manually release this version after approval
 - **Phased release:** Not relevant for the first release
 
-## Screenshots to upload
+## Screenshots and review media
 
-- iPhone: upload `AppStoreScreenshots/iPhone-1284x2778/01.jpg` through `10.jpg` in numerical order. Each image is 1284 × 2778 pixels, matching the dimensions requested by App Store Connect.
-- iPad 13-inch: upload `AppStoreScreenshots/iPad-13-inch/01.jpg` through `10.jpg` in numerical order
-- App preview videos: None required
+The original numbered JPEG screenshot sets and `AppStoreReview/DrawThrough-Reviewer-Walkthrough.mp4` describe the earlier version and are historical materials. Do not upload them with this build. Some were made from promotional demo screens, which have now been removed from the app's executable source.
+
+Capture fresh screenshots of the running app on the required iPhone and iPad simulator sizes: Learn, a lesson page, the drawing practice pad, My practice with a real saved drawing, and the reference studio. Use only functionality present in the shipping build. Automated UI-test screenshots are QA evidence, not automatically a complete App Store screenshot set.
 
 ## Build selection
 
-- Select version `1.0.0`, build `1`
-- Bundle identifier must be `com.oanarinaldi.drawthrough`
-- Before uploading another archive with changes, increase **Build** from `1` to `2`; keep the marketing version at `1.0.0` for the same App Store version.
+- Keep marketing version `1.0.0` for the rejected initial version and select a newly uploaded build `2`.
+- Bundle identifier: `com.oanarinaldi.drawthrough`.
+- Build 2 is the local project setting; it has not been uploaded just because this document exists. If already used in App Store Connect, increase it before uploading.
+- Preserve the existing signing team. Archive and validate a signed Release build, upload it, and wait for processing before selecting it.
 
 ## App Review declarations
 
@@ -211,11 +214,11 @@ Photo access is used only for reference images chosen by the reviewer and for sa
 - Confirm version is `1.0.0`, not `1`
 - Upload the public privacy page
 - Verify the support URL opens and visibly contains the contact email
-- Upload both screenshot sets in numerical order
+- Upload newly captured, accurate screenshots of this revision
 - Complete the age rating questionnaire
 - Publish the “Data Not Collected” privacy response
 - Complete pricing, tax category, territory availability, and DSA status
-- Upload/select build `1`
+- Upload/select the new build (`2`, or the next unused number)
 - Add the App Review contact phone number
 - Answer export compliance
 - Save every section until no required-field warnings remain

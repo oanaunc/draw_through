@@ -8,29 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		0A54B6F1C9CF372125C3DC8F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */; };
+		113BF8FBEAC3A0540CAB2027 /* LessonPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD696250A0ADE183A53B9F10 /* LessonPracticeView.swift */; };
 		1F97C45EE0A18534C57C5D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94908477B142A3593EF65555 /* Assets.xcassets */; };
-		36465441AC73791C6665FC4F /* ScreenshotShowcaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457EFAFC08FFC4B3C51C426 /* ScreenshotShowcaseView.swift */; };
+		32EC513CD0A655E16201F621 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F693C73EA23E6653B5ACDCD /* LearningView.swift */; };
+		378E2581451158C0F81846BD /* LessonIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBE222FEDC0A7B4C82F99 /* LessonIllustration.swift */; };
 		5AB8E17826BF6714E9AE7DF0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386279A82FA2E048A5BA9D5 /* Models.swift */; };
 		67CC9E4AF0324AAF83693D66 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D1B721C440482A06C01114 /* Theme.swift */; };
 		6B15BCCA74BF1F3B4DC84AD2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */; };
 		97FC96BC42C51BFCBF3D4FFD /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */; };
 		986D3418D4FA18A799E63E4D /* DrawThroughApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C323FFF7C1ECA6F19C35DF /* DrawThroughApp.swift */; };
+		A303D9D9FE29F2DCDDF03339 /* LearningStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E98B01A6B26F52A4CF6D4A0 /* LearningStoreTests.swift */; };
 		A4363DF9BB130A5B529CBFB8 /* SettingsAndTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C918D41A7CF3B2825438703B /* SettingsAndTips.swift */; };
+		ADEAB21A42117A24C5E78D45 /* LearningFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DE6FC8F55CCA36A93F3D8D /* LearningFlowTests.swift */; };
+		B5B1307A962A68311055CAD1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F42DEAC4ADBB384C4A7FC699 /* PrivacyInfo.xcprivacy */; };
+		B8A5C46AD81409254071459C /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACD9B8CF230DFF3433D5E3 /* Lessons.swift */; };
 		BCB1193BF775F7E009062B3C /* CanvasComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76965161ABA2FBC61DBC50B /* CanvasComponents.swift */; };
+		E6235D08213F65ABBD74439A /* LearningStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8BBE486D2D46AEA1FF760 /* LearningStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0D78F0E107A6F4C81971B00D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81E49293CC0B8F72B14F76AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5898DA6F35A913BA6E22D792;
+			remoteInfo = DrawThrough;
+		};
+		57FEA9833A37C5A04B16FC3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81E49293CC0B8F72B14F76AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5898DA6F35A913BA6E22D792;
+			remoteInfo = DrawThrough;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		08BBCE2841C49090029C7925 /* DrawThroughTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DrawThroughTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E98B01A6B26F52A4CF6D4A0 /* LearningStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningStoreTests.swift; sourceTree = "<group>"; };
+		4FD81188CA5A1B9E2C44756D /* DrawThroughUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DrawThroughUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D1B721C440482A06C01114 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5F693C73EA23E6653B5ACDCD /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7DACD9B8CF230DFF3433D5E3 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
 		9386279A82FA2E048A5BA9D5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		9457EFAFC08FFC4B3C51C426 /* ScreenshotShowcaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotShowcaseView.swift; sourceTree = "<group>"; };
 		94908477B142A3593EF65555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AADBE222FEDC0A7B4C82F99 /* LessonIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonIllustration.swift; sourceTree = "<group>"; };
+		A3D8BBE486D2D46AEA1FF760 /* LearningStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningStore.swift; sourceTree = "<group>"; };
 		B76965161ABA2FBC61DBC50B /* CanvasComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasComponents.swift; sourceTree = "<group>"; };
 		BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DrawThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C918D41A7CF3B2825438703B /* SettingsAndTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAndTips.swift; sourceTree = "<group>"; };
 		D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D3C323FFF7C1ECA6F19C35DF /* DrawThroughApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawThroughApp.swift; sourceTree = "<group>"; };
+		DD696250A0ADE183A53B9F10 /* LessonPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPracticeView.swift; sourceTree = "<group>"; };
+		E7DE6FC8F55CCA36A93F3D8D /* LearningFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningFlowTests.swift; sourceTree = "<group>"; };
+		F42DEAC4ADBB384C4A7FC699 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -38,14 +71,25 @@
 			isa = PBXGroup;
 			children = (
 				94908477B142A3593EF65555 /* Assets.xcassets */,
+				F42DEAC4ADBB384C4A7FC699 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F58645A0FAD9F32E62BBE71 /* DrawThroughTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E98B01A6B26F52A4CF6D4A0 /* LearningStoreTests.swift */,
+			);
+			path = DrawThroughTests;
 			sourceTree = "<group>";
 		};
 		CA48BB7078DB1CCA37BDFE6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */,
+				08BBCE2841C49090029C7925 /* DrawThroughTests.xctest */,
+				4FD81188CA5A1B9E2C44756D /* DrawThroughUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				DEBA20928C418EC855AB1522 /* DrawThrough */,
+				6F58645A0FAD9F32E62BBE71 /* DrawThroughTests */,
+				FA89D8D4B9DC1EB766B589F2 /* DrawThroughUITests */,
 				CA48BB7078DB1CCA37BDFE6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,9 +111,13 @@
 				BB3BEEF1A0FB9A2920889DD1 /* CanvasView.swift */,
 				D3C323FFF7C1ECA6F19C35DF /* DrawThroughApp.swift */,
 				D17994B0DE9E5F8AEDD8E043 /* HomeView.swift */,
+				A3D8BBE486D2D46AEA1FF760 /* LearningStore.swift */,
+				5F693C73EA23E6653B5ACDCD /* LearningView.swift */,
+				9AADBE222FEDC0A7B4C82F99 /* LessonIllustration.swift */,
+				DD696250A0ADE183A53B9F10 /* LessonPracticeView.swift */,
+				7DACD9B8CF230DFF3433D5E3 /* Lessons.swift */,
 				9386279A82FA2E048A5BA9D5 /* Models.swift */,
 				7C5BB881ED0D700F7FA0ADE5 /* OnboardingView.swift */,
-				9457EFAFC08FFC4B3C51C426 /* ScreenshotShowcaseView.swift */,
 				C918D41A7CF3B2825438703B /* SettingsAndTips.swift */,
 				52D1B721C440482A06C01114 /* Theme.swift */,
 				33447D132791BC60F4C77685 /* Resources */,
@@ -75,9 +125,35 @@
 			path = DrawThrough;
 			sourceTree = "<group>";
 		};
+		FA89D8D4B9DC1EB766B589F2 /* DrawThroughUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7DE6FC8F55CCA36A93F3D8D /* LearningFlowTests.swift */,
+			);
+			path = DrawThroughUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C7B5F156B75F3F52B73F225 /* DrawThroughTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5591FF92280AD8D51DFFF160 /* Build configuration list for PBXNativeTarget "DrawThroughTests" */;
+			buildPhases = (
+				B398798E13B234B1C834560E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2916C145E3937C0C4049BAF7 /* PBXTargetDependency */,
+			);
+			name = DrawThroughTests;
+			packageProductDependencies = (
+			);
+			productName = DrawThroughTests;
+			productReference = 08BBCE2841C49090029C7925 /* DrawThroughTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5898DA6F35A913BA6E22D792 /* DrawThrough */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94E5E72BE38C0DC39D248980 /* Build configuration list for PBXNativeTarget "DrawThrough" */;
@@ -96,6 +172,24 @@
 			productReference = C5E0BCA12D5C62B72C750B0E /* DrawThrough.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BFFEB7618AFAF1D2A721FC8D /* DrawThroughUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD0C12DAAF1DE4DB1A6C1A88 /* Build configuration list for PBXNativeTarget "DrawThroughUITests" */;
+			buildPhases = (
+				B629C70E2AA0F1DBA27EFE19 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A45F7F5EFDAA727C0F69DB1 /* PBXTargetDependency */,
+			);
+			name = DrawThroughUITests;
+			packageProductDependencies = (
+			);
+			productName = DrawThroughUITests;
+			productReference = 4FD81188CA5A1B9E2C44756D /* DrawThroughUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +198,18 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3C7B5F156B75F3F52B73F225 = {
+						DevelopmentTeam = HBD3XXQK45;
+					};
+					5898DA6F35A913BA6E22D792 = {
+						DevelopmentTeam = HBD3XXQK45;
+					};
+					BFFEB7618AFAF1D2A721FC8D = {
+						DevelopmentTeam = HBD3XXQK45;
+						TestTargetID = 5898DA6F35A913BA6E22D792;
+					};
+				};
 			};
 			buildConfigurationList = 4DA871E5F2EE86002C392764 /* Build configuration list for PBXProject "DrawThrough" */;
 			developmentRegion = en;
@@ -120,6 +226,8 @@
 			projectRoot = "";
 			targets = (
 				5898DA6F35A913BA6E22D792 /* DrawThrough */,
+				3C7B5F156B75F3F52B73F225 /* DrawThroughTests */,
+				BFFEB7618AFAF1D2A721FC8D /* DrawThroughUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F97C45EE0A18534C57C5D7A /* Assets.xcassets in Resources */,
+				B5B1307A962A68311055CAD1 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,15 +253,48 @@
 				97FC96BC42C51BFCBF3D4FFD /* CanvasView.swift in Sources */,
 				986D3418D4FA18A799E63E4D /* DrawThroughApp.swift in Sources */,
 				6B15BCCA74BF1F3B4DC84AD2 /* HomeView.swift in Sources */,
+				E6235D08213F65ABBD74439A /* LearningStore.swift in Sources */,
+				32EC513CD0A655E16201F621 /* LearningView.swift in Sources */,
+				378E2581451158C0F81846BD /* LessonIllustration.swift in Sources */,
+				113BF8FBEAC3A0540CAB2027 /* LessonPracticeView.swift in Sources */,
+				B8A5C46AD81409254071459C /* Lessons.swift in Sources */,
 				5AB8E17826BF6714E9AE7DF0 /* Models.swift in Sources */,
 				0A54B6F1C9CF372125C3DC8F /* OnboardingView.swift in Sources */,
-				36465441AC73791C6665FC4F /* ScreenshotShowcaseView.swift in Sources */,
 				A4363DF9BB130A5B529CBFB8 /* SettingsAndTips.swift in Sources */,
 				67CC9E4AF0324AAF83693D66 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B398798E13B234B1C834560E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A303D9D9FE29F2DCDDF03339 /* LearningStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B629C70E2AA0F1DBA27EFE19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADEAB21A42117A24C5E78D45 /* LearningFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2916C145E3937C0C4049BAF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5898DA6F35A913BA6E22D792 /* DrawThrough */;
+			targetProxy = 0D78F0E107A6F4C81971B00D /* PBXContainerItemProxy */;
+		};
+		6A45F7F5EFDAA727C0F69DB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5898DA6F35A913BA6E22D792 /* DrawThrough */;
+			targetProxy = 57FEA9833A37C5A04B16FC3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4FDEBDB7DDECE23CA2F9061D /* Release */ = {
@@ -160,7 +302,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = HBD3XXQK45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Draw Through";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your finished compositions.";
@@ -213,8 +354,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HBD3XXQK45;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -237,6 +379,40 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		9EF820949291DF409A385D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.DrawThroughUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawThrough;
+			};
+			name = Release;
+		};
+		A4F77BC9CA74F13338E85ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.DrawThroughTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawThrough.app/DrawThrough";
+			};
+			name = Debug;
 		};
 		B3620326C5173B3CB01321E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -272,8 +448,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HBD3XXQK45;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -304,12 +481,45 @@
 			};
 			name = Debug;
 		};
+		BD9DC5E13BE8771F12F826FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.DrawThroughUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawThrough;
+			};
+			name = Debug;
+		};
+		CE4021402380F9656FB8DFB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oanarinaldi.DrawThroughTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawThrough.app/DrawThrough";
+			};
+			name = Release;
+		};
 		CF74FBF8A44747B60770C2CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = HBD3XXQK45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Draw Through";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save your finished compositions.";
@@ -340,11 +550,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		5591FF92280AD8D51DFFF160 /* Build configuration list for PBXNativeTarget "DrawThroughTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F77BC9CA74F13338E85ECB /* Debug */,
+				CE4021402380F9656FB8DFB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		94E5E72BE38C0DC39D248980 /* Build configuration list for PBXNativeTarget "DrawThrough" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF74FBF8A44747B60770C2CE /* Debug */,
 				4FDEBDB7DDECE23CA2F9061D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD0C12DAAF1DE4DB1A6C1A88 /* Build configuration list for PBXNativeTarget "DrawThroughUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9DC5E13BE8771F12F826FF /* Debug */,
+				9EF820949291DF409A385D57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

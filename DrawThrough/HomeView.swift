@@ -19,13 +19,14 @@ struct HomeView: View {
                     VStack(alignment: .leading, spacing: 22) {
                         HStack(alignment: .firstTextBaseline) {
                             VStack(alignment: .leading, spacing: 2) {
-                                Text("DRAWING STUDIO").font(DTTheme.smallCaps).tracking(2.4).foregroundStyle(DTTheme.clay.opacity(0.72))
-                                Text("Draw Through").font(DTTheme.display(43)).italic()
+                                Text("YOUR REFERENCE STUDIO").font(DTTheme.smallCaps).tracking(2.4).foregroundStyle(DTTheme.clay.opacity(0.72))
+                                Text("The light table").font(DTTheme.display(40)).italic()
                             }
                             Spacer()
-                            Button { showTips = true } label: { Image(systemName: "lightbulb").frame(width: 38, height: 38).background(.white.opacity(0.28), in: Circle()) }
-                            Button { showSettings = true } label: { Image(systemName: "gearshape").frame(width: 38, height: 38).background(.white.opacity(0.28), in: Circle()) }
+                            Button { showTips = true } label: { Image(systemName: "lightbulb").frame(width: 44, height: 44).background(.white.opacity(0.28), in: Circle()) }.accessibilityLabel("Light table tips")
+                            Button { showSettings = true } label: { Image(systemName: "gearshape").frame(width: 44, height: 44).background(.white.opacity(0.28), in: Circle()) }.accessibilityLabel("Studio settings")
                         }.font(.title3).foregroundStyle(DTTheme.ink)
+                        Text("Arrange your own references. Study them on screen or lock the composition to trace on paper.").font(.system(.body, design: .serif)).foregroundStyle(DTTheme.clay).lineSpacing(4)
                         Button { showCanvasSetup = true } label: { Label("New Canvas", systemImage: "plus").frame(maxWidth: .infinity) }.buttonStyle(InkButtonStyle())
                         HStack {
                             Text("YOUR CANVASES").font(DTTheme.smallCaps).tracking(1.7)
@@ -40,7 +41,7 @@ struct HomeView: View {
                                 ForEach(filtered) { project in ProjectCard(project: project) { route = project } }
                             }
                         }
-                    }.padding(20)
+                    }.padding(20).frame(maxWidth: 1000).frame(maxWidth: .infinity)
                 }
             }
             .navigationDestination(item: $route) { CanvasView(project: $0) }
@@ -98,6 +99,7 @@ struct ProjectCard: View {
 }
 
 struct NewCanvasSheet: View {
+    @EnvironmentObject private var store: ProjectStore
     let create: (CanvasKind) -> Void
     @Environment(\.dismiss) private var dismiss
     @State private var selected = CanvasKind.infinite
@@ -114,6 +116,6 @@ struct NewCanvasSheet: View {
             }.parchmentList()
                 .navigationTitle("New Canvas").navigationBarTitleDisplayMode(.inline)
                 .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }; ToolbarItem(placement: .confirmationAction) { Button("Create") { create(selected) }.fontWeight(.semibold) } }
-        }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial)
+        }.onAppear { selected = store.settings.defaultCanvas }.presentationDetents([.medium]).presentationBackground(.ultraThinMaterial)
     }
 }
