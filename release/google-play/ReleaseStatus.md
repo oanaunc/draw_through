@@ -4,9 +4,13 @@ Prepared on **23 October 2026**, Europe/Bucharest.
 
 ## Current release state
 
-The Android app is implemented, tested and signed. The Google Play new-app form is prepared for **Draw Through**, free, English (United States), package `com.oanarinaldi.drawthrough`; Play confirmed that the package name is available. **The app has not yet been created, uploaded or submitted.** The app-creation/export declarations require the account owner's confirmation before continuing in Play Console.
+The Android app is implemented, tested, signed, pushed to `main` and **submitted to Google Play for production review**. On 23 October 2026 at approximately 22:37 Europe/Bucharest (19:37 UTC), Play confirmed **“11 changes sent for review”** and displayed **“Changes in review”**, including production **1.0.0 (1), Start full rollout**. Google's quick checks were still running at verification; the submission will proceed through those checks automatically. This is not approval or public availability.
 
-The visible form is at https://play.google.com/console/u/0/developers/8359156760975569195/create-new-app?hl=en . No production approval or public availability is implied by the prepared bundle.
+The free English (United States) **Draw Through** entry uses package `com.oanarinaldi.drawthrough`, app ID `4976230497312384698`. All 178 offered country/region rows are targeted (177 named markets plus Rest of World). The existing managed-publishing setting is off. The user confirmed Google's Developer Program Policies / US export declarations and separately the IARC Terms of Use. IARC is completed: ESRB Everyone, PEGI 3, equivalent all-ages/3+ regional ratings. The intended audience declaration is 13 and older.
+
+[Publishing overview](https://play.google.com/console/u/0/developers/8359156760975569195/app/4976230497312384698/publishing?hl=en) · [App dashboard](https://play.google.com/console/u/0/developers/8359156760975569195/app/4976230497312384698/app-dashboard?hl=en). Screenshot evidence: `validation/Play-Submitted-For-Review.png`; structured receipt: `SubmissionReceipt.json`.
+
+Implementation commit: `82fcee00216ed7445199dabd313fc5528aefb9cf`. The exact locally verified signed AAB was uploaded successfully; Play recognized version code 1, version name 1.0.0, minimum API 29 and target API 36, and marked it “Ready to release.” Play App Signing and automatic protection were already active in the release form. No new signing agreement prompt appeared. The required advertising ID declaration was completed as **No** after quick checks identified it as missing; the issue cleared before submission.
 
 ## Verification
 
@@ -39,6 +43,6 @@ The Android implementation follows the Apple visual structure and theme. It is n
 
 The existing website repository was updated only at `drawthroughprivacy.html`, commit `ce4d5cacb77842ec571f55e9b09f2bca8b78f5c3`. Its deployment succeeded and https://oanarinaldi.com/drawthroughprivacy.html now covers Android, lessons, drawings, reflections and local-only data handling. Unrelated website working files were left untouched.
 
-## Next Play steps
+## Remaining external review
 
-After confirmation of the required declarations: create the app, complete its listing and policy questionnaires, enable Play App Signing as prompted, upload the signed AAB, choose the available production/testing track and submit for review. Preserve the existing account's country availability choices where applicable. If Play requires testing or another owner action, record that exact requirement rather than claiming production submission.
+Google's automated quick checks and review remain pending. Play stated that review is typically completed within seven days but may take longer. The console has accepted the review request; no further submission action was pending at verification. With managed publishing off, approved changes are intended to publish automatically. Monitor the publishing overview for any policy or app-quality findings. The in-app browser was left open to that page.
