@@ -1,0 +1,12 @@
+{
+  "package": "com.oanarinaldi.drawthrough",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "targetSdk": 36,
+  "minSdk": 29,
+  "aabSHA256": "f5d3885cb7db88cb2e468ebf526c9645be7af8b1f04f91ec17fb6963f6f7b240",
+  "aabBytes": 54243419,
+  "courseImages": 100,
+  "allWebAssetsMatchSource": true,
+  "nativeSharedLibraries": 0
+}

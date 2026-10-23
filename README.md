@@ -13,3 +13,7 @@ Open `DrawThrough.xcodeproj` in Xcode. `project.yml` is the XcodeGen source of t
 Run the `DrawThrough` scheme's tests on an iOS simulator. Unit tests cover curriculum completeness, 100 distinct bundled images, full workshop content, personal-reference persistence, drawing persistence, failed writes, corrupt files, and resize coordinates. UI tests cover drawing and journal flows, onboarding, search, gallery tools, the gallery-to-lesson-to-Studio path, and long workshop reading.
 
 See [validation](docs/Validation.md), [product research](docs/ProductResearch.md), [image provenance and prompts](docs/reference-art/README.md), and [submission materials](AppStoreSubmission.md).
+
+## Android / Google Play
+
+The Android edition lives in [`android/`](android/README.md). It carries the complete Apple curriculum and original artwork into an offline Android drawing app with native photo selection and image export. Build instructions, platform-specific rendering differences and signing details are documented there. Google Play listing materials, genuine device captures and validation evidence are in [`release/google-play/`](release/google-play/).

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="5" failures="0" errors="0" skipped="0" time="24.173" timestamp="2026-10-23T19:21:37" hostname="localhost">
+  <testsuite name="com.oanarinaldi.drawthrough.AppFlowTest" tests="5" failures="0" errors="0" skipped="0" time="23.621" timestamp="2026-10-23T19:21:37" hostname="localhost">
+    <properties>
+      <property name="device" value="DrawThrough_Tablet_API36(AVD) - 16" />
+      <property name="flavor" value="" />
+      <property name="project" value=":app" />
+    </properties>
+    <testcase name="completeOfflineCourseAndArtwork" classname="com.oanarinaldi.drawthrough.AppFlowTest" time="6.199" />
+    <testcase name="corruptFilesPreservedAndFailureReported" classname="com.oanarinaldi.drawthrough.AppFlowTest" time="2.326" />
+    <testcase name="realDrawingUndoCompletionAndRecreation" classname="com.oanarinaldi.drawthrough.AppFlowTest" time="3.991" />
+    <testcase name="galleryStudioTransformPersistenceAndDuplicate" classname="com.oanarinaldi.drawthrough.AppFlowTest" time="7.279" />
+    <testcase name="systemPhotoPickerAndNativeImageExport" classname="com.oanarinaldi.drawthrough.AppFlowTest" time="3.826" />
+  </testsuite>
+</testsuites>

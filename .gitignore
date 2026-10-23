@@ -8,3 +8,12 @@ DerivedData/
 *.ipa
 *.dSYM.zip
 *.dSYM
+android/.gradle/
+android/.idea/
+android/local.properties
+android/**/build/
+*.jks
+*.keystore
+*.aab
+*.apk
+__pycache__/

@@ -1,0 +1,128 @@
+[
+  {
+    "source": "release/google-play/raw-phone/01-Learn.png",
+    "sourceSHA256": "8c88bd58d4fa4598cca73608ed65aefa314baca1415213de9d48696d2fd8f50e",
+    "output": "release/google-play/screenshots-phone/01-Learn.png",
+    "outputSHA256": "33b58e856c7cf2abc3420e521c107c77968c8e54ed025e5690df3d69a91db790",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/02-References.png",
+    "sourceSHA256": "e36ec34723428ddb9ee5cc72aba6f3472808a1f1ec33cfb0bf4499590ad58875",
+    "output": "release/google-play/screenshots-phone/02-References.png",
+    "outputSHA256": "79cd5f1405f63c2b0f5a9fc5bcb9cc9259fe214b083426e781f355287383bec3",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/03-Workshop.png",
+    "sourceSHA256": "911cfe301c36ce40d01b9e9df5621d3002bca043cb237bf4e27908b6bdedf83d",
+    "output": "release/google-play/screenshots-phone/03-Workshop.png",
+    "outputSHA256": "3bf767f5e488c2c39b697b0c9255cf24a56ba77f9bfaec588f574b38f81e14b0",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/04-Practice.png",
+    "sourceSHA256": "398d35718640e65e86fda2cb1ce0fc3259937ec8bcacb3cb82135b8186e56acb",
+    "output": "release/google-play/screenshots-phone/04-Practice.png",
+    "outputSHA256": "2eecf6fb8a540be0965ef0b964368866b7e1e5b43b75a68c0bbb2b3bd1297f4e",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/05-Journal.png",
+    "sourceSHA256": "ac310e4797e192444c971eaf79978e879b0151e3e2d27adb3231d612ef9d944f",
+    "output": "release/google-play/screenshots-phone/05-Journal.png",
+    "outputSHA256": "f124b93ee16ba56f7f12f34f7bc64268fdd855da7780ded3105b2dbd956832d8",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/06-Observation.png",
+    "sourceSHA256": "fdf488f4019260868a40cce18f4f9fb48496520950baa4585752822640a5e5ce",
+    "output": "release/google-play/screenshots-phone/06-Observation.png",
+    "outputSHA256": "eb17e7bbfdb220860d260bee4ea812feec2f00464ccf6a07d9158cc1ae6544e9",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/07-Light-Table.png",
+    "sourceSHA256": "c923aa7d9716c058c3aaedb89304ce140006155cc32fe862379cef6f261291a3",
+    "output": "release/google-play/screenshots-phone/07-Light-Table.png",
+    "outputSHA256": "3403e29f7b4e4aafcd5c5d410931571367d7e1ea2e3f7c9b64dd8252d50552c9",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-phone/09-Own-Photo.png",
+    "sourceSHA256": "3666679057c995ab3853cf062393701fe610cca706513e4467711f2a908beda3",
+    "output": "release/google-play/screenshots-phone/09-Own-Photo.png",
+    "outputSHA256": "4197d18c03f91a183440480d02a1ad7c5c1f7c49385d324937be3167cd26cd2f",
+    "width": 1080,
+    "height": 1920,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-tablet/01-Learn.png",
+    "sourceSHA256": "40ee2703ebd98c85baa7a376e18e54ed1f0d9afc10b528a1cd91151bacf58b01",
+    "output": "release/google-play/screenshots-tablet/01-Learn.png",
+    "outputSHA256": "966d71bfeb7d73210b8e93d43e676cab21b60978003fd652fe070555393fea4f",
+    "width": 1920,
+    "height": 1080,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-tablet/02-References.png",
+    "sourceSHA256": "227842b3c8ac7cdc8ea0d92d236e9419f9e49281b2bf69636f8bf9d04ba42f83",
+    "output": "release/google-play/screenshots-tablet/02-References.png",
+    "outputSHA256": "1f9c3dcf29263e555ff0345352b8cccc0f1cb233400213efba5bc834187d053e",
+    "width": 1920,
+    "height": 1080,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-tablet/03-Workshop.png",
+    "sourceSHA256": "95506cb2c8b60704344fe4fcfbf714fe41d7762beb9361945a51fdf3c0f231fc",
+    "output": "release/google-play/screenshots-tablet/03-Workshop.png",
+    "outputSHA256": "917e42130aa33da495d0af18471e14b7b75ee35c090a1f789dc5d38e2a009f82",
+    "width": 1920,
+    "height": 1080,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-tablet/04-Practice.png",
+    "sourceSHA256": "a4d00c4fa151e0a4cf3b566ed09de25a4b62db05cbe8dea3455f99ae9478d335",
+    "output": "release/google-play/screenshots-tablet/04-Practice.png",
+    "outputSHA256": "9702ab4edc165e2366c8b3cddb297beada27db31160db6608cfba27f87496b47",
+    "width": 1920,
+    "height": 1080,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-tablet/05-Journal.png",
+    "sourceSHA256": "eb876292b180f58f304e7a0f0a4d2357edb5ae8e37f0b7d497f32e5b389bfe6c",
+    "output": "release/google-play/screenshots-tablet/05-Journal.png",
+    "outputSHA256": "465bda034e054e2a9e6e472c8febbad7a67627249da4073ea80a15b2a6d0e69c",
+    "width": 1920,
+    "height": 1080,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  },
+  {
+    "source": "release/google-play/raw-tablet/07-Light-Table.png",
+    "sourceSHA256": "0f83a8c5a685fce7cd8f82dc22e13db3d03f58bd8baf848d7d3fe2c9cbb5502f",
+    "output": "release/google-play/screenshots-tablet/07-Light-Table.png",
+    "outputSHA256": "e5d97b306bee0e1017124d783d480b80ff65cab7d61df53c95a1564e356f8f74",
+    "width": 1920,
+    "height": 1080,
+    "method": "Full capture, proportional fit on warm-paper canvas; no UI cropping or alteration."
+  }
+]
